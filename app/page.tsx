@@ -239,6 +239,7 @@ export default function Home() {
             <li><a href="#fleet" onClick={handleNavClick}>Our Fleet</a></li>
             <li><a href="#why-us" onClick={handleNavClick}>Why Us</a></li>
             <li><a href="#how-it-works" onClick={handleNavClick}>How It Works</a></li>
+            <li><a href="#faq" onClick={handleNavClick}>FAQs</a></li>
             <li><a href="#contact" onClick={handleNavClick}>Contact</a></li>
             <li>
               <a
@@ -462,6 +463,72 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== FAQ SECTION ===== */}
+      <section className="section" id="faq">
+        <div className="container">
+          <div className="section-header animate-on-scroll">
+            <div className="section-badge">FAQs</div>
+            <h2 className="section-title">Frequently Asked Questions</h2>
+            <p className="section-subtitle">
+              Everything you need to know about renting a car in Ahmedabad with WheelOnHour.
+            </p>
+          </div>
+
+          <div className="faq-list">
+            {[
+              {
+                q: "What is the cheapest car on rent in Ahmedabad?",
+                a: "WheelOnHour offers the Tata Altroz on rent in Ahmedabad starting at just ₹1,800 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
+              },
+              {
+                q: "How do I rent a car in Ahmedabad from WheelOnHour?",
+                a: "Booking a car is simple: 1) Choose your car (Baleno or Altroz), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) We deliver the car to your doorstep in Ahmedabad. No app download needed!",
+              },
+              {
+                q: "Do you offer self-drive car rental in Ahmedabad?",
+                a: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. We offer Maruti Suzuki Baleno and Tata Altroz for self-drive rentals.",
+              },
+              {
+                q: "Is there doorstep delivery for rental cars in Ahmedabad?",
+                a: "Yes, WheelOnHour provides free doorstep delivery of rental cars anywhere in Ahmedabad. Whether it's your home, office, or the airport — we bring the car to you.",
+              },
+              {
+                q: "What documents are needed to rent a car in Ahmedabad?",
+                a: "You need a valid Indian driving license, an Aadhaar card (or any government ID), and a refundable security deposit. The process is quick and hassle-free.",
+              },
+              {
+                q: "Can I rent a Baleno in Ahmedabad?",
+                a: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours. Available in both automatic and manual. Book via WhatsApp at +91 884 984 9888.",
+              },
+              {
+                q: "Are the rental cars insured?",
+                a: "Yes, all cars at WheelOnHour are comprehensively insured. Drive with complete peace of mind knowing you're fully covered.",
+              },
+              {
+                q: "What is the price of car rental in Ahmedabad per day?",
+                a: "WheelOnHour offers car rental starting at ₹1,800/day for the Tata Altroz and ₹2,400/day for the Maruti Suzuki Baleno. All-inclusive — no hidden charges.",
+              },
+              {
+                q: "Do you provide car rental for outstation trips from Ahmedabad?",
+                a: "Yes! Rent our cars for outstation trips — Udaipur, Mount Abu, Goa, Kutch, and more. Contact us on WhatsApp for outstation rates.",
+              },
+              {
+                q: "Is WheelOnHour available 24/7?",
+                a: "Yes! We operate 24/7 in Ahmedabad. Book, pick up, or return at any time. Reach us anytime on WhatsApp at +91 884 984 9888.",
+              },
+            ].map((faq, idx) => (
+              <details className="faq-item animate-on-scroll" key={idx}>
+                <summary className="faq-question">
+                  <h3>{faq.q}</h3>
+                  <span className="faq-toggle">+</span>
+                </summary>
+                <p className="faq-answer">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== CONTACT ===== */}
       <section className="section" id="contact">
         <div className="container">
@@ -583,10 +650,27 @@ export default function Home() {
             </div>
           </div>
 
+          {/* SEO Internal Links */}
+          <div className="footer-seo-links">
+            <h4>Car Rental Services in Ahmedabad</h4>
+            <div className="footer-links-grid">
+              <a href="/rent-a-car-in-ahmedabad">Rent a Car in Ahmedabad</a>
+              <a href="/self-drive-car-rental-ahmedabad">Self Drive Car Rental Ahmedabad</a>
+              <a href="/cheap-car-rental-ahmedabad">Cheap Car Rental Ahmedabad</a>
+              <a href="/baleno-on-rent-in-ahmedabad">Baleno on Rent in Ahmedabad</a>
+              <a href="/altroz-on-rent-in-ahmedabad">Altroz on Rent in Ahmedabad</a>
+              <a href="/car-hire-ahmedabad-airport">Car Hire Ahmedabad Airport</a>
+              <a href="/outstation-car-rental-ahmedabad">Outstation Car Rental Ahmedabad</a>
+              <a href="/wedding-car-rental-ahmedabad">Wedding Car Rental Ahmedabad</a>
+              <a href="/car-rental-ahmedabad-price">Car Rental Ahmedabad Price List</a>
+              <a href="/monthly-car-rental-ahmedabad">Monthly Car Rental Ahmedabad</a>
+            </div>
+          </div>
+
           <div className="footer-bottom">
             <div className="footer-copy">
               © {new Date().getFullYear()} WheelOnHour. All rights reserved. |
-              Owned by <strong>Nilesh Kidiya</strong>
+              Owned by <strong>Nilesh Kidiya</strong> | Ahmedabad, Gujarat
             </div>
             <div className="footer-designer">
               Designed &amp; Developed by{" "}
@@ -597,6 +681,41 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* ===== SEO CONTENT SECTION ===== */}
+      <section className="seo-content">
+        <div className="container">
+          <h2>Car Rental in Ahmedabad — WheelOnHour</h2>
+          <p>
+            Looking to <strong>rent a car in Ahmedabad</strong>? WheelOnHour is Ahmedabad&apos;s most trusted
+            <strong> self-drive car rental</strong> service offering premium cars like the <strong>Maruti Suzuki Baleno</strong> and
+            <strong> Tata Altroz</strong> at unbeatable prices. Whether you need a <strong>car on rent in Ahmedabad</strong> for
+            a day trip, outstation journey, wedding, or airport transfer — we&apos;ve got you covered.
+          </p>
+          <h3>Why Choose WheelOnHour for Car Rental in Ahmedabad?</h3>
+          <p>
+            WheelOnHour stands out as the <strong>best car rental in Ahmedabad</strong> with transparent pricing starting
+            at just ₹1,800 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer free doorstep
+            delivery, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes the
+            <strong> Baleno on rent in Ahmedabad</strong> (₹2,400/day) and <strong>Altroz on rent in Ahmedabad</strong> (₹1,800/day).
+          </p>
+          <h3>Self-Drive Car Rental in Ahmedabad</h3>
+          <p>
+            Enjoy the freedom of driving with our <strong>self-drive car rental in Ahmedabad</strong>. No driver needed —
+            pick up the keys and explore Gujarat at your own pace. Perfect for <strong>outstation car rental from Ahmedabad</strong> to
+            popular destinations like Udaipur, Mount Abu, Goa, Kutch, Somnath, and Dwarka.
+            WheelOnHour also provides <strong>cheap car rental in Ahmedabad</strong> for budget-conscious travelers and
+            <strong> car rental near Ahmedabad airport</strong> with pickup and drop-off.
+          </p>
+          <h3>Affordable Car Rental Prices in Ahmedabad</h3>
+          <p>
+            Compare our <strong>car rental Ahmedabad prices</strong>: Tata Altroz at ₹1,800/24hrs and Maruti Suzuki Baleno
+            at ₹2,400/24hrs. These are among the most <strong>affordable car rental rates in Ahmedabad, Gujarat</strong>.
+            Whether you search for &quot;rent a car in Ahmedabad&quot;, &quot;car rental near me&quot;, or &quot;cheap car on rent Ahmedabad&quot; —
+            WheelOnHour is the answer. Contact owner Nilesh Kidiya at +91 884 984 9888 on WhatsApp to book now.
+          </p>
+        </div>
+      </section>
 
       {/* ===== FLOATING WHATSAPP ===== */}
       <a

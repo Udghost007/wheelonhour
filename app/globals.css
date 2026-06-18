@@ -1385,3 +1385,279 @@ button {
     flex-direction: column;
   }
 }
+
+/* ===== FAQ SECTION ===== */
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-item[open] {
+  border-color: rgba(0, 212, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.05);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  cursor: pointer;
+  list-style: none;
+  gap: 16px;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.faq-toggle {
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 300;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 24px 20px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ===== SEO CONTENT SECTION ===== */
+
+.seo-content {
+  padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.seo-content h2 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.seo-content h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin: 24px 0 12px;
+}
+
+.seo-content p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 0.92rem;
+  margin-bottom: 12px;
+}
+
+.seo-content strong {
+  color: var(--text-secondary);
+}
+
+/* ===== SEO LANDING PAGES ===== */
+
+.seo-page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.seo-page-hero {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.seo-page-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.seo-page-hero p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.seo-page-content {
+  padding: 40px 0 80px;
+}
+
+.seo-page-content h2 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin: 32px 0 16px;
+}
+
+.seo-page-content h3 {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin: 24px 0 12px;
+}
+
+.seo-page-content p,
+.seo-page-content li {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.seo-page-content ul {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.seo-page-content strong {
+  color: var(--text-primary);
+}
+
+.seo-page-cta {
+  text-align: center;
+  padding: 48px 0;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  margin: 40px 0;
+}
+
+.seo-page-cta h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.seo-page-cta p {
+  margin-bottom: 24px;
+}
+
+.seo-page-cta .btn {
+  display: inline-flex;
+}
+
+.seo-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.seo-back-link:hover {
+  opacity: 0.8;
+}
+
+/* ===== FOOTER SEO LINKS ===== */
+
+.footer-seo-links {
+  padding: 28px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer-seo-links h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.footer-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.footer-links-grid a {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  transition: var(--transition);
+  padding: 4px 0;
+}
+
+.footer-links-grid a:hover {
+  color: var(--primary);
+}
+
+/* ===== SEO PAGE NAV ===== */
+
+.seo-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(5, 10, 21, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+}
+
+.seo-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== SEO PAGE FOOTER ===== */
+
+.seo-footer {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-links-grid {
+    gap: 8px 16px;
+  }
+
+  .footer-links-grid a {
+    font-size: 0.8rem;
+  }
+
+  .seo-page-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .seo-page-hero p {
+    font-size: 0.95rem;
+  }
+
+  .seo-page-cta {
+    padding: 32px 16px;
+  }
+}
