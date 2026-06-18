@@ -2358,7 +2358,7 @@ button {
     justify-content: center;
   }
 
-  .car-footer>div>a {
+  .car-footer>div>a, .btn a {
     font-size: 16.6px;
     line-height: 122%;
   }
