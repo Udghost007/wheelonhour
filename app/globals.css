@@ -1775,7 +1775,8 @@ button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #25d366, #128c7e);
+  /* background: linear-gradient(135deg, #25d366, #128c7e); */
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark))!important;
   display: flex;
   align-items: center;
   justify-content: center;
