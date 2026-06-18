@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Car Rental Ahmedabad Price List 2025 | WheelOnHour",
     description: "Compare car rental prices in Ahmedabad. Cheapest rates from ₹1800/day.",
-    url: "https://wheelonhour.com/car-rental-ahmedabad-price",
+    url: "https://wheelonhour.vercel.app/car-rental-ahmedabad-price",
     type: "website",
     locale: "en_IN",
   },

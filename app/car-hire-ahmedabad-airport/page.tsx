@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Car Hire Ahmedabad Airport — From ₹1800/day",
     description: "Rent a car at Ahmedabad airport. Self-drive with airport delivery.",
-    url: "https://wheelonhour.com/car-hire-ahmedabad-airport",
+    url: "https://wheelonhour.vercel.app/car-hire-ahmedabad-airport",
     type: "website",
     locale: "en_IN",
   },

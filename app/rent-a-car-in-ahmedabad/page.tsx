@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Rent a Car in Ahmedabad — From ₹1800/day | WheelOnHour",
     description:
       "Self-drive car rental in Ahmedabad. Baleno & Altroz with free doorstep delivery. Book on WhatsApp!",
-    url: "https://wheelonhour.com/rent-a-car-in-ahmedabad",
+    url: "https://wheelonhour.vercel.app/rent-a-car-in-ahmedabad",
     type: "website",
     locale: "en_IN",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cheap Car Rental Ahmedabad — From ₹1800/day",
     description: "Most affordable car rental in Ahmedabad. Premium cars from ₹1800/day.",
-    url: "https://wheelonhour.com/cheap-car-rental-ahmedabad",
+    url: "https://wheelonhour.vercel.app/cheap-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },

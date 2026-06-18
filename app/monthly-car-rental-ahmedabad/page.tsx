@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Monthly Car Rental Ahmedabad | WheelOnHour",
     description: "Long-term car rental in Ahmedabad. Special monthly packages available.",
-    url: "https://wheelonhour.com/monthly-car-rental-ahmedabad",
+    url: "https://wheelonhour.vercel.app/monthly-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },

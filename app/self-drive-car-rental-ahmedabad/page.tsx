@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Self Drive Car Rental Ahmedabad — From ₹1800/day",
     description: "Rent self-drive cars in Ahmedabad. Baleno & Altroz with doorstep delivery.",
-    url: "https://wheelonhour.com/self-drive-car-rental-ahmedabad",
+    url: "https://wheelonhour.vercel.app/self-drive-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },

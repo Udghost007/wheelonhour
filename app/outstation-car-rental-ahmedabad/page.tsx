@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Outstation Car Rental from Ahmedabad | WheelOnHour",
     description: "Self-drive outstation trips from Ahmedabad. Baleno & Altroz from ₹1800/day.",
-    url: "https://wheelonhour.com/outstation-car-rental-ahmedabad",
+    url: "https://wheelonhour.vercel.app/outstation-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },

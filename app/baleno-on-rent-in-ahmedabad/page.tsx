@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Baleno on Rent in Ahmedabad — ₹2400/day | WheelOnHour",
     description: "Rent Maruti Baleno in Ahmedabad. Automatic & Manual. ₹2400/day with doorstep delivery.",
-    url: "https://wheelonhour.com/baleno-on-rent-in-ahmedabad",
+    url: "https://wheelonhour.vercel.app/baleno-on-rent-in-ahmedabad",
     type: "website",
     locale: "en_IN",
   },

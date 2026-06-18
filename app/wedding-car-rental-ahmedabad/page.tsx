@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Car Rental Ahmedabad | WheelOnHour",
     description: "Premium wedding car rental in Ahmedabad from ₹1800/day.",
-    url: "https://wheelonhour.com/wedding-car-rental-ahmedabad",
+    url: "https://wheelonhour.vercel.app/wedding-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },

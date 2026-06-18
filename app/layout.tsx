@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 
-const BASE_URL = "https://wheelonhour.com";
+const BASE_URL = "https://wheelonhour.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

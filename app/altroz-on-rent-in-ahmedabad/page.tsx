@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tata Altroz on Rent in Ahmedabad — ₹1800/day",
     description: "Cheapest car rental in Ahmedabad. Tata Altroz at ₹1800/day with doorstep delivery.",
-    url: "https://wheelonhour.com/altroz-on-rent-in-ahmedabad",
+    url: "https://wheelonhour.vercel.app/altroz-on-rent-in-ahmedabad",
     type: "website",
     locale: "en_IN",
   },
