@@ -1190,7 +1190,7 @@ button {
 }
 
 .car-card--featured::before {
-  content: '';
+  /* content: '';
   position: absolute;
   inset: -2px;
   border-radius: var(--radius);
@@ -1198,7 +1198,7 @@ button {
   background-size: 300% 300%;
   animation: featuredBorderShift 4s ease-in-out infinite;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.7; */
 }
 
 .car-card--featured::after {
@@ -1240,12 +1240,12 @@ button {
   font-size: 1.7rem;
 }
 
+.car-card--featured .car-price {
+  background: linear-gradient(135deg, var(--accent), #e85d2a);
+}
+
 .car-card--featured .car-price-amount {
-  font-size: 2.2rem;
-  background: linear-gradient(135deg, var(--primary), #67e8f9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 1rem;
 }
 
 @keyframes featuredPulse {
@@ -1399,28 +1399,36 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  padding: 12px 8px;
+  gap: 8px;
+  padding: 16px 12px;
   background: var(--bg-deep);
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.car-spec:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.15);
 }
 
 .car-spec-icon {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 .car-spec-value {
-  font-weight: 600;
-  font-size: 0.85rem;
+  font-weight: 700;
+  font-size: 1.05rem;
   color: var(--text-primary);
 }
 
 .car-spec-label {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
 }
 
 .car-footer {
@@ -1432,21 +1440,24 @@ button {
 }
 
 .car-price {
-  display: flex;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
   align-items: baseline;
   gap: 4px;
 }
 
 .car-price-amount {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #ffffff;
 }
 
 .car-price-period {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .car-actions {
@@ -1964,7 +1975,35 @@ button {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 16px;
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .car-info {
+    padding: 20px;
+  }
+
+  .feature-card {
+    padding: 28px 20px;
+  }
+
+  .step-card {
+    padding: 32px 20px;
+  }
+
+  .faq-question {
+    padding: 16px 18px;
+  }
+
+  .faq-answer {
+    padding: 0 18px 16px;
+  }
+
+  .contact-info-card {
+    padding: 24px 20px;
   }
 
   .hero-title {
@@ -1982,17 +2021,34 @@ button {
   }
 
   .car-footer {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .car-price {
+    padding: 6px 14px;
+  }
+
+  .car-price-amount {
+    font-size: 1.1rem !important;
+  }
+
+  .car-price-period {
+    font-size: 0.7rem;
   }
 
   .car-actions {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
   }
 
   .car-actions .btn {
-    flex: 1;
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 10px 16px;
   }
 
   .contact-cta-group {
