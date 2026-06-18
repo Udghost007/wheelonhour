@@ -312,12 +312,255 @@ export default function Home() {
             </div>
 
             <div className="hero-visual">
-              <img
-                src="/cars/altroz/1.jpg"
-                alt="Tata Altroz - Premium Rental Car"
-                className="hero-car-image"
-              />
+              {/* Animated rings */}
+              <div className="hero-ring hero-ring-1" />
+              <div className="hero-ring hero-ring-2" />
+              <div className="hero-ring hero-ring-3" />
+
+              {/* Speed lines */}
+              <div className="hero-speed-lines">
+                <span /><span /><span /><span /><span />
+              </div>
+
+              {/* Floating particles */}
+              <div className="hero-particles">
+                <span className="hero-particle" style={{ top: "10%", left: "5%", animationDelay: "0s" }} />
+                <span className="hero-particle" style={{ top: "20%", right: "10%", animationDelay: "0.5s" }} />
+                <span className="hero-particle" style={{ top: "70%", left: "15%", animationDelay: "1s" }} />
+                <span className="hero-particle" style={{ top: "80%", right: "20%", animationDelay: "1.5s" }} />
+                <span className="hero-particle" style={{ top: "40%", left: "0%", animationDelay: "2s" }} />
+                <span className="hero-particle" style={{ top: "60%", right: "5%", animationDelay: "0.7s" }} />
+              </div>
+
+              {/* Animated SVG Car Illustration */}
+              <div className="hero-car-wrapper">
+                <svg viewBox="0 0 800 400" className="hero-car-svg" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    {/* Gradients */}
+                    <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#1a3a5c" />
+                      <stop offset="50%" stopColor="#0f2440" />
+                      <stop offset="100%" stopColor="#0a1628" />
+                    </linearGradient>
+                    <linearGradient id="carBodyShine" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="rgba(0,212,255,0.15)" />
+                      <stop offset="50%" stopColor="rgba(0,212,255,0.03)" />
+                      <stop offset="100%" stopColor="rgba(0,212,255,0.1)" />
+                    </linearGradient>
+                    <linearGradient id="windowGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#0ea5e9" />
+                      <stop offset="100%" stopColor="#0369a1" />
+                    </linearGradient>
+                    <linearGradient id="roadGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stopColor="transparent" />
+                      <stop offset="20%" stopColor="rgba(0,212,255,0.06)" />
+                      <stop offset="80%" stopColor="rgba(0,212,255,0.06)" />
+                      <stop offset="100%" stopColor="transparent" />
+                    </linearGradient>
+                    <linearGradient id="headlight" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stopColor="rgba(255,240,200,0.9)" />
+                      <stop offset="100%" stopColor="rgba(255,240,200,0)" />
+                    </linearGradient>
+                    <linearGradient id="taillight" x1="1" y1="0" x2="0" y2="0">
+                      <stop offset="0%" stopColor="rgba(255,60,60,0.9)" />
+                      <stop offset="100%" stopColor="rgba(255,60,60,0)" />
+                    </linearGradient>
+                    <radialGradient id="wheelGrad">
+                      <stop offset="0%" stopColor="#333" />
+                      <stop offset="60%" stopColor="#1a1a1a" />
+                      <stop offset="100%" stopColor="#111" />
+                    </radialGradient>
+                    <radialGradient id="hubGrad">
+                      <stop offset="0%" stopColor="#aaa" />
+                      <stop offset="100%" stopColor="#555" />
+                    </radialGradient>
+                    <filter id="carGlow">
+                      <feGaussianBlur stdDeviation="3" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                    <filter id="neonGlow">
+                      <feGaussianBlur stdDeviation="6" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                    <filter id="softGlow">
+                      <feGaussianBlur stdDeviation="12" />
+                    </filter>
+                  </defs>
+
+                  {/* Road surface */}
+                  <rect x="0" y="310" width="800" height="90" fill="url(#roadGrad)" rx="4" />
+
+                  {/* Road line markings - animated */}
+                  <g className="hero-road-lines">
+                    <rect x="50" y="340" width="60" height="3" rx="1.5" fill="rgba(0,212,255,0.15)" />
+                    <rect x="160" y="340" width="60" height="3" rx="1.5" fill="rgba(0,212,255,0.15)" />
+                    <rect x="270" y="340" width="60" height="3" rx="1.5" fill="rgba(0,212,255,0.15)" />
+                    <rect x="380" y="340" width="60" height="3" rx="1.5" fill="rgba(0,212,255,0.15)" />
+                    <rect x="490" y="340" width="60" height="3" rx="1.5" fill="rgba(0,212,255,0.15)" />
+                    <rect x="600" y="340" width="60" height="3" rx="1.5" fill="rgba(0,212,255,0.15)" />
+                    <rect x="710" y="340" width="60" height="3" rx="1.5" fill="rgba(0,212,255,0.15)" />
+                  </g>
+
+                  {/* Headlight beams */}
+                  <g className="hero-headlights">
+                    <polygon points="620,230 800,180 800,260" fill="url(#headlight)" opacity="0.3" />
+                    <polygon points="620,240 800,210 800,270" fill="url(#headlight)" opacity="0.15" />
+                  </g>
+
+                  {/* Taillight glow */}
+                  <g className="hero-taillights">
+                    <polygon points="195,230 50,200 50,260" fill="url(#taillight)" opacity="0.25" />
+                  </g>
+
+                  {/* Car body - main group with float animation */}
+                  <g className="hero-car-body">
+                    {/* Underbody glow / neon */}
+                    <ellipse cx="400" cy="310" rx="200" ry="8" fill="rgba(0,212,255,0.2)" filter="url(#softGlow)" className="hero-underglow" />
+
+                    {/* Car shadow on road */}
+                    <ellipse cx="400" cy="315" rx="180" ry="12" fill="rgba(0,0,0,0.4)" />
+
+                    {/* Lower body */}
+                    <path
+                      d="M195,280 L195,230 Q195,220 205,215 L590,215 Q610,215 615,225 L620,280 Q620,295 605,300 L210,300 Q195,300 195,280Z"
+                      fill="url(#carBody)"
+                      stroke="rgba(0,212,255,0.12)"
+                      strokeWidth="1"
+                    />
+
+                    {/* Body shine overlay */}
+                    <path
+                      d="M195,280 L195,230 Q195,220 205,215 L590,215 Q610,215 615,225 L620,280 Q620,295 605,300 L210,300 Q195,300 195,280Z"
+                      fill="url(#carBodyShine)"
+                    />
+
+                    {/* Upper body / roof */}
+                    <path
+                      d="M275,215 L310,145 Q315,135 330,135 L500,135 Q515,135 520,145 L570,215Z"
+                      fill="url(#carBody)"
+                      stroke="rgba(0,212,255,0.1)"
+                      strokeWidth="1"
+                    />
+
+                    {/* Roof shine */}
+                    <path
+                      d="M310,150 L330,145 L500,145 L515,150Z"
+                      fill="rgba(0,212,255,0.08)"
+                    />
+
+                    {/* Windows */}
+                    <path
+                      d="M290,210 L320,155 Q323,150 330,150 L405,150 L405,210Z"
+                      fill="url(#windowGrad)"
+                      opacity="0.5"
+                      rx="4"
+                    />
+                    <path
+                      d="M415,210 L415,150 L495,150 Q502,150 505,155 L555,210Z"
+                      fill="url(#windowGrad)"
+                      opacity="0.5"
+                      rx="4"
+                    />
+
+                    {/* Window frame divider */}
+                    <rect x="407" y="148" width="6" height="65" rx="3" fill="#0a1628" />
+
+                    {/* Headlights */}
+                    <rect x="600" y="225" width="22" height="18" rx="5" fill="#fffbe6" opacity="0.95" filter="url(#carGlow)" className="hero-headlight-blink" />
+                    <rect x="600" y="250" width="22" height="10" rx="3" fill="rgba(0,212,255,0.7)" filter="url(#carGlow)" />
+
+                    {/* Taillights */}
+                    <rect x="195" y="225" width="14" height="14" rx="4" fill="#ff3b3b" opacity="0.9" filter="url(#carGlow)" className="hero-taillight-blink" />
+                    <rect x="195" y="244" width="14" height="8" rx="3" fill="#ff8800" opacity="0.7" />
+
+                    {/* Front bumper accent */}
+                    <path d="M600,275 L622,275 Q625,275 625,278 L625,290 Q625,293 622,293 L600,293Z" fill="#1a1a2e" stroke="rgba(0,212,255,0.15)" strokeWidth="0.5" />
+
+                    {/* Grille lines */}
+                    <line x1="600" y1="260" x2="620" y2="260" stroke="rgba(0,212,255,0.2)" strokeWidth="1" />
+                    <line x1="600" y1="264" x2="620" y2="264" stroke="rgba(0,212,255,0.15)" strokeWidth="1" />
+                    <line x1="600" y1="268" x2="620" y2="268" stroke="rgba(0,212,255,0.1)" strokeWidth="1" />
+
+                    {/* Rear bumper */}
+                    <path d="M190,275 L210,275 L210,293 L190,293Z" fill="#1a1a2e" stroke="rgba(0,212,255,0.1)" strokeWidth="0.5" />
+
+                    {/* Side mirror - right */}
+                    <ellipse cx="575" cy="200" rx="8" ry="12" fill="#0f2440" stroke="rgba(0,212,255,0.1)" strokeWidth="0.5" />
+
+                    {/* Door line */}
+                    <line x1="410" y1="215" x2="410" y2="295" stroke="rgba(0,212,255,0.06)" strokeWidth="1" />
+
+                    {/* Door handle */}
+                    <rect x="430" y="250" width="24" height="4" rx="2" fill="rgba(0,212,255,0.15)" />
+
+                    {/* Body line accent */}
+                    <line x1="210" y1="258" x2="605" y2="258" stroke="rgba(0,212,255,0.08)" strokeWidth="1.5" />
+
+                    {/* Neon accent strip under body */}
+                    <line x1="240" y1="302" x2="570" y2="302" stroke="rgba(0,212,255,0.5)" strokeWidth="2" filter="url(#neonGlow)" className="hero-neon-strip" />
+
+                    {/* Front wheel */}
+                    <g className="hero-wheel hero-wheel-front">
+                      <circle cx="520" cy="300" r="36" fill="url(#wheelGrad)" stroke="#222" strokeWidth="3" />
+                      <circle cx="520" cy="300" r="28" fill="none" stroke="#333" strokeWidth="2" />
+                      <circle cx="520" cy="300" r="12" fill="url(#hubGrad)" />
+                      <circle cx="520" cy="300" r="4" fill="#777" />
+                      {/* Spokes */}
+                      <line x1="520" y1="272" x2="520" y2="288" stroke="#555" strokeWidth="2" />
+                      <line x1="520" y1="312" x2="520" y2="328" stroke="#555" strokeWidth="2" />
+                      <line x1="492" y1="300" x2="508" y2="300" stroke="#555" strokeWidth="2" />
+                      <line x1="532" y1="300" x2="548" y2="300" stroke="#555" strokeWidth="2" />
+                      <line x1="500" y1="280" x2="510" y2="290" stroke="#555" strokeWidth="1.5" />
+                      <line x1="530" y1="310" x2="540" y2="320" stroke="#555" strokeWidth="1.5" />
+                      <line x1="540" y1="280" x2="530" y2="290" stroke="#555" strokeWidth="1.5" />
+                      <line x1="500" y1="320" x2="510" y2="310" stroke="#555" strokeWidth="1.5" />
+                    </g>
+
+                    {/* Rear wheel */}
+                    <g className="hero-wheel hero-wheel-rear">
+                      <circle cx="270" cy="300" r="36" fill="url(#wheelGrad)" stroke="#222" strokeWidth="3" />
+                      <circle cx="270" cy="300" r="28" fill="none" stroke="#333" strokeWidth="2" />
+                      <circle cx="270" cy="300" r="12" fill="url(#hubGrad)" />
+                      <circle cx="270" cy="300" r="4" fill="#777" />
+                      <line x1="270" y1="272" x2="270" y2="288" stroke="#555" strokeWidth="2" />
+                      <line x1="270" y1="312" x2="270" y2="328" stroke="#555" strokeWidth="2" />
+                      <line x1="242" y1="300" x2="258" y2="300" stroke="#555" strokeWidth="2" />
+                      <line x1="282" y1="300" x2="298" y2="300" stroke="#555" strokeWidth="2" />
+                      <line x1="250" y1="280" x2="260" y2="290" stroke="#555" strokeWidth="1.5" />
+                      <line x1="280" y1="310" x2="290" y2="320" stroke="#555" strokeWidth="1.5" />
+                      <line x1="290" y1="280" x2="280" y2="290" stroke="#555" strokeWidth="1.5" />
+                      <line x1="250" y1="320" x2="260" y2="310" stroke="#555" strokeWidth="1.5" />
+                    </g>
+                  </g>
+                </svg>
+
+                <div className="hero-car-shadow" />
+              </div>
+
+              {/* Floating info badges */}
+              <div className="hero-float-badge hero-float-badge-1">
+                <span className="hero-float-badge-icon">💰</span>
+                <span>From ₹1,800/day</span>
+              </div>
+              <div className="hero-float-badge hero-float-badge-2">
+                <span className="hero-float-badge-icon">🛡️</span>
+                <span>Fully Insured</span>
+              </div>
+              <div className="hero-float-badge hero-float-badge-3">
+                <span className="hero-float-badge-icon">🚗</span>
+                <span>Doorstep Delivery</span>
+              </div>
+
+              {/* Glow effects */}
               <div className="hero-glow" />
+              <div className="hero-glow-2" />
             </div>
           </div>
         </div>

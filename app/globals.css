@@ -82,13 +82,16 @@ button {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-deep);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--primary-dark);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
@@ -142,13 +145,29 @@ button {
 }
 
 @keyframes orbFloat {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-60px) scale(1.1); }
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-60px) scale(1.1);
+  }
 }
 
 @keyframes orbPulse {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
-  50% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 1;
+  }
 }
 
 /* ========== CONTAINER ========== */
@@ -197,8 +216,17 @@ button {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
 }
 
 .section-title {
@@ -297,6 +325,10 @@ button {
   border-radius: 10px !important;
   box-shadow: 0 4px 20px var(--primary-glow);
   transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .navbar-cta:hover {
@@ -367,13 +399,6 @@ button {
   animation: fadeInUp 0.8s ease-out 0.1s both;
 }
 
-.hero-title .highlight {
-  background: linear-gradient(135deg, var(--primary), #67e8f9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .hero-description {
   font-size: 1.15rem;
   color: var(--text-secondary);
@@ -415,21 +440,306 @@ button {
 .hero-visual {
   position: relative;
   animation: fadeInRight 1s ease-out 0.3s both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 480px;
 }
 
-.hero-car-image {
-  width: 100%;
-  border-radius: var(--radius);
+/* ===== Animated Rings ===== */
+.hero-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid;
+  pointer-events: none;
+}
+
+.hero-ring-1 {
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  border-color: rgba(0, 212, 255, 0.08);
+  animation: heroRingSpin 25s linear infinite;
+}
+
+.hero-ring-2 {
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  border-color: rgba(255, 107, 53, 0.06);
+  border-style: dashed;
+  animation: heroRingSpin 35s linear infinite reverse;
+}
+
+.hero-ring-3 {
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  border-color: rgba(0, 212, 255, 0.1);
+  border-width: 2px;
+  border-style: dotted;
+  animation: heroRingSpin 20s linear infinite;
+}
+
+@keyframes heroRingSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===== Speed Lines ===== */
+.hero-speed-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-speed-lines span {
+  position: absolute;
+  left: -20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  animation: heroSpeedLine 3s ease-in-out infinite;
+  opacity: 0;
+}
+
+.hero-speed-lines span:nth-child(1) { top: 25%; width: 40%; animation-delay: 0s; }
+.hero-speed-lines span:nth-child(2) { top: 40%; width: 35%; animation-delay: 0.6s; }
+.hero-speed-lines span:nth-child(3) { top: 55%; width: 45%; animation-delay: 1.2s; }
+.hero-speed-lines span:nth-child(4) { top: 65%; width: 30%; animation-delay: 1.8s; }
+.hero-speed-lines span:nth-child(5) { top: 78%; width: 38%; animation-delay: 2.4s; }
+
+@keyframes heroSpeedLine {
+  0% { left: -20%; opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { left: 120%; opacity: 0; }
+}
+
+/* ===== Floating Particles ===== */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.hero-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 12px var(--primary), 0 0 24px var(--primary-glow);
+  animation: heroParticleFloat 4s ease-in-out infinite;
+}
+
+@keyframes heroParticleFloat {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.4; }
+  50% { transform: translateY(-20px) scale(1.5); opacity: 1; }
+}
+
+/* ===== SVG Car Wrapper ===== */
+.hero-car-wrapper {
   position: relative;
-  z-index: 2;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  transition: var(--transition);
+  z-index: 3;
+  width: 100%;
+  animation: heroCarFloat 5s ease-in-out infinite;
 }
 
-.hero-car-image:hover {
-  transform: scale(1.02);
+.hero-car-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.4));
 }
 
+@keyframes heroCarFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+/* Car body bounce */
+.hero-car-body {
+  animation: heroCarBounce 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes heroCarBounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-2px); }
+  75% { transform: translateY(1px); }
+}
+
+/* Spinning wheels */
+.hero-wheel {
+  transform-origin: center;
+  animation: heroWheelSpin 1.5s linear infinite;
+}
+
+.hero-wheel-front {
+  transform-origin: 520px 300px;
+}
+
+.hero-wheel-rear {
+  transform-origin: 270px 300px;
+}
+
+@keyframes heroWheelSpin {
+  from { rotate: 0deg; }
+  to { rotate: 360deg; }
+}
+
+/* Road lines moving */
+.hero-road-lines {
+  animation: heroRoadMove 1.5s linear infinite;
+}
+
+@keyframes heroRoadMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-110px); }
+}
+
+/* Headlight pulse */
+.hero-headlight-blink {
+  animation: heroHeadlightPulse 2s ease-in-out infinite;
+}
+
+@keyframes heroHeadlightPulse {
+  0%, 100% { opacity: 0.95; }
+  50% { opacity: 0.7; }
+}
+
+/* Headlight beams flicker */
+.hero-headlights {
+  animation: heroBeamFlicker 3s ease-in-out infinite;
+}
+
+@keyframes heroBeamFlicker {
+  0%, 100% { opacity: 1; }
+  30% { opacity: 0.8; }
+  60% { opacity: 1; }
+  80% { opacity: 0.85; }
+}
+
+/* Taillight pulse */
+.hero-taillight-blink {
+  animation: heroTaillightPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes heroTaillightPulse {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.5; }
+}
+
+.hero-taillights {
+  animation: heroTaillightGlow 2s ease-in-out infinite;
+}
+
+@keyframes heroTaillightGlow {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+}
+
+/* Neon underglow strip */
+.hero-neon-strip {
+  animation: heroNeonPulse 2s ease-in-out infinite;
+}
+
+@keyframes heroNeonPulse {
+  0%, 100% { opacity: 0.5; stroke: rgba(0,212,255,0.5); }
+  50% { opacity: 1; stroke: rgba(0,212,255,0.9); }
+}
+
+/* Underglow */
+.hero-underglow {
+  animation: heroUnderglowPulse 3s ease-in-out infinite;
+}
+
+@keyframes heroUnderglowPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* Shadow underneath car */
+.hero-car-shadow {
+  position: absolute;
+  bottom: 8%;
+  left: 15%;
+  width: 70%;
+  height: 20px;
+  background: rgba(0, 212, 255, 0.12);
+  border-radius: 50%;
+  filter: blur(20px);
+  animation: heroShadowPulse 5s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes heroShadowPulse {
+  0%, 100% { transform: scaleX(1); opacity: 0.4; }
+  50% { transform: scaleX(0.85); opacity: 0.7; }
+}
+
+/* ===== Floating Info Badges ===== */
+.hero-float-badge {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(15, 29, 53, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hero-float-badge-icon {
+  font-size: 1.1rem;
+}
+
+.hero-float-badge-1 {
+  top: 8%;
+  right: -5%;
+  animation: heroBadgeFloat1 4s ease-in-out infinite;
+}
+
+.hero-float-badge-2 {
+  bottom: 25%;
+  left: -8%;
+  animation: heroBadgeFloat2 5s ease-in-out infinite;
+}
+
+.hero-float-badge-3 {
+  bottom: 5%;
+  right: 5%;
+  animation: heroBadgeFloat3 4.5s ease-in-out infinite;
+}
+
+@keyframes heroBadgeFloat1 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes heroBadgeFloat2 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(-2deg); }
+}
+
+@keyframes heroBadgeFloat3 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+/* ===== Glow Effects ===== */
 .hero-glow {
   position: absolute;
   bottom: -20%;
@@ -440,6 +750,47 @@ button {
   filter: blur(80px);
   border-radius: 50%;
   z-index: 1;
+  animation: heroGlowPulse 6s ease-in-out infinite;
+}
+
+.hero-glow-2 {
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 50%;
+  height: 40%;
+  background: rgba(255, 107, 53, 0.12);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 1;
+  animation: heroGlowPulse 8s ease-in-out infinite reverse;
+}
+
+@keyframes heroGlowPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+/* ===== Animated gradient text shimmer ===== */
+.hero-title .highlight {
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    #67e8f9 25%,
+    var(--accent) 50%,
+    #67e8f9 75%,
+    var(--primary) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: heroTextShimmer 4s linear infinite;
+}
+
+@keyframes heroTextShimmer {
+  from { background-position: 0% center; }
+  to { background-position: 200% center; }
 }
 
 /* ========== BUTTONS ========== */
@@ -460,7 +811,7 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -676,14 +1027,29 @@ button {
 }
 
 @keyframes featuredPulse {
-  0%, 100% { box-shadow: 0 0 30px rgba(0, 212, 255, 0.2), 0 0 60px rgba(0, 212, 255, 0.08); }
-  50% { box-shadow: 0 0 40px rgba(0, 212, 255, 0.35), 0 0 80px rgba(0, 212, 255, 0.15); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2), 0 0 60px rgba(0, 212, 255, 0.08);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.35), 0 0 80px rgba(0, 212, 255, 0.15);
+  }
 }
 
 @keyframes featuredBorderShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .car-gallery {
@@ -760,8 +1126,13 @@ button {
   color: var(--bg-deep);
 }
 
-.car-gallery-arrow.prev { left: 12px; }
-.car-gallery-arrow.next { right: 12px; }
+.car-gallery-arrow.prev {
+  left: 12px;
+}
+
+.car-gallery-arrow.next {
+  right: 12px;
+}
 
 .car-badge {
   position: absolute;
@@ -1189,8 +1560,15 @@ button {
 }
 
 @keyframes whatsappBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 /* ========== ANIMATIONS ========== */
@@ -1199,6 +1577,7 @@ button {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1210,6 +1589,7 @@ button {
     opacity: 0;
     transform: translateX(60px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -1221,6 +1601,7 @@ button {
     opacity: 0;
     transform: translateX(-60px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -1288,6 +1669,17 @@ button {
   .hero-stats {
     justify-content: center;
   }
+
+  .hero-visual {
+    min-height: 350px;
+  }
+
+  .hero-ring { display: none; }
+  .hero-speed-lines { display: none; }
+
+  .hero-float-badge-1 { right: 0; top: 2%; }
+  .hero-float-badge-2 { left: 0; }
+  .hero-float-badge-3 { right: 0; }
 
   .fleet-grid {
     grid-template-columns: 1fr;
@@ -1660,4 +2052,47 @@ button {
   .seo-page-cta {
     padding: 32px 16px;
   }
+}
+
+/* ===== PRICE TABLE ===== */
+
+.price-table-wrap {
+  overflow-x: auto;
+  margin: 16px 0 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.price-table th {
+  background: var(--bg-card);
+  color: var(--primary);
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 18px;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.price-table td {
+  padding: 12px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+}
+
+.price-table tbody tr:hover {
+  background: rgba(0, 212, 255, 0.03);
+}
+
+.price-table .highlight-row {
+  background: rgba(0, 212, 255, 0.06);
+}
+
+.price-table .highlight-row td {
+  color: var(--text-primary);
 }
