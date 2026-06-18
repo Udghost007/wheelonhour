@@ -45,6 +45,30 @@ function ChevronLeft() {
   );
 }
 
+function SunIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="5" />
+      <line x1="12" y1="1" x2="12" y2="3" />
+      <line x1="12" y1="21" x2="12" y2="23" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+      <line x1="1" y1="12" x2="3" y2="12" />
+      <line x1="21" y1="12" x2="23" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+    </svg>
+  );
+}
+
+function MoonIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+    </svg>
+  );
+}
+
 function ChevronRight() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -184,11 +208,172 @@ function CarCard({ car }: { car: CarData }) {
   );
 }
 
+/* ===== PARTNER FORM ===== */
+
+function PartnerForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    contactNumber: "",
+    carName: "",
+    yearOfManufacture: "",
+    availability: "",
+  });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/partner", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus("success");
+        setFormData({ name: "", contactNumber: "", carName: "", yearOfManufacture: "", availability: "" });
+      } else {
+        setStatus("error");
+        setErrorMsg(data.error || "Something went wrong.");
+      }
+    } catch {
+      setStatus("error");
+      setErrorMsg("Network error. Please try again.");
+    }
+  };
+
+  return (
+    <form className="partner-form" onSubmit={handleSubmit}>
+      <h3 className="partner-form-title">Submit Your Details</h3>
+
+      <div className="form-group">
+        <label htmlFor="pf-name">Full Name <span className="form-required">*</span></label>
+        <input
+          id="pf-name"
+          type="text"
+          name="name"
+          placeholder="Enter your full name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="pf-contact">Contact Number <span className="form-required">*</span></label>
+        <input
+          id="pf-contact"
+          type="tel"
+          name="contactNumber"
+          placeholder="+91 XXXXX XXXXX"
+          value={formData.contactNumber}
+          onChange={handleChange}
+          required
+          pattern="[0-9+\s\-]{10,15}"
+          title="Enter a valid phone number"
+        />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="pf-car">Car Name / Model <span className="form-required">*</span></label>
+        <input
+          id="pf-car"
+          type="text"
+          name="carName"
+          placeholder="e.g. Maruti Suzuki Baleno"
+          value={formData.carName}
+          onChange={handleChange}
+          required
+        />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="pf-year">Year of Manufacture <span className="form-required">*</span></label>
+        <input
+          id="pf-year"
+          type="number"
+          name="yearOfManufacture"
+          placeholder="e.g. 2022"
+          value={formData.yearOfManufacture}
+          onChange={handleChange}
+          required
+          min="2000"
+          max={new Date().getFullYear()}
+        />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="pf-avail">How Much Time Available? <span className="form-required">*</span></label>
+        <select
+          id="pf-avail"
+          name="availability"
+          value={formData.availability}
+          onChange={handleChange}
+          required
+        >
+          <option value="" disabled>Select availability</option>
+          <option value="Full-time (24/7)">Full-time (24/7)</option>
+          <option value="Weekdays only">Weekdays only</option>
+          <option value="Weekends only">Weekends only</option>
+          <option value="Few days a week">Few days a week</option>
+          <option value="Monthly (specific months)">Monthly (specific months)</option>
+          <option value="On-demand / Flexible">On-demand / Flexible</option>
+        </select>
+      </div>
+
+      <button
+        type="submit"
+        className="btn btn-accent partner-submit"
+        disabled={status === "loading"}
+      >
+        {status === "loading" ? "Sending..." : "Submit Partnership Inquiry"}
+      </button>
+
+      {status === "success" && (
+        <div className="form-message form-success">
+          Thank you! We&apos;ll contact you soon to discuss the partnership.
+        </div>
+      )}
+      {status === "error" && (
+        <div className="form-message form-error">
+          {errorMsg}
+        </div>
+      )}
+    </form>
+  );
+}
+
 /* ===== MAIN PAGE ===== */
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<"dark" | "light">("light");
+
+  // Load saved theme
+  useEffect(() => {
+    const saved = localStorage.getItem("woh-theme") as "dark" | "light" | null;
+    const t = saved || "light";
+    setTheme(t);
+    document.documentElement.setAttribute("data-theme", t);
+  }, []);
+
+  const toggleTheme = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("woh-theme", next);
+  };
 
   // Navbar scroll effect
   useEffect(() => {
@@ -253,6 +438,15 @@ export default function Home() {
               </a>
             </li>
           </ul>
+
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+          </button>
 
           <button
             className="navbar-toggle"
@@ -555,7 +749,7 @@ export default function Home() {
               </div>
               <div className="hero-float-badge hero-float-badge-3">
                 <span className="hero-float-badge-icon">🚗</span>
-                <span>Doorstep Delivery</span>
+                <span>Easy Pickup</span>
               </div>
 
               {/* Glow effects */}
@@ -648,8 +842,8 @@ export default function Home() {
               },
               {
                 icon: "🔑",
-                title: "Doorstep Delivery",
-                desc: "We deliver the car to your location in Ahmedabad. No need to visit us — we come to you.",
+                title: "Easy Pickup Location",
+                desc: "Pick up your car from our conveniently located office in Ahmedabad — Stavan Ample, Devnagar Gam Road. Quick and hassle-free!",
               },
               {
                 icon: "🕐",
@@ -693,7 +887,7 @@ export default function Home() {
               {
                 num: "03",
                 title: "Hit the Road!",
-                desc: "We deliver the car to you. Just show your documents, get the keys, and drive!",
+                desc: "Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. Show your documents, get the keys, and drive!",
               },
             ].map((step, idx) => (
               <div className="step-card animate-on-scroll" key={idx}>
@@ -702,6 +896,87 @@ export default function Home() {
                 <p>{step.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== DOCUMENTS REQUIRED ===== */}
+      <section className="section" id="documents">
+        <div className="container">
+          <div className="section-header animate-on-scroll">
+            <div className="section-badge">Important</div>
+            <h2 className="section-title">Keep in Mind Before You Book</h2>
+            <p className="section-subtitle">
+              To start your booking, just send the following documents on WhatsApp. That&apos;s it — no lengthy forms!
+            </p>
+          </div>
+
+          <div className="docs-wrapper animate-on-scroll">
+            <div className="docs-card">
+              <div className="docs-step-number">1</div>
+              <div className="docs-icon">🪪</div>
+              <h3>Aadhaar Card</h3>
+              <p>Send a clear photo/scan of your Aadhaar card (front &amp; back) on WhatsApp.</p>
+            </div>
+            <div className="docs-card">
+              <div className="docs-step-number">2</div>
+              <div className="docs-icon">🪄</div>
+              <h3>Driving License</h3>
+              <p>Send a clear photo/scan of your valid Indian driving license on WhatsApp.</p>
+            </div>
+            <div className="docs-card docs-card-cta">
+              <div className="docs-step-number">3</div>
+              <div className="docs-icon">✅</div>
+              <h3>Done! You&apos;re Ready</h3>
+              <p>Once verified, we&apos;ll confirm your booking and have the car ready for pickup at our location!</p>
+            </div>
+          </div>
+
+          <div className="docs-whatsapp-cta animate-on-scroll">
+            <p>Send your documents now to start booking instantly:</p>
+            <a
+              href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20book%20a%20car.%20Sending%20my%20Aadhaar%20and%20Driving%20License."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+            >
+              <WhatsAppIcon size={20} /> Send Documents on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+          {/* ===== PARTNER WITH US ===== */}
+      <section className="section partner-section" id="partner">
+        <div className="container">
+          <div className="partner-card animate-on-scroll">
+            <div className="partner-layout">
+              <div className="partner-content">
+                <div className="section-badge">Partner With Us</div>
+                <h2 className="partner-title">Own a Car? Earn With Us!</h2>
+                <p className="partner-desc">
+                  If you own a vehicle and would like to rent it out, we are open to discussing a
+                  partnership opportunity with you. We can make you a <strong>partner in our fleet program</strong>,
+                  where your vehicle can be listed and managed through our platform. You earn — we handle everything.
+                </p>
+                <div className="partner-perks">
+                  <div className="partner-perk">
+                    <span>💰</span><span>Earn passive income from your car</span>
+                  </div>
+                  <div className="partner-perk">
+                    <span>🛡️</span><span>Full insurance and maintenance covered</span>
+                  </div>
+                  <div className="partner-perk">
+                    <span>📊</span><span>Transparent earnings and reports</span>
+                  </div>
+                  <div className="partner-perk">
+                    <span>🤝</span><span>Hassle-free partnership</span>
+                  </div>
+                </div>
+              </div>
+
+              <PartnerForm />
+            </div>
           </div>
         </div>
       </section>
@@ -725,15 +1000,15 @@ export default function Home() {
               },
               {
                 q: "How do I rent a car in Ahmedabad from WheelOnHour?",
-                a: "Booking a car is simple: 1) Choose your car (Baleno or Altroz), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) We deliver the car to your doorstep in Ahmedabad. No app download needed!",
+                a: "Booking a car is simple: 1) Choose your car (Baleno or Altroz), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
               },
               {
                 q: "Do you offer self-drive car rental in Ahmedabad?",
                 a: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. We offer Maruti Suzuki Baleno and Tata Altroz for self-drive rentals.",
               },
               {
-                q: "Is there doorstep delivery for rental cars in Ahmedabad?",
-                a: "Yes, WheelOnHour provides free doorstep delivery of rental cars anywhere in Ahmedabad. Whether it's your home, office, or the airport — we bring the car to you.",
+                q: "Where do I pick up the rental car in Ahmedabad?",
+                a: "Pick up your rental car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad-382481 (Landmark: ICB FLORA, SILVER HARMONY-2). Just show your documents, get the keys, and you're ready to drive!",
               },
               {
                 q: "What documents are needed to rent a car in Ahmedabad?",
@@ -869,6 +1144,8 @@ export default function Home() {
         </div>
       </section>
 
+  
+
       {/* ===== FOOTER ===== */}
       <footer className="footer">
         <div className="container">
@@ -938,8 +1215,8 @@ export default function Home() {
           <h3>Why Choose WheelOnHour for Car Rental in Ahmedabad?</h3>
           <p>
             WheelOnHour stands out as the <strong>best car rental in Ahmedabad</strong> with transparent pricing starting
-            at just ₹1,800 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer free doorstep
-            delivery, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes the {" "}
+            at just ₹1,800 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer easy pickup from our Ahmedabad
+            location, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes the {" "}
             <strong>Baleno on rent in Ahmedabad</strong> (₹2,400/day) and <strong>Altroz on rent in Ahmedabad</strong> (₹1,800/day).
           </p>
           <h3>Self-Drive Car Rental in Ahmedabad</h3>

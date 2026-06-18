@@ -5,12 +5,12 @@ import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 export const metadata: Metadata = {
   title: "Rent a Car in Ahmedabad — Self Drive from ₹1800/day | WheelOnHour",
   description:
-    "Rent a car in Ahmedabad starting ₹1800/day. Self-drive Baleno & Altroz with doorstep delivery, full insurance & 24/7 support. Book on WhatsApp — no app needed. WheelOnHour is Ahmedabad's #1 car rental.",
+    "Rent a car in Ahmedabad starting ₹1800/day. Self-drive Baleno & Altroz with easy pickup, full insurance & 24/7 support. Book on WhatsApp — no app needed. WheelOnHour is Ahmedabad's #1 car rental.",
   alternates: { canonical: "/rent-a-car-in-ahmedabad" },
   openGraph: {
     title: "Rent a Car in Ahmedabad — From ₹1800/day | WheelOnHour",
     description:
-      "Self-drive car rental in Ahmedabad. Baleno & Altroz with free doorstep delivery. Book on WhatsApp!",
+      "Self-drive car rental in Ahmedabad. Baleno & Altroz with easy pickup. Book on WhatsApp!",
     url: "https://wheelonhour.vercel.app/rent-a-car-in-ahmedabad",
     type: "website",
     locale: "en_IN",
@@ -36,7 +36,7 @@ export default function RentACarInAhmedabad() {
           <h1>Rent a Car in Ahmedabad</h1>
           <p>
             WheelOnHour is Ahmedabad&apos;s most affordable and trusted car rental service.
-            Get premium self-drive cars delivered to your doorstep — starting at just ₹1,800 per day.
+            Get premium self-drive cars ready for pickup at our location — starting at just ₹1,800 per day.
           </p>
           <a
             href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20in%20Ahmedabad."
@@ -76,7 +76,7 @@ export default function RentACarInAhmedabad() {
           <h2>Why WheelOnHour is the #1 Car Rental in Ahmedabad</h2>
           <ul>
             <li><strong>Lowest prices</strong> — Starting at just ₹1,800/day, cheaper than Zoomcar, Revv, and local dealers</li>
-            <li><strong>Free doorstep delivery</strong> — We deliver the car anywhere in Ahmedabad city</li>
+            <li><strong>Convenient pickup location</strong> — Pick up from our centrally located office in Ahmedabad</li>
             <li><strong>Fully insured</strong> — All cars are comprehensively insured for your peace of mind</li>
             <li><strong>No hidden charges</strong> — What you see is what you pay</li>
             <li><strong>24/7 availability</strong> — Book, pick up, or return at any time</li>
@@ -92,7 +92,7 @@ export default function RentACarInAhmedabad() {
           <ul>
             <li><strong>Step 1:</strong> Choose your car — Tata Altroz (₹1,800/day) or Maruti Baleno (₹2,400/day)</li>
             <li><strong>Step 2:</strong> Send a WhatsApp message to <strong>+91 884 984 9888</strong> with your dates and pickup location</li>
-            <li><strong>Step 3:</strong> We deliver the car to your doorstep. Show your documents, get the keys, and drive!</li>
+            <li><strong>Step 3:</strong> Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. Show your documents, get the keys, and drive!</li>
           </ul>
 
           <h2>Documents Required to Rent a Car in Ahmedabad</h2>

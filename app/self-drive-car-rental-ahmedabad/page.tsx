@@ -5,11 +5,11 @@ import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 export const metadata: Metadata = {
   title: "Self Drive Car Rental in Ahmedabad — Baleno & Altroz from ₹1800",
   description:
-    "Self-drive car rental in Ahmedabad without driver. Rent Baleno & Altroz from ₹1800/day. No hidden charges, free doorstep delivery, fully insured. Book on WhatsApp — WheelOnHour.",
+    "Self-drive car rental in Ahmedabad without driver. Rent Baleno & Altroz from ₹1800/day. No hidden charges, easy pickup, fully insured. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/self-drive-car-rental-ahmedabad" },
   openGraph: {
     title: "Self Drive Car Rental Ahmedabad — From ₹1800/day",
-    description: "Rent self-drive cars in Ahmedabad. Baleno & Altroz with doorstep delivery.",
+    description: "Rent self-drive cars in Ahmedabad. Baleno & Altroz with easy pickup.",
     url: "https://wheelonhour.vercel.app/self-drive-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
@@ -32,7 +32,7 @@ export default function SelfDriveCarRentalAhmedabad() {
           <h1>Self Drive Car Rental in Ahmedabad</h1>
           <p>
             Drive without a driver. WheelOnHour offers premium self-drive cars in Ahmedabad — Baleno &amp; Altroz
-            starting at just ₹1,800/day with doorstep delivery and full insurance.
+            starting at just ₹1,800/day with easy pickup and full insurance.
           </p>
           <a
             href="https://wa.me/918849849888?text=Hi!%20I%20want%20a%20self-drive%20car%20in%20Ahmedabad."
@@ -77,7 +77,7 @@ export default function SelfDriveCarRentalAhmedabad() {
           <ul>
             <li><strong>Step 1:</strong> Choose Altroz (₹1,800) or Baleno (₹2,400)</li>
             <li><strong>Step 2:</strong> WhatsApp us at +91 884 984 9888</li>
-            <li><strong>Step 3:</strong> We deliver to your doorstep — drive away!</li>
+            <li><strong>Step 3:</strong> Pick up from our location — and drive away!</li>
           </ul>
 
           <div className="seo-page-cta">

@@ -73,7 +73,7 @@ export default function CarRentalPrice() {
             <h2>What&apos;s Included in the Price?</h2>
             <ul>
               <li><strong>Comprehensive insurance</strong> — Full coverage, drive worry-free</li>
-              <li><strong>Free doorstep delivery</strong> — Anywhere in Ahmedabad city</li>
+              <li><strong>Convenient pickup location</strong> — Centrally located in Ahmedabad</li>
               <li><strong>24/7 roadside support</strong> — We&apos;re always just a call away</li>
               <li><strong>Well-maintained car</strong> — Serviced regularly, showroom condition</li>
               <li><strong>No platform fees</strong> — Unlike Zoomcar/Revv, no app charges</li>
@@ -87,7 +87,7 @@ export default function CarRentalPrice() {
                     <th>Provider</th>
                     <th>Hatchback (Daily)</th>
                     <th>Hidden Fees?</th>
-                    <th>Doorstep Delivery?</th>
+                    <th>Pickup Location?</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -95,25 +95,25 @@ export default function CarRentalPrice() {
                     <td><strong>WheelOnHour</strong></td>
                     <td><strong>₹1,800 - ₹2,400</strong></td>
                     <td>None</td>
-                    <td>Free</td>
+                    <td>Ahmedabad Office</td>
                   </tr>
                   <tr>
                     <td>Zoomcar</td>
                     <td>₹2,800 - ₹4,500</td>
                     <td>Platform fee, GST extra</td>
-                    <td>Extra charge</td>
+                    <td>Various locations</td>
                   </tr>
                   <tr>
                     <td>Revv</td>
                     <td>₹3,000 - ₹5,000</td>
                     <td>Convenience fee</td>
-                    <td>Extra charge</td>
+                    <td>Various locations</td>
                   </tr>
                   <tr>
                     <td>Local Dealers</td>
                     <td>₹2,500 - ₹3,500</td>
                     <td>Varies</td>
-                    <td>Usually not</td>
+                    <td>Varies</td>
                   </tr>
                 </tbody>
               </table>

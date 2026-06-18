@@ -5,11 +5,11 @@ import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 export const metadata: Metadata = {
   title: "Tata Altroz on Rent in Ahmedabad — ₹1800/day | Self Drive | WheelOnHour",
   description:
-    "Rent Tata Altroz in Ahmedabad at just ₹1800/day — cheapest car rental in Ahmedabad. Self-drive, fully insured, doorstep delivery. Book on WhatsApp — WheelOnHour.",
+    "Rent Tata Altroz in Ahmedabad at just ₹1800/day — cheapest car rental in Ahmedabad. Self-drive, fully insured, easy pickup. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/altroz-on-rent-in-ahmedabad" },
   openGraph: {
     title: "Tata Altroz on Rent in Ahmedabad — ₹1800/day",
-    description: "Cheapest car rental in Ahmedabad. Tata Altroz at ₹1800/day with doorstep delivery.",
+    description: "Cheapest car rental in Ahmedabad. Tata Altroz at ₹1800/day with easy pickup.",
     url: "https://wheelonhour.vercel.app/altroz-on-rent-in-ahmedabad",
     type: "website",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export default function AltrozOnRent() {
             <li><strong>Safety:</strong> 5-Star Global NCAP Rating</li>
             <li><strong>Rental Price:</strong> ₹1,800 per 24 hours</li>
             <li><strong>Insurance:</strong> Fully insured</li>
-            <li><strong>Delivery:</strong> Free doorstep delivery in Ahmedabad</li>
+            <li><strong>Pickup:</strong> Easy pickup from our Ahmedabad location</li>
           </ul>
 
           <h2>Why Rent a Tata Altroz in Ahmedabad?</h2>

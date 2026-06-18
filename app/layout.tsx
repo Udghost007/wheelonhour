@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | WheelOnHour — Car Rental Ahmedabad",
   },
   description:
-    "Rent a car in Ahmedabad starting ₹1800/day. Self-drive Maruti Baleno & Tata Altroz on rent with doorstep delivery. Fully insured, no hidden charges. Book on WhatsApp — 24/7 support. WheelOnHour is Ahmedabad's most trusted car rental service.",
+    "Rent a car in Ahmedabad starting ₹1800/day. Self-drive Maruti Baleno & Tata Altroz on rent with easy pickup. Fully insured, no hidden charges. Book on WhatsApp — 24/7 support. WheelOnHour is Ahmedabad's most trusted car rental service.",
   keywords: [
     "rent a car in ahmedabad",
     "car rental ahmedabad",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "WheelOnHour — #1 Car Rental in Ahmedabad | From ₹1800/day",
     description:
-      "Rent self-drive cars in Ahmedabad — Baleno & Altroz at the best prices. Doorstep delivery, fully insured, no hidden charges. Book now on WhatsApp!",
+      "Rent self-drive cars in Ahmedabad — Baleno & Altroz at the best prices. Easy pickup, fully insured, no hidden charges. Book now on WhatsApp!",
     url: BASE_URL,
     siteName: "WheelOnHour",
     type: "website",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WheelOnHour — #1 Car Rental in Ahmedabad",
     description:
-      "Self-drive cars on rent from ₹1800/day. Baleno & Altroz with doorstep delivery in Ahmedabad.",
+      "Self-drive cars on rent from ₹1800/day. Baleno & Altroz with easy pickup in Ahmedabad.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -100,7 +100,7 @@ const localBusinessSchema = {
   url: BASE_URL,
   telephone: "+918849849888",
   description:
-    "WheelOnHour is Ahmedabad's most trusted self-drive car rental service. Rent Maruti Suzuki Baleno and Tata Altroz starting at just ₹1800 per day with doorstep delivery, full insurance, and 24/7 support.",
+    "WheelOnHour is Ahmedabad's most trusted self-drive car rental service. Rent Maruti Suzuki Baleno and Tata Altroz starting at just ₹1800 per day with easy pickup, full insurance, and 24/7 support.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Stavan Ample, Devnagar Gam Road",
@@ -215,7 +215,7 @@ const faqSchema = {
       name: "How do I rent a car in Ahmedabad from WheelOnHour?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Booking a car with WheelOnHour is simple: 1) Choose your car (Baleno or Altroz), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) We deliver the car to your doorstep in Ahmedabad. No app download needed!",
+        text: "Booking a car with WheelOnHour is simple: 1) Choose your car (Baleno or Altroz), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
       },
     },
     {
@@ -228,10 +228,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Is there doorstep delivery for rental cars in Ahmedabad?",
+      name: "Where do I pick up the rental car in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, WheelOnHour provides free doorstep delivery of rental cars anywhere in Ahmedabad. Whether it's your home, office, or the airport — we bring the car to you.",
+        text: "Pick up your rental car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad-382481 (Landmark: ICB FLORA, SILVER HARMONY-2). Just show your documents, get the keys, and you're ready to drive!",
       },
     },
     {
@@ -332,7 +332,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <head>
         <link rel="icon" href="/logo.png" type="image/png" />
         <link rel="shortcut icon" href="/logo.png" />

@@ -101,7 +101,7 @@ export default async function Image() {
             marginBottom: "32px",
           }}
         >
-          {["Doorstep Delivery", "Fully Insured", "No Hidden Charges", "24/7 Support"].map(
+          {["Easy Pickup", "Fully Insured", "No Hidden Charges", "24/7 Support"].map(
             (item) => (
               <div
                 key={item}

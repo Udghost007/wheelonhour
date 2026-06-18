@@ -5,7 +5,7 @@ import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 export const metadata: Metadata = {
   title: "Cheap Car Rental in Ahmedabad — From ₹1800/day | WheelOnHour",
   description:
-    "Cheapest car rental in Ahmedabad starting ₹1800/day. Fully insured Tata Altroz & Maruti Baleno with free doorstep delivery. No hidden charges. Book on WhatsApp — WheelOnHour.",
+    "Cheapest car rental in Ahmedabad starting ₹1800/day. Fully insured Tata Altroz & Maruti Baleno with easy pickup. No hidden charges. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/cheap-car-rental-ahmedabad" },
   openGraph: {
     title: "Cheap Car Rental Ahmedabad — From ₹1800/day",
@@ -63,7 +63,7 @@ export default function CheapCarRental() {
           <h2>What&apos;s Included in Our Cheap Car Rental?</h2>
           <ul>
             <li>Comprehensive car insurance</li>
-            <li>Free doorstep delivery anywhere in Ahmedabad</li>
+            <li>Easy pickup from our Ahmedabad location</li>
             <li>24/7 roadside support</li>
             <li>Well-maintained, serviced vehicles</li>
             <li>No per-km charges within Ahmedabad city</li>
