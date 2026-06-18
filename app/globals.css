@@ -202,8 +202,10 @@
   border-color: rgba(0, 0, 0, 0.04);
 }
 
-[data-theme="light"] .navbar-links.open {
+[data-theme="light"] .navbar-links {
   background: rgba(255, 255, 255, 0.98);
+  border-bottom-color: #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 [data-theme="light"] .price-table th {
@@ -1939,19 +1941,58 @@ button {
   }
 
   .navbar-links {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(5, 10, 21, 0.98);
-    backdrop-filter: blur(20px);
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    padding: 24px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 0 24px;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .navbar-links.open {
-    display: flex;
+    max-height: 500px;
+    padding: 12px 24px 20px;
+  }
+
+  .navbar-links li {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .navbar-links.open li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-links.open li:nth-child(1) { transition-delay: 0.05s; }
+  .navbar-links.open li:nth-child(2) { transition-delay: 0.08s; }
+  .navbar-links.open li:nth-child(3) { transition-delay: 0.11s; }
+  .navbar-links.open li:nth-child(4) { transition-delay: 0.14s; }
+  .navbar-links.open li:nth-child(5) { transition-delay: 0.17s; }
+  .navbar-links.open li:nth-child(6) { transition-delay: 0.20s; }
+  .navbar-links.open li:nth-child(7) { transition-delay: 0.23s; }
+  .navbar-links.open li:nth-child(8) { transition-delay: 0.26s; }
+
+  .navbar-links li a {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+  }
+
+  .navbar-links li:last-child a {
+    border-bottom: none;
   }
 
   .navbar-toggle {
