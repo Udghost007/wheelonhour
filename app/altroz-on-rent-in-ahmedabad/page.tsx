@@ -92,5 +92,7 @@ export default function AltrozOnRent() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/altroz-on-rent-in-ahmedabad" />
+    </>
   );
 }

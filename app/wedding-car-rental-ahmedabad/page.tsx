@@ -83,5 +83,7 @@ export default function WeddingCarRental() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/wedding-car-rental-ahmedabad" />
+    </>
   );
 }

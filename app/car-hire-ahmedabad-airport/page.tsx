@@ -85,5 +85,7 @@ export default function CarHireAirport() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/car-hire-ahmedabad-airport" />
+    </>
   );
 }

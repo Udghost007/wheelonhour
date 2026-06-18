@@ -91,5 +91,7 @@ export default function CheapCarRental() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/cheap-car-rental-ahmedabad" />
+    </>
   );
 }

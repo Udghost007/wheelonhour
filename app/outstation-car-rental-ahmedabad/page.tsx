@@ -89,5 +89,7 @@ export default function OutstationCarRental() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/outstation-car-rental-ahmedabad" />
+    </>
   );
 }
