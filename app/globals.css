@@ -1983,6 +1983,13 @@ button {
     padding: 20px 0;
   }
 
+  .navbar-logo-text{
+            font-size: 1.25rem;
+  }
+      .navbar-logo img {
+        height: 40px;
+    }
+
   .navbar-links{
     padding-top: 0 !important;
   }
