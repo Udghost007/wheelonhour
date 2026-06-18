@@ -930,25 +930,25 @@ export default function Home() {
         <div className="container">
           <h2>Car Rental in Ahmedabad — WheelOnHour</h2>
           <p>
-            Looking to <strong>rent a car in Ahmedabad</strong>? WheelOnHour is Ahmedabad&apos;s most trusted
-            <strong> self-drive car rental</strong> service offering premium cars like the <strong>Maruti Suzuki Baleno</strong> and
-            <strong> Tata Altroz</strong> at unbeatable prices. Whether you need a <strong>car on rent in Ahmedabad</strong> for
+            Looking to <strong>rent a car in Ahmedabad</strong>? WheelOnHour is Ahmedabad&apos;s most trusted {" "}
+            <strong>self-drive car rental</strong> service offering premium cars like the <strong>Maruti Suzuki Baleno</strong> and {" "}
+            <strong>Tata Altroz</strong> at unbeatable prices. Whether you need a <strong>car on rent in Ahmedabad</strong> for
             a day trip, outstation journey, wedding, or airport transfer — we&apos;ve got you covered.
           </p>
           <h3>Why Choose WheelOnHour for Car Rental in Ahmedabad?</h3>
           <p>
             WheelOnHour stands out as the <strong>best car rental in Ahmedabad</strong> with transparent pricing starting
             at just ₹1,800 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer free doorstep
-            delivery, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes the
-            <strong> Baleno on rent in Ahmedabad</strong> (₹2,400/day) and <strong>Altroz on rent in Ahmedabad</strong> (₹1,800/day).
+            delivery, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes the {" "}
+            <strong>Baleno on rent in Ahmedabad</strong> (₹2,400/day) and <strong>Altroz on rent in Ahmedabad</strong> (₹1,800/day).
           </p>
           <h3>Self-Drive Car Rental in Ahmedabad</h3>
           <p>
             Enjoy the freedom of driving with our <strong>self-drive car rental in Ahmedabad</strong>. No driver needed —
             pick up the keys and explore Gujarat at your own pace. Perfect for <strong>outstation car rental from Ahmedabad</strong> to
             popular destinations like Udaipur, Mount Abu, Goa, Kutch, Somnath, and Dwarka.
-            WheelOnHour also provides <strong>cheap car rental in Ahmedabad</strong> for budget-conscious travelers and
-            <strong> car rental near Ahmedabad airport</strong> with pickup and drop-off.
+            WheelOnHour also provides <strong>cheap car rental in Ahmedabad</strong> for budget-conscious travelers and {" "}
+            <strong>car rental near Ahmedabad airport</strong> with pickup and drop-off.
           </p>
           <h3>Affordable Car Rental Prices in Ahmedabad</h3>
           <p>
