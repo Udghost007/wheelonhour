@@ -464,7 +464,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <div className="hero-badge">🚗 Ahmedabad&apos;s Trusted Car Rental</div>
+              <div className="hero-badge"><span>🚗 </span> Ahmedabad&apos;s Trusted Car Rental</div>
               <h1 className="hero-title">
                 Drive Your Dream<br />
                 <span className="highlight">By The Hour.</span>
