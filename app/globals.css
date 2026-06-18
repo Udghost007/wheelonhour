@@ -583,7 +583,7 @@ button {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 100px;
   overflow: hidden;
 }
 
@@ -1981,6 +1981,15 @@ button {
 @media (max-width: 768px) {
   .section {
     padding: 20px 0;
+  }
+
+  .navbar-links{
+    padding-top: 0 !important;
+  }
+
+  .navbar-cta{
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
   .navbar-links {
