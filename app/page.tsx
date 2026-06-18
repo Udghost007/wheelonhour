@@ -1121,7 +1121,7 @@ export default function Home() {
                 >
                   <WhatsAppIcon size={18} /> Chat on WhatsApp
                 </a>
-                <a href="tel:+918849849888" className="btn btn-outline">
+                <a href="tel:+918849849888" className="btn btn-outline View_Our_Fleet">
                   <PhoneIcon /> Call Now
                 </a>
               </div>
