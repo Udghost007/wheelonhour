@@ -135,5 +135,7 @@ export default function RentACarInAhmedabad() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/rent-a-car-in-ahmedabad" />
+    </>
   );
 }

@@ -91,5 +91,7 @@ export default function BalenoOnRent() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/baleno-on-rent-in-ahmedabad" />
+    </>
   );
 }

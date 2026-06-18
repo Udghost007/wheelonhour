@@ -93,5 +93,7 @@ export default function SelfDriveCarRentalAhmedabad() {
         </div>
       </div>
     </div>
+      <SeoFooter currentPath="/self-drive-car-rental-ahmedabad" />
+    </>
   );
 }
