@@ -97,7 +97,7 @@
 }
 
 [data-theme="light"] .hero-car-svg {
-  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.12));
+  filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.12));
 }
 
 [data-theme="light"] .hero-title .highlight {
@@ -708,8 +708,13 @@ button {
 }
 
 @keyframes heroRingSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===== Speed Lines ===== */
@@ -730,17 +735,54 @@ button {
   opacity: 0;
 }
 
-.hero-speed-lines span:nth-child(1) { top: 25%; width: 40%; animation-delay: 0s; }
-.hero-speed-lines span:nth-child(2) { top: 40%; width: 35%; animation-delay: 0.6s; }
-.hero-speed-lines span:nth-child(3) { top: 55%; width: 45%; animation-delay: 1.2s; }
-.hero-speed-lines span:nth-child(4) { top: 65%; width: 30%; animation-delay: 1.8s; }
-.hero-speed-lines span:nth-child(5) { top: 78%; width: 38%; animation-delay: 2.4s; }
+.hero-speed-lines span:nth-child(1) {
+  top: 25%;
+  width: 40%;
+  animation-delay: 0s;
+}
+
+.hero-speed-lines span:nth-child(2) {
+  top: 40%;
+  width: 35%;
+  animation-delay: 0.6s;
+}
+
+.hero-speed-lines span:nth-child(3) {
+  top: 55%;
+  width: 45%;
+  animation-delay: 1.2s;
+}
+
+.hero-speed-lines span:nth-child(4) {
+  top: 65%;
+  width: 30%;
+  animation-delay: 1.8s;
+}
+
+.hero-speed-lines span:nth-child(5) {
+  top: 78%;
+  width: 38%;
+  animation-delay: 2.4s;
+}
 
 @keyframes heroSpeedLine {
-  0% { left: -20%; opacity: 0; }
-  10% { opacity: 0.6; }
-  90% { opacity: 0.6; }
-  100% { left: 120%; opacity: 0; }
+  0% {
+    left: -20%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.6;
+  }
+
+  90% {
+    opacity: 0.6;
+  }
+
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
 }
 
 /* ===== Floating Particles ===== */
@@ -762,8 +804,17 @@ button {
 }
 
 @keyframes heroParticleFloat {
-  0%, 100% { transform: translateY(0) scale(1); opacity: 0.4; }
-  50% { transform: translateY(-20px) scale(1.5); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translateY(-20px) scale(1.5);
+    opacity: 1;
+  }
 }
 
 /* ===== SVG Car Wrapper ===== */
@@ -777,12 +828,19 @@ button {
 .hero-car-svg {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.4));
 }
 
 @keyframes heroCarFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
 }
 
 /* Car body bounce */
@@ -792,9 +850,19 @@ button {
 }
 
 @keyframes heroCarBounce {
-  0%, 100% { transform: translateY(0); }
-  25% { transform: translateY(-2px); }
-  75% { transform: translateY(1px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-2px);
+  }
+
+  75% {
+    transform: translateY(1px);
+  }
 }
 
 /* Spinning wheels */
@@ -812,8 +880,13 @@ button {
 }
 
 @keyframes heroWheelSpin {
-  from { rotate: 0deg; }
-  to { rotate: 360deg; }
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
 }
 
 /* Road lines moving */
@@ -822,8 +895,13 @@ button {
 }
 
 @keyframes heroRoadMove {
-  from { transform: translateX(0); }
-  to { transform: translateX(-110px); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-110px);
+  }
 }
 
 /* Headlight pulse */
@@ -832,8 +910,15 @@ button {
 }
 
 @keyframes heroHeadlightPulse {
-  0%, 100% { opacity: 0.95; }
-  50% { opacity: 0.7; }
+
+  0%,
+  100% {
+    opacity: 0.95;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
 }
 
 /* Headlight beams flicker */
@@ -842,10 +927,23 @@ button {
 }
 
 @keyframes heroBeamFlicker {
-  0%, 100% { opacity: 1; }
-  30% { opacity: 0.8; }
-  60% { opacity: 1; }
-  80% { opacity: 0.85; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.8;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.85;
+  }
 }
 
 /* Taillight pulse */
@@ -854,8 +952,15 @@ button {
 }
 
 @keyframes heroTaillightPulse {
-  0%, 100% { opacity: 0.9; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
 
 .hero-taillights {
@@ -863,8 +968,15 @@ button {
 }
 
 @keyframes heroTaillightGlow {
-  0%, 100% { opacity: 0.25; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
 
 /* Neon underglow strip */
@@ -873,8 +985,17 @@ button {
 }
 
 @keyframes heroNeonPulse {
-  0%, 100% { opacity: 0.5; stroke: rgba(0,212,255,0.5); }
-  50% { opacity: 1; stroke: rgba(0,212,255,0.9); }
+
+  0%,
+  100% {
+    opacity: 0.5;
+    stroke: rgba(0, 212, 255, 0.5);
+  }
+
+  50% {
+    opacity: 1;
+    stroke: rgba(0, 212, 255, 0.9);
+  }
 }
 
 /* Underglow */
@@ -883,8 +1004,15 @@ button {
 }
 
 @keyframes heroUnderglowPulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
 }
 
 /* Shadow underneath car */
@@ -902,8 +1030,17 @@ button {
 }
 
 @keyframes heroShadowPulse {
-  0%, 100% { transform: scaleX(1); opacity: 0.4; }
-  50% { transform: scaleX(0.85); opacity: 0.7; }
+
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scaleX(0.85);
+    opacity: 0.7;
+  }
 }
 
 /* ===== Floating Info Badges ===== */
@@ -948,18 +1085,39 @@ button {
 }
 
 @keyframes heroBadgeFloat1 {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(2deg); }
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
 }
 
 @keyframes heroBadgeFloat2 {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-14px) rotate(-2deg); }
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-14px) rotate(-2deg);
+  }
 }
 
 @keyframes heroBadgeFloat3 {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(1.5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
 }
 
 /* ===== Glow Effects ===== */
@@ -990,20 +1148,27 @@ button {
 }
 
 @keyframes heroGlowPulse {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.15); }
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
 }
 
 /* ===== Animated gradient text shimmer ===== */
 .hero-title .highlight {
-  background: linear-gradient(
-    90deg,
-    var(--primary) 0%,
-    #67e8f9 25%,
-    var(--accent) 50%,
-    #67e8f9 75%,
-    var(--primary) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--primary) 0%,
+      #67e8f9 25%,
+      var(--accent) 50%,
+      #67e8f9 75%,
+      var(--primary) 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1012,8 +1177,13 @@ button {
 }
 
 @keyframes heroTextShimmer {
-  from { background-position: 0% center; }
-  to { background-position: 200% center; }
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: 200% center;
+  }
 }
 
 /* ========== BUTTONS ========== */
@@ -1081,6 +1251,7 @@ button {
   background: linear-gradient(135deg, #25d366, #128c7e);
   color: white;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  padding: 10px 15px;
 }
 
 .btn-whatsapp:hover {
@@ -1777,7 +1948,7 @@ button {
   height: 60px;
   border-radius: 50%;
   /* background: linear-gradient(135deg, #25d366, #128c7e); */
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark))!important;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1890,7 +2061,7 @@ button {
 /* ========== RESPONSIVE ========== */
 
 @media (max-width: 1120px) {
-  .navbar-links{
+  .navbar-links {
     gap: 8px;
   }
 }
@@ -1919,12 +2090,26 @@ button {
     min-height: 350px;
   }
 
-  .hero-ring { display: none; }
-  .hero-speed-lines { display: none; }
+  .hero-ring {
+    display: none;
+  }
 
-  .hero-float-badge-1 { right: 0; top: 2%; }
-  .hero-float-badge-2 { left: 0; }
-  .hero-float-badge-3 { right: 0; }
+  .hero-speed-lines {
+    display: none;
+  }
+
+  .hero-float-badge-1 {
+    right: 0;
+    top: 2%;
+  }
+
+  .hero-float-badge-2 {
+    left: 0;
+  }
+
+  .hero-float-badge-3 {
+    right: 0;
+  }
 
   .fleet-grid {
     grid-template-columns: 1fr;
@@ -1942,40 +2127,41 @@ button {
 }
 
 @media (max-width: 967px) {
-  .navbar-links{
+  .navbar-links {
     gap: 2px;
   }
 }
 
-@media(max-width: 930px){
-    .navbar-links a{
+@media(max-width: 930px) {
+  .navbar-links a {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  .navbar-logo{
-        gap: 8px;
+  .navbar-logo {
+    gap: 8px;
   }
+
   .navbar-logo-text {
     font-size: 1rem;
-}
+  }
 
-.container{
-  padding: 0 12px;
-}
+  .container {
+    padding: 0 12px;
+  }
 
-.navbar-inner{
-  gap: 5px;
-}
+  .navbar-inner {
+    gap: 5px;
+  }
 
-.navbar-logo img{
-      width: auto;
+  .navbar-logo img {
+    width: auto;
     height: 30px;
-}
+  }
 
-.navbar-cta{
-      padding: 10px !important;
-}
+  .navbar-cta {
+    padding: 10px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1983,18 +2169,19 @@ button {
     padding: 20px 0;
   }
 
-  .navbar-logo-text{
-            font-size: 1.25rem;
+  .navbar-logo-text {
+    font-size: 1.25rem;
   }
-      .navbar-logo img {
-        height: 40px;
-    }
 
-  .navbar-links{
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-links {
     padding-top: 0 !important;
   }
 
-  .navbar-cta{
+  .navbar-cta {
     margin-top: 10px;
     margin-bottom: 5px;
   }
@@ -2034,14 +2221,37 @@ button {
     transform: translateY(0);
   }
 
-  .navbar-links.open li:nth-child(1) { transition-delay: 0.05s; }
-  .navbar-links.open li:nth-child(2) { transition-delay: 0.08s; }
-  .navbar-links.open li:nth-child(3) { transition-delay: 0.11s; }
-  .navbar-links.open li:nth-child(4) { transition-delay: 0.14s; }
-  .navbar-links.open li:nth-child(5) { transition-delay: 0.17s; }
-  .navbar-links.open li:nth-child(6) { transition-delay: 0.20s; }
-  .navbar-links.open li:nth-child(7) { transition-delay: 0.23s; }
-  .navbar-links.open li:nth-child(8) { transition-delay: 0.26s; }
+  .navbar-links.open li:nth-child(1) {
+    transition-delay: 0.05s;
+  }
+
+  .navbar-links.open li:nth-child(2) {
+    transition-delay: 0.08s;
+  }
+
+  .navbar-links.open li:nth-child(3) {
+    transition-delay: 0.11s;
+  }
+
+  .navbar-links.open li:nth-child(4) {
+    transition-delay: 0.14s;
+  }
+
+  .navbar-links.open li:nth-child(5) {
+    transition-delay: 0.17s;
+  }
+
+  .navbar-links.open li:nth-child(6) {
+    transition-delay: 0.20s;
+  }
+
+  .navbar-links.open li:nth-child(7) {
+    transition-delay: 0.23s;
+  }
+
+  .navbar-links.open li:nth-child(8) {
+    transition-delay: 0.26s;
+  }
 
   .navbar-links li a {
     display: block;
@@ -2097,13 +2307,13 @@ button {
   /* .step-card {
     padding: 32px 20px;
   } */
-   .step-number{
+  .step-number {
     margin-bottom: 0;
-   }
+  }
 
-   .step-card h3{
+  .step-card h3 {
     margin-top: -20px;
-   }
+  }
 
   .faq-question {
     padding: 16px 18px;
@@ -2133,7 +2343,7 @@ button {
     padding-right: 10px;
   }
 
-  
+
 
   .car-footer {
     flex-direction: row;
@@ -2141,6 +2351,16 @@ button {
     gap: 12px;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .car-footer>div {
+    width: 48%;
+    justify-content: center;
+  }
+
+  .car-footer>div>a {
+    font-size: 16.6px;
+    line-height: 122%;
   }
 
   .car-price {
@@ -2162,7 +2382,7 @@ button {
 
   .car-actions .btn {
     width: 100%;
-    font-size: 0.85rem;
+    /* font-size: 0.85rem; */
     padding: 10px;
   }
 
@@ -2756,7 +2976,7 @@ button {
     gap: 8px 16px;
   }
 
-    .faq-question {
+  .faq-question {
     padding: 15px;
   }
 
