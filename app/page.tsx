@@ -108,7 +108,7 @@ const carsData: CarData[] = [
   {
     id: "baleno",
     name: "Maruti Suzuki Baleno",
-    type: "Premium Hatchback • Petrol • Automatic / Manual",
+    type: "Premium Hatchback • Petrol • Manual",
     badge: "Popular",
     price: 2400,
     images: Array.from({ length: 14 }, (_, i) => `/cars/baleno/${i + 1}.jpg`),
@@ -1015,7 +1015,7 @@ export default function Home() {
               },
               {
                 q: "Can I rent a Baleno in Ahmedabad?",
-                a: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours. Available in both automatic and manual. Book via WhatsApp at +91 884 984 9888.",
+                a: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours. Available in manual transmission. Book via WhatsApp at +91 884 984 9888.",
               },
               {
                 q: "Are the rental cars insured?",
