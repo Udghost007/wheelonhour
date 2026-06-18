@@ -196,8 +196,7 @@ function CarCard({ car }: { car: CarData }) {
               href={`https://wa.me/918849849888?text=${whatsappMsg}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-whatsapp"
-              style={{ padding: "10px 20px", fontSize: "0.9rem" }}
+              className="btn btn-whatsapp !px-[10px] md:!px-[20px] py-[10px] md:text-[0.9rem]"
             >
               <WhatsAppIcon size={18} /> Book Now
             </a>

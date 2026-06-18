@@ -334,8 +334,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/logo.png" type="image/png" />
-        <link rel="shortcut icon" href="/logo.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo.png" />
         <meta name="theme-color" content="#0a0e27" />
         <meta name="geo.region" content="IN-GJ" />
