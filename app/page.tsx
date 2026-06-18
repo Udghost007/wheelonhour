@@ -483,7 +483,7 @@ export default function Home() {
                 >
                   <WhatsAppIcon size={20} /> Book on WhatsApp
                 </a>
-                <a href="#fleet" className="btn btn-outline">
+                <a href="#fleet" className="btn btn-outline View_Our_Fleet">
                   View Our Fleet →
                 </a>
               </div>

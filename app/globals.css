@@ -1254,6 +1254,10 @@ button {
   padding: 10px 15px;
 }
 
+.View_Our_Fleet{
+  height: 45.2px;
+}
+
 .btn-whatsapp:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 40px rgba(37, 211, 102, 0.4);
@@ -2616,6 +2620,11 @@ button {
 @media (max-width: 768px) {
   .partner-card {
     padding: 36px 15px;
+  }
+
+  .View_Our_Fleet{
+    padding: 12px 15px;
+    font-size: 16px !important;
   }
 
   .partner-perks {
