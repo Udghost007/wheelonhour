@@ -1487,6 +1487,8 @@ button {
 .step-card {
   text-align: center;
   position: relative;
+  padding-bottom: 30px;
+  margin-top: 25px;
 }
 
 .step-number {
@@ -1506,6 +1508,7 @@ button {
   position: relative;
   z-index: 2;
   transition: var(--transition);
+  top: -35px;
 }
 
 .step-card:hover .step-number {
@@ -1975,11 +1978,11 @@ button {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .section {
-    padding: 48px 0;
+    padding: 20px 0;
   }
 
   .car-info {
@@ -1990,9 +1993,16 @@ button {
     padding: 28px 20px;
   }
 
-  .step-card {
+  /* .step-card {
     padding: 32px 20px;
-  }
+  } */
+   .step-number{
+    margin-bottom: 0;
+   }
+
+   .step-card h3{
+    margin-top: -20px;
+   }
 
   .faq-question {
     padding: 16px 18px;
@@ -2018,7 +2028,11 @@ button {
   .btn {
     width: 100%;
     justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
+  
 
   .car-footer {
     flex-direction: row;
@@ -2280,7 +2294,7 @@ button {
 
 @media (max-width: 768px) {
   .partner-card {
-    padding: 36px 24px;
+    padding: 36px 15px;
   }
 
   .partner-perks {
@@ -2288,7 +2302,7 @@ button {
   }
 
   .partner-form {
-    padding: 24px;
+    padding: 24px 15px;
   }
 }
 
@@ -2632,6 +2646,10 @@ button {
 @media (max-width: 768px) {
   .footer-links-grid {
     gap: 8px 16px;
+  }
+
+    .faq-question {
+    padding: 15px;
   }
 
   .footer-links-grid a {
