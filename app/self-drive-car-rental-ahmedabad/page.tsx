@@ -54,7 +54,7 @@ export default function SelfDriveCarRentalAhmedabad() {
           <h3>Tata Altroz (Manual) — ₹1,800/day</h3>
           <p>5-seater premium hatchback with 23 km/l mileage. Ideal for city drives and short trips.</p>
           <h3>Maruti Suzuki Baleno (Automatic/Manual) — ₹2,400/day</h3>
-          <p>5-seater premium hatchback with 22 km/l mileage. Perfect for comfortable long drives and family outings.</p>
+          <p>5-seater premium hatchback with 30 km/l mileage. Perfect for comfortable long drives and family outings.</p>
 
           <h2>Benefits of Self-Drive Car Rental in Ahmedabad</h2>
           <ul>

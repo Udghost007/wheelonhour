@@ -115,7 +115,7 @@ const carsData: CarData[] = [
     specs: [
       { icon: "⛽", value: "Petrol", label: "Fuel" },
       { icon: "👤", value: "5", label: "Seats" },
-      { icon: "💨", value: "22 km/l", label: "Mileage" },
+      { icon: "💨", value: "30 km/l", label: "Mileage" },
     ],
   },
 ];

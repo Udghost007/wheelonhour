@@ -49,7 +49,7 @@ export default function BalenoOnRent() {
             <li><strong>Fuel:</strong> Petrol</li>
             <li><strong>Transmission:</strong> Automatic / Manual (both available)</li>
             <li><strong>Seats:</strong> 5</li>
-            <li><strong>Mileage:</strong> 22 km/l</li>
+            <li><strong>Mileage:</strong> 30 km/l</li>
             <li><strong>Rental Price:</strong> ₹2,400 per 24 hours</li>
             <li><strong>Insurance:</strong> Fully insured (comprehensive coverage)</li>
             <li><strong>Pickup:</strong> Easy pickup from our Ahmedabad location</li>

@@ -69,7 +69,7 @@ export default function RentACarInAhmedabad() {
           <h3>Maruti Suzuki Baleno — ₹2,400 per 24 Hours</h3>
           <p>
             The Maruti Suzuki Baleno is available in both automatic and manual transmission. With 5 seats,
-            22 km/l mileage, and premium interiors, it&apos;s the perfect car for family trips, outstation
+            30 km/l mileage, and premium interiors, it&apos;s the perfect car for family trips, outstation
             journeys, and wedding events from Ahmedabad.
           </p>
 
