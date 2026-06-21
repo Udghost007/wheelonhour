@@ -5,11 +5,11 @@ import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 export const metadata: Metadata = {
   title: "Wedding Car Rental in Ahmedabad — Premium Baleno & Altroz | WheelOnHour",
   description:
-    "Rent premium cars for weddings in Ahmedabad. Maruti Baleno & Tata Altroz from ₹1800/day. Decorated car options available. Book on WhatsApp — WheelOnHour.",
+    "Rent premium cars for weddings in Ahmedabad. Maruti Baleno & Tata Altroz from ₹2000/day. Decorated car options available. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/wedding-car-rental-ahmedabad" },
   openGraph: {
     title: "Wedding Car Rental Ahmedabad | WheelOnHour",
-    description: "Premium wedding car rental in Ahmedabad from ₹1800/day.",
+    description: "Premium wedding car rental in Ahmedabad from ₹2000/day.",
     url: "https://wheelonhour.vercel.app/wedding-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export default function WeddingCarRental() {
           <h2>Wedding Car Rental Options</h2>
           <ul>
             <li><strong>Maruti Suzuki Baleno:</strong> ₹2,400/day — Sleek, modern, premium interiors</li>
-            <li><strong>Tata Altroz:</strong> ₹1,800/day — Stylish design, 5-star safety</li>
+            <li><strong>Tata Altroz:</strong> ₹2,000/day — Stylish design, 5-star safety</li>
           </ul>
 
           <h2>Wedding Car Rental Uses</h2>
@@ -71,7 +71,7 @@ export default function WeddingCarRental() {
           </p>
 
           <div className="seo-page-cta">
-            <h2>Book Wedding Car Rental — From ₹1,800/day</h2>
+            <h2>Book Wedding Car Rental — From ₹2,000/day</h2>
             <p>Make your wedding day perfect. Book now on WhatsApp!</p>
             <a
               href="https://wa.me/918849849888?text=Hi!%20I%20need%20a%20car%20for%20a%20wedding%20in%20Ahmedabad."

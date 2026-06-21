@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Monthly Car Rental in Ahmedabad — Long Term from ₹1800/day | WheelOnHour",
+  title: "Monthly Car Rental in Ahmedabad — Long Term from ₹2000/day | WheelOnHour",
   description:
     "Monthly car rental in Ahmedabad at discounted rates. Long-term Baleno & Altroz rental with special packages. Self-drive, fully insured. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/monthly-car-rental-ahmedabad" },
@@ -61,7 +61,7 @@ export default function MonthlyCarRental() {
 
             <h2>Monthly Rental Cars Available</h2>
             <ul>
-              <li><strong>Tata Altroz:</strong> Daily ₹1,800 — contact for monthly package rate</li>
+              <li><strong>Tata Altroz:</strong> Daily ₹2,000 — contact for monthly package rate</li>
               <li><strong>Maruti Suzuki Baleno:</strong> Daily ₹2,400 — contact for monthly package rate</li>
             </ul>
             <p>

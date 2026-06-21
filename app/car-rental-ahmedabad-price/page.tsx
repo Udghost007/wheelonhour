@@ -3,13 +3,13 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Car Rental Ahmedabad Price List 2025 — ₹1800/day | WheelOnHour",
+  title: "Car Rental Ahmedabad Price List 2025 — ₹2000/day | WheelOnHour",
   description:
-    "Car rental prices in Ahmedabad 2025. Tata Altroz ₹1800/day, Maruti Baleno ₹2400/day. Compare WheelOnHour prices vs Zoomcar, Revv. Cheapest rates guaranteed. Book on WhatsApp.",
+    "Car rental prices in Ahmedabad 2025. Tata Altroz ₹2000/day, Maruti Baleno ₹2400/day. Compare WheelOnHour prices vs Zoomcar, Revv. Cheapest rates guaranteed. Book on WhatsApp.",
   alternates: { canonical: "/car-rental-ahmedabad-price" },
   openGraph: {
     title: "Car Rental Ahmedabad Price List 2025 | WheelOnHour",
-    description: "Compare car rental prices in Ahmedabad. Cheapest rates from ₹1800/day.",
+    description: "Compare car rental prices in Ahmedabad. Cheapest rates from ₹2000/day.",
     url: "https://wheelonhour.vercel.app/car-rental-ahmedabad-price",
     type: "website",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export default function CarRentalPrice() {
                     <td><strong>Tata Altroz</strong></td>
                     <td>Premium Hatchback</td>
                     <td>Manual</td>
-                    <td><strong>₹1,800</strong></td>
+                    <td><strong>₹2,000</strong></td>
                     <td>Contact for deal</td>
                   </tr>
                   <tr>
@@ -93,7 +93,7 @@ export default function CarRentalPrice() {
                 <tbody>
                   <tr className="highlight-row">
                     <td><strong>WheelOnHour</strong></td>
-                    <td><strong>₹1,800 - ₹2,400</strong></td>
+                    <td><strong>₹2,000 - ₹2,400</strong></td>
                     <td>None</td>
                     <td>Ahmedabad Office</td>
                   </tr>
@@ -131,7 +131,7 @@ export default function CarRentalPrice() {
             <h2>How to Get the Best Car Rental Deal in Ahmedabad</h2>
             <ul>
               <li>Book directly via WhatsApp — skip platform fees</li>
-              <li>Choose Tata Altroz for the lowest price at ₹1,800/day</li>
+              <li>Choose Tata Altroz for the lowest price at ₹2,000/day</li>
               <li>Ask about weekly and monthly discount packages</li>
               <li>Book 2-3 days in advance for guaranteed availability</li>
             </ul>

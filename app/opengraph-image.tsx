@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 export const alt =
-  "WheelOnHour — #1 Car Rental in Ahmedabad | Self Drive from ₹1800/day";
+  "WheelOnHour — #1 Car Rental in Ahmedabad | Self Drive from ₹2000/day";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -90,7 +90,7 @@ export default async function Image() {
             maxWidth: "800px",
           }}
         >
-          Self-Drive Baleno &amp; Altroz on Rent — From ₹1,800/day
+          Self-Drive Baleno &amp; Altroz on Rent — From ₹2,000/day
         </div>
 
         {/* Features row */}

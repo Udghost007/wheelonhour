@@ -5,11 +5,11 @@ import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 export const metadata: Metadata = {
   title: "Outstation Car Rental from Ahmedabad — Self Drive to Udaipur, Goa, Kutch | WheelOnHour",
   description:
-    "Outstation car rental from Ahmedabad. Self-drive to Udaipur, Mount Abu, Goa, Kutch, Dwarka & more. Baleno & Altroz from ₹1800/day. Book on WhatsApp — WheelOnHour.",
+    "Outstation car rental from Ahmedabad. Self-drive to Udaipur, Mount Abu, Goa, Kutch, Dwarka & more. Baleno & Altroz from ₹2000/day. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/outstation-car-rental-ahmedabad" },
   openGraph: {
     title: "Outstation Car Rental from Ahmedabad | WheelOnHour",
-    description: "Self-drive outstation trips from Ahmedabad. Baleno & Altroz from ₹1800/day.",
+    description: "Self-drive outstation trips from Ahmedabad. Baleno & Altroz from ₹2000/day.",
     url: "https://wheelonhour.vercel.app/outstation-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
@@ -31,7 +31,7 @@ export default function OutstationCarRental() {
           <h1>Outstation Car Rental from Ahmedabad</h1>
           <p>
             Plan your road trip from Ahmedabad with WheelOnHour. Self-drive Baleno &amp; Altroz for outstation
-            trips to Udaipur, Mount Abu, Goa, Kutch, Dwarka, and more — starting at ₹1,800/day.
+            trips to Udaipur, Mount Abu, Goa, Kutch, Dwarka, and more — starting at ₹2,000/day.
           </p>
           <a
             href="https://wa.me/918849849888?text=Hi!%20I%20need%20an%20outstation%20car%20rental%20from%20Ahmedabad."
@@ -66,7 +66,7 @@ export default function OutstationCarRental() {
 
           <h2>Outstation Car Options</h2>
           <ul>
-            <li><strong>Tata Altroz (₹1,800/day):</strong> Best for budget trips, 23 km/l mileage</li>
+            <li><strong>Tata Altroz (₹2,000/day):</strong> Best for budget trips, 23 km/l mileage</li>
             <li><strong>Maruti Baleno (₹2,400/day):</strong> Best for comfort, automatic available for highway driving</li>
           </ul>
 
@@ -77,7 +77,7 @@ export default function OutstationCarRental() {
           </p>
 
           <div className="seo-page-cta">
-            <h2>Plan Your Road Trip — From ₹1,800/day</h2>
+            <h2>Plan Your Road Trip — From ₹2,000/day</h2>
             <p>Self-drive outstation from Ahmedabad. WhatsApp us with your trip details!</p>
             <a
               href="https://wa.me/918849849888?text=Hi!%20I%20need%20an%20outstation%20car%20rental%20from%20Ahmedabad."

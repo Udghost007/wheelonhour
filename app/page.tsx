@@ -96,7 +96,7 @@ const carsData: CarData[] = [
     name: "Tata Altroz",
     type: "Premium Hatchback • Petrol • Manual",
     badge: "⭐ Owner's Pick",
-    price: 1800,
+    price: 2000,
     images: Array.from({ length: 5 }, (_, i) => `/cars/altroz/${i + 1}.jpg`),
     specs: [
       { icon: "⛽", value: "Petrol", label: "Fuel" },
@@ -550,7 +550,7 @@ export default function Home() {
               <p className="hero-description">
                 Premium cars on rent at unbeatable prices in Ahmedabad, Gujarat.
                 Enjoy the freedom of the road with our well-maintained fleet —
-                starting at just <strong>₹1,800/24hrs</strong>.
+                starting at just <strong>₹2,000/24hrs</strong>.
               </p>
               <div className="hero-actions">
                 <a
@@ -818,7 +818,7 @@ export default function Home() {
               {/* Floating info badges */}
               <div className="hero-float-badge hero-float-badge-1">
                 <span className="hero-float-badge-icon">💰</span>
-                <span>From ₹1,800/day</span>
+                <span>From ₹2,000/day</span>
               </div>
               <div className="hero-float-badge hero-float-badge-2">
                 <span className="hero-float-badge-icon">🛡️</span>
@@ -872,7 +872,7 @@ export default function Home() {
             <div className="section-badge">Our Fleet</div>
             <h2 className="section-title">Choose Your Perfect Ride</h2>
             <p className="section-subtitle">
-              Handpicked premium cars maintained to the highest standards. 8+ cars including Baleno, Altroz, i20, Dzire, Nexon &amp; Brezza — starting at ₹1,800/24hrs.
+              Handpicked premium cars maintained to the highest standards. 8+ cars including Baleno, Altroz, i20, Dzire, Nexon &amp; Brezza — starting at ₹2,000/24hrs.
             </p>
           </div>
 
@@ -905,7 +905,7 @@ export default function Home() {
               {
                 icon: "🏷️",
                 title: "Transparent Pricing",
-                desc: "Clear 24-hour rates starting from ₹1,800. Altroz, Baleno, i20, Dzire, Nexon & Brezza — all transparently priced. No hidden charges.",
+                desc: "Clear 24-hour rates starting from ₹2,000. Altroz, Baleno, i20, Dzire, Nexon & Brezza — all transparently priced. No hidden charges.",
               },
               {
                 icon: "🛡️",
@@ -1073,7 +1073,7 @@ export default function Home() {
             {[
               {
                 q: "What is the cheapest car on rent in Ahmedabad?",
-                a: "WheelOnHour offers the Tata Altroz on rent in Ahmedabad starting at just ₹1,800 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
+                a: "WheelOnHour offers the Tata Altroz on rent in Ahmedabad starting at just ₹2,000 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
               },
               {
                 q: "How do I rent a car in Ahmedabad from WheelOnHour?",
@@ -1101,7 +1101,7 @@ export default function Home() {
               },
               {
                 q: "What is the price of car rental in Ahmedabad per day?",
-                a: "Car rental prices: Altroz ₹1,800/day, Baleno ₹2,400/day, Dzire ₹2,600/day, i20 ₹2,800/day, Nexon & Brezza ₹3,000/day. All-inclusive — no hidden charges.",
+                a: "Car rental prices: Altroz ₹2,000/day, Baleno ₹2,400/day, Dzire ₹2,600/day, i20 ₹2,800/day, Nexon & Brezza ₹3,000/day. All-inclusive — no hidden charges.",
               },
               {
                 q: "Do you provide car rental for outstation trips from Ahmedabad?",
@@ -1298,9 +1298,9 @@ export default function Home() {
           <h3>Why Choose WheelOnHour for Car Rental in Ahmedabad?</h3>
           <p>
             WheelOnHour stands out as the <strong>best car rental in Ahmedabad</strong> with transparent pricing starting
-            at just ₹1,800 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer easy pickup from our Ahmedabad
+            at just ₹2,000 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer easy pickup from our Ahmedabad
             location, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes {" "}
-            <strong>Baleno on rent in Ahmedabad</strong> (₹2,400/day), <strong>Altroz on rent in Ahmedabad</strong> (₹1,800/day), {" "}
+            <strong>Baleno on rent in Ahmedabad</strong> (₹2,400/day), <strong>Altroz on rent in Ahmedabad</strong> (₹2,000/day), {" "}
             <strong>i20 on rent in Ahmedabad</strong> (₹2,800/day), <strong>Dzire on rent</strong> (₹2,600/day), and SUVs like {" "}
             <strong>Nexon</strong> and <strong>Brezza</strong> at ₹3,000/day.
           </p>
@@ -1315,7 +1315,7 @@ export default function Home() {
           </p>
           <h3>Affordable Car Rental Prices in Ahmedabad</h3>
           <p>
-            Compare our <strong>car rental Ahmedabad prices</strong>: Tata Altroz ₹1,800/day, Baleno ₹2,400/day,
+            Compare our <strong>car rental Ahmedabad prices</strong>: Tata Altroz ₹2,000/day, Baleno ₹2,400/day,
             Dzire ₹2,600/day, Hyundai i20 ₹2,800/day, Tata Nexon ₹3,000/day, and Brezza ₹3,000/day. These are among the most {" "}
             <strong>affordable car rental rates in Ahmedabad, Gujarat</strong>.
             Whether you search for &quot;rent a car in Ahmedabad&quot;, &quot;car rental near me&quot;, &quot;SUV on rent in Ahmedabad&quot;, or

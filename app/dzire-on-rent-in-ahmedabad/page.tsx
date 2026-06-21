@@ -136,7 +136,7 @@ export default function DzireOnRent() {
               Choose from our full range of self-drive cars in Ahmedabad:
             </p>
             <ul>
-              <li>Tata Altroz — ₹1,800/day</li>
+              <li>Tata Altroz — ₹2,000/day</li>
               <li>Maruti Suzuki Baleno — ₹2,400/day</li>
               <li>
                 <strong>Maruti Suzuki Dzire — ₹2,600/day</strong>

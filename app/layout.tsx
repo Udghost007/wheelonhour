@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default:
-      "WheelOnHour — #1 Car Rental in Ahmedabad | Self Drive Cars from ₹1,800/day",
+      "WheelOnHour — #1 Car Rental in Ahmedabad | Self Drive Cars from ₹2,000/day",
     template: "%s | WheelOnHour — Car Rental Ahmedabad",
   },
   description:
-    "Rent a car in Ahmedabad starting ₹1,800/day. Self-drive Baleno, Altroz, i20, Dzire, Nexon & Brezza on rent. 8+ cars available, fully insured, no hidden charges. Book on WhatsApp — 24/7 support. WheelOnHour is Ahmedabad's most trusted car rental service.",
+    "Rent a car in Ahmedabad starting ₹2,000/day. Self-drive Baleno, Altroz, i20, Dzire, Nexon & Brezza on rent. 8+ cars available, fully insured, no hidden charges. Book on WhatsApp — 24/7 support. WheelOnHour is Ahmedabad's most trusted car rental service.",
   keywords: [
     "rent a car in ahmedabad",
     "car rental ahmedabad",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "WheelOnHour — #1 Car Rental in Ahmedabad | From ₹1,800/day",
+    title: "WheelOnHour — #1 Car Rental in Ahmedabad | From ₹2,000/day",
     description:
       "Rent self-drive cars in Ahmedabad — Baleno, Altroz, i20, Dzire, Nexon & Brezza. 8+ cars, easy pickup, fully insured, no hidden charges. Book now on WhatsApp!",
     url: BASE_URL,
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WheelOnHour — #1 Car Rental in Ahmedabad",
     description:
-      "Self-drive cars on rent from ₹1,800/day. Baleno, Altroz, i20, Dzire, Nexon & Brezza — 8+ cars with easy pickup in Ahmedabad.",
+      "Self-drive cars on rent from ₹2,000/day. Baleno, Altroz, i20, Dzire, Nexon & Brezza — 8+ cars with easy pickup in Ahmedabad.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -105,7 +105,7 @@ const localBusinessSchema = {
   url: BASE_URL,
   telephone: "+918849849888",
   description:
-    "WheelOnHour is Ahmedabad's most trusted self-drive car rental service. Rent Baleno, Altroz, i20, Dzire, Nexon & Brezza starting at just ₹1,800 per day with easy pickup, full insurance, and 24/7 support. 8+ cars available.",
+    "WheelOnHour is Ahmedabad's most trusted self-drive car rental service. Rent Baleno, Altroz, i20, Dzire, Nexon & Brezza starting at just ₹2,000 per day with easy pickup, full insurance, and 24/7 support. 8+ cars available.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Stavan Ample, Devnagar Gam Road",
@@ -133,7 +133,7 @@ const localBusinessSchema = {
     opens: "00:00",
     closes: "23:59",
   },
-  priceRange: "₹1,800 - ₹3,000 per day",
+  priceRange: "₹2,000 - ₹3,000 per day",
   currenciesAccepted: "INR",
   paymentAccepted: "Cash, UPI, Bank Transfer",
   areaServed: {
@@ -171,7 +171,7 @@ const localBusinessSchema = {
           seatingCapacity: 5,
           image: `${BASE_URL}/cars/altroz/1.jpg`,
         },
-        price: "1800",
+        price: "2000",
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
@@ -288,7 +288,7 @@ const faqSchema = {
       name: "What is the cheapest car on rent in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "WheelOnHour offers the Tata Altroz on rent in Ahmedabad starting at just ₹1,800 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
+        text: "WheelOnHour offers the Tata Altroz on rent in Ahmedabad starting at just ₹2,000 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
       },
     },
     {
@@ -344,7 +344,7 @@ const faqSchema = {
       name: "What is the price of car rental in Ahmedabad per day?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "WheelOnHour offers car rental in Ahmedabad starting at ₹1,800/day (Altroz), ₹2,400/day (Baleno), ₹2,600/day (Dzire), ₹2,800/day (i20), and ₹3,000/day (Nexon & Brezza). All-inclusive prices with no hidden charges.",
+        text: "WheelOnHour offers car rental in Ahmedabad starting at ₹2,000/day (Altroz), ₹2,400/day (Baleno), ₹2,600/day (Dzire), ₹2,800/day (i20), and ₹3,000/day (Nexon & Brezza). All-inclusive prices with no hidden charges.",
       },
     },
     {
@@ -372,7 +372,7 @@ const websiteSchema = {
   name: "WheelOnHour",
   url: BASE_URL,
   description:
-    "Ahmedabad's most trusted self-drive car rental service. 8+ cars — Baleno, Altroz, i20, Dzire, Nexon & Brezza from ₹1,800/day.",
+    "Ahmedabad's most trusted self-drive car rental service. 8+ cars — Baleno, Altroz, i20, Dzire, Nexon & Brezza from ₹2,000/day.",
   publisher: {
     "@type": "Organization",
     name: "WheelOnHour",

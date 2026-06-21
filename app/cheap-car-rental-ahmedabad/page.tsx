@@ -3,13 +3,13 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Cheap Car Rental in Ahmedabad — From ₹1800/day | WheelOnHour",
+  title: "Cheap Car Rental in Ahmedabad — From ₹2000/day | WheelOnHour",
   description:
-    "Cheapest car rental in Ahmedabad starting ₹1800/day. Fully insured Tata Altroz & Maruti Baleno with easy pickup. No hidden charges. Book on WhatsApp — WheelOnHour.",
+    "Cheapest car rental in Ahmedabad starting ₹2000/day. Fully insured Tata Altroz & Maruti Baleno with easy pickup. No hidden charges. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/cheap-car-rental-ahmedabad" },
   openGraph: {
-    title: "Cheap Car Rental Ahmedabad — From ₹1800/day",
-    description: "Most affordable car rental in Ahmedabad. Premium cars from ₹1800/day.",
+    title: "Cheap Car Rental Ahmedabad — From ₹2000/day",
+    description: "Most affordable car rental in Ahmedabad. Premium cars from ₹2000/day.",
     url: "https://wheelonhour.vercel.app/cheap-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
@@ -31,7 +31,7 @@ export default function CheapCarRental() {
           <h1>Cheap Car Rental in Ahmedabad</h1>
           <p>
             Get the most affordable car rental in Ahmedabad with WheelOnHour. Premium cars starting at
-            just ₹1,800/day — no hidden charges, no surge pricing, fully insured.
+            just ₹2,000/day — no hidden charges, no surge pricing, fully insured.
           </p>
           <a
             href="https://wa.me/918849849888?text=Hi!%20I%20need%20a%20cheap%20car%20rental%20in%20Ahmedabad."
@@ -48,13 +48,13 @@ export default function CheapCarRental() {
             quality. Compare our prices:
           </p>
           <ul>
-            <li><strong>Tata Altroz:</strong> ₹1,800/day (₹75/hour) — Cheapest option</li>
+            <li><strong>Tata Altroz:</strong> ₹2,000/day (₹75/hour) — Cheapest option</li>
             <li><strong>Maruti Baleno:</strong> ₹2,400/day (₹100/hour) — Premium automatic</li>
           </ul>
 
           <h2>Price Comparison: WheelOnHour vs Other Car Rentals in Ahmedabad</h2>
           <ul>
-            <li><strong>WheelOnHour:</strong> ₹1,800 - ₹2,400/day (no hidden charges)</li>
+            <li><strong>WheelOnHour:</strong> ₹2,000 - ₹2,400/day (no hidden charges)</li>
             <li><strong>Zoomcar:</strong> ₹2,800 - ₹4,500/day + platform fees</li>
             <li><strong>Revv:</strong> ₹3,000 - ₹5,000/day + service charges</li>
             <li><strong>Local dealers:</strong> ₹2,500 - ₹3,500/day + driver charges</li>
@@ -73,13 +73,13 @@ export default function CheapCarRental() {
           <h2>Tips to Get Cheaper Car Rental in Ahmedabad</h2>
           <ul>
             <li>Book directly on WhatsApp — no platform fees like Zoomcar/Revv</li>
-            <li>Choose the Tata Altroz for the lowest rate (₹1,800/day)</li>
+            <li>Choose the Tata Altroz for the lowest rate (₹2,000/day)</li>
             <li>Book for longer durations — ask about weekly discounts</li>
             <li>Book in advance for guaranteed availability</li>
           </ul>
 
           <div className="seo-page-cta">
-            <h2>Ahmedabad&apos;s Cheapest Car Rental — ₹1,800/day</h2>
+            <h2>Ahmedabad&apos;s Cheapest Car Rental — ₹2,000/day</h2>
             <p>No hidden charges. Fully insured. Free delivery.</p>
             <a
               href="https://wa.me/918849849888?text=Hi!%20I%20need%20a%20cheap%20car%20rental%20in%20Ahmedabad."

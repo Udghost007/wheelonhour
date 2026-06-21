@@ -3,12 +3,12 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Car Hire Ahmedabad Airport — Self Drive from ₹1800/day | WheelOnHour",
+  title: "Car Hire Ahmedabad Airport — Self Drive from ₹2000/day | WheelOnHour",
   description:
-    "Car hire at Ahmedabad airport (SVP International). Self-drive Baleno & Altroz from ₹1800/day with airport pickup & drop. Book on WhatsApp — WheelOnHour.",
+    "Car hire at Ahmedabad airport (SVP International). Self-drive Baleno & Altroz from ₹2000/day with airport pickup & drop. Book on WhatsApp — WheelOnHour.",
   alternates: { canonical: "/car-hire-ahmedabad-airport" },
   openGraph: {
-    title: "Car Hire Ahmedabad Airport — From ₹1800/day",
+    title: "Car Hire Ahmedabad Airport — From ₹2000/day",
     description: "Rent a car at Ahmedabad airport. Self-drive with airport delivery.",
     url: "https://wheelonhour.vercel.app/car-hire-ahmedabad-airport",
     type: "website",
@@ -31,7 +31,7 @@ export default function CarHireAirport() {
           <h1>Car Hire at Ahmedabad Airport</h1>
           <p>
             Arriving at Sardar Vallabhbhai Patel International Airport? Get a self-drive car delivered to
-            the airport. Baleno &amp; Altroz from ₹1,800/day — no cab hassle, drive at your pace.
+            the airport. Baleno &amp; Altroz from ₹2,000/day — no cab hassle, drive at your pace.
           </p>
           <a
             href="https://wa.me/918849849888?text=Hi!%20I%20need%20a%20car%20at%20Ahmedabad%20airport."
@@ -59,7 +59,7 @@ export default function CarHireAirport() {
 
           <h2>Cars Available at Ahmedabad Airport</h2>
           <ul>
-            <li><strong>Tata Altroz:</strong> ₹1,800/day — Budget-friendly, fuel-efficient</li>
+            <li><strong>Tata Altroz:</strong> ₹2,000/day — Budget-friendly, fuel-efficient</li>
             <li><strong>Maruti Baleno:</strong> ₹2,400/day — Premium comfort, automatic available</li>
           </ul>
 
@@ -73,7 +73,7 @@ export default function CarHireAirport() {
           </ul>
 
           <div className="seo-page-cta">
-            <h2>Book Airport Car Hire — ₹1,800/day</h2>
+            <h2>Book Airport Car Hire — ₹2,000/day</h2>
             <p>Share your flight details on WhatsApp. We&apos;ll have the car ready!</p>
             <a
               href="https://wa.me/918849849888?text=Hi!%20I%20need%20a%20car%20at%20Ahmedabad%20airport."
