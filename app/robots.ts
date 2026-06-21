@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://wheelonhour.vercel.app/sitemap.xml",
+    sitemap: "https://wheelsonhours.vercel.app/sitemap.xml",
   };
 }

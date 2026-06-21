@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Wedding Car Rental in Ahmedabad — Premium Baleno & Altroz | WheelOnHour",
+  title: "Wedding Car Rental in Ahmedabad — Premium Baleno & Altroz | wheelsonhours",
   description:
-    "Rent premium cars for weddings in Ahmedabad. Maruti Baleno & Tata Altroz from ₹2000/day. Decorated car options available. Book on WhatsApp — WheelOnHour.",
+    "Rent premium cars for weddings in Ahmedabad. Maruti Baleno & Tata Altroz from ₹2000/day. Decorated car options available. Book on WhatsApp — wheelsonhours.",
   alternates: { canonical: "/wedding-car-rental-ahmedabad" },
   openGraph: {
-    title: "Wedding Car Rental Ahmedabad | WheelOnHour",
+    title: "Wedding Car Rental Ahmedabad | wheelsonhours",
     description: "Premium wedding car rental in Ahmedabad from ₹2000/day.",
-    url: "https://wheelonhour.vercel.app/wedding-car-rental-ahmedabad",
+    url: "https://wheelsonhours.vercel.app/wedding-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },
@@ -25,12 +25,12 @@ export default function WeddingCarRental() {
       <div className="bg-orb bg-orb-1" />
       <div className="bg-orb bg-orb-2" />
       <div className="container">
-        <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+        <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
         <div className="seo-page-hero">
           <h1>Wedding Car Rental in Ahmedabad</h1>
           <p>
-            Make your special day even more memorable with a premium rental car from WheelOnHour.
+            Make your special day even more memorable with a premium rental car from wheelsonhours.
             Stylish Maruti Baleno &amp; Tata Altroz available for weddings and functions in Ahmedabad.
           </p>
           <a
@@ -44,7 +44,7 @@ export default function WeddingCarRental() {
         <div className="seo-page-content">
           <h2>Premium Cars for Weddings in Ahmedabad</h2>
           <p>
-            WheelOnHour offers <strong>wedding car rental in Ahmedabad</strong> at affordable rates. Our premium
+            wheelsonhours offers <strong>wedding car rental in Ahmedabad</strong> at affordable rates. Our premium
             fleet is perfect for baraat processions, bride/groom entry, guest transportation, and airport
             pickups for wedding guests.
           </p>

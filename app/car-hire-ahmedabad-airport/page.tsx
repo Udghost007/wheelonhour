@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Car Hire Ahmedabad Airport — Self Drive from ₹2000/day | WheelOnHour",
+  title: "Car Hire Ahmedabad Airport — Self Drive from ₹2000/day | wheelsonhours",
   description:
-    "Car hire at Ahmedabad airport (SVP International). Self-drive Baleno & Altroz from ₹2000/day with airport pickup & drop. Book on WhatsApp — WheelOnHour.",
+    "Car hire at Ahmedabad airport (SVP International). Self-drive Baleno & Altroz from ₹2000/day with airport pickup & drop. Book on WhatsApp — wheelsonhours.",
   alternates: { canonical: "/car-hire-ahmedabad-airport" },
   openGraph: {
     title: "Car Hire Ahmedabad Airport — From ₹2000/day",
     description: "Rent a car at Ahmedabad airport. Self-drive with airport delivery.",
-    url: "https://wheelonhour.vercel.app/car-hire-ahmedabad-airport",
+    url: "https://wheelsonhours.vercel.app/car-hire-ahmedabad-airport",
     type: "website",
     locale: "en_IN",
   },
@@ -25,7 +25,7 @@ export default function CarHireAirport() {
       <div className="bg-orb bg-orb-1" />
       <div className="bg-orb bg-orb-2" />
       <div className="container">
-        <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+        <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
         <div className="seo-page-hero">
           <h1>Car Hire at Ahmedabad Airport</h1>
@@ -44,7 +44,7 @@ export default function CarHireAirport() {
         <div className="seo-page-content">
           <h2>Airport Car Rental in Ahmedabad</h2>
           <p>
-            Skip the expensive airport taxis and surge-priced Ola/Uber rides. With WheelOnHour, rent a
+            Skip the expensive airport taxis and surge-priced Ola/Uber rides. With wheelsonhours, rent a
             self-drive car at <strong>Ahmedabad airport</strong> at a flat daily rate — drive anywhere in Gujarat
             without per-km charges.
           </p>

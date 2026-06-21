@@ -3,15 +3,15 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Rent a Car in Ahmedabad — Self Drive from ₹2000/day | WheelOnHour",
+  title: "Rent a Car in Ahmedabad — Self Drive from ₹2000/day | wheelsonhours",
   description:
-    "Rent a car in Ahmedabad starting ₹2000/day. Self-drive Baleno & Altroz with easy pickup, full insurance & 24/7 support. Book on WhatsApp — no app needed. WheelOnHour is Ahmedabad's #1 car rental.",
+    "Rent a car in Ahmedabad starting ₹2000/day. Self-drive Baleno & Altroz with easy pickup, full insurance & 24/7 support. Book on WhatsApp — no app needed. wheelsonhours is Ahmedabad's #1 car rental.",
   alternates: { canonical: "/rent-a-car-in-ahmedabad" },
   openGraph: {
-    title: "Rent a Car in Ahmedabad — From ₹2000/day | WheelOnHour",
+    title: "Rent a Car in Ahmedabad — From ₹2000/day | wheelsonhours",
     description:
       "Self-drive car rental in Ahmedabad. Baleno & Altroz with easy pickup. Book on WhatsApp!",
-    url: "https://wheelonhour.vercel.app/rent-a-car-in-ahmedabad",
+    url: "https://wheelsonhours.vercel.app/rent-a-car-in-ahmedabad",
     type: "website",
     locale: "en_IN",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
@@ -29,13 +29,13 @@ export default function RentACarInAhmedabad() {
 
       <div className="container">
         <Link href="/" className="seo-back-link">
-          ← Back to WheelOnHour
+          ← Back to wheelsonhours
         </Link>
 
         <div className="seo-page-hero">
           <h1>Rent a Car in Ahmedabad</h1>
           <p>
-            WheelOnHour is Ahmedabad&apos;s most affordable and trusted car rental service.
+            wheelsonhours is Ahmedabad&apos;s most affordable and trusted car rental service.
             Get premium self-drive cars ready for pickup at our location — starting at just ₹2,000 per day.
           </p>
           <a
@@ -52,7 +52,7 @@ export default function RentACarInAhmedabad() {
           <h2>Best Car Rental Service in Ahmedabad, Gujarat</h2>
           <p>
             If you&apos;re searching for &quot;rent a car in Ahmedabad&quot;, &quot;car rental Ahmedabad&quot;, or &quot;car on rent near me&quot;,
-            look no further than <strong>WheelOnHour</strong>. We offer the <strong>best self-drive car rental experience
+            look no further than <strong>wheelsonhours</strong>. We offer the <strong>best self-drive car rental experience
             in Ahmedabad</strong> with a premium fleet of well-maintained vehicles, transparent pricing, and hassle-free
             WhatsApp booking.
           </p>
@@ -73,7 +73,7 @@ export default function RentACarInAhmedabad() {
             journeys, and wedding events from Ahmedabad.
           </p>
 
-          <h2>Why WheelOnHour is the #1 Car Rental in Ahmedabad</h2>
+          <h2>Why wheelsonhours is the #1 Car Rental in Ahmedabad</h2>
           <ul>
             <li><strong>Lowest prices</strong> — Starting at just ₹2,000/day, cheaper than Zoomcar, Revv, and local dealers</li>
             <li><strong>Convenient pickup location</strong> — Pick up from our centrally located office in Ahmedabad</li>
@@ -85,7 +85,7 @@ export default function RentACarInAhmedabad() {
             <li><strong>500+ happy customers</strong> — 5-star rated service in Ahmedabad</li>
           </ul>
 
-          <h2>How to Rent a Car in Ahmedabad from WheelOnHour</h2>
+          <h2>How to Rent a Car in Ahmedabad from wheelsonhours</h2>
           <p>
             Renting a car in Ahmedabad has never been easier:
           </p>
@@ -114,7 +114,7 @@ export default function RentACarInAhmedabad() {
 
           <h2>Car Rental Ahmedabad — Areas We Serve</h2>
           <p>
-            WheelOnHour delivers rental cars across all major areas of Ahmedabad including SG Highway, Satellite,
+            wheelsonhours delivers rental cars across all major areas of Ahmedabad including SG Highway, Satellite,
             Prahlad Nagar, Vastrapur, Navrangpura, Maninagar, Bopal, South Bopal, Thaltej, Chandkheda, Gota,
             New CG Road, Ashram Road, C.G. Road, Paldi, Ambawadi, Bodakdev, Jodhpur, Memnagar, Naranpura,
             Ghatlodiya, Ranip, Sabarmati, Motera, Shilaj, Science City area, and Ahmedabad Airport (SVP International).

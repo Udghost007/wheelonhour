@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Outstation Car Rental from Ahmedabad — Self Drive to Udaipur, Goa, Kutch | WheelOnHour",
+  title: "Outstation Car Rental from Ahmedabad — Self Drive to Udaipur, Goa, Kutch | wheelsonhours",
   description:
-    "Outstation car rental from Ahmedabad. Self-drive to Udaipur, Mount Abu, Goa, Kutch, Dwarka & more. Baleno & Altroz from ₹2000/day. Book on WhatsApp — WheelOnHour.",
+    "Outstation car rental from Ahmedabad. Self-drive to Udaipur, Mount Abu, Goa, Kutch, Dwarka & more. Baleno & Altroz from ₹2000/day. Book on WhatsApp — wheelsonhours.",
   alternates: { canonical: "/outstation-car-rental-ahmedabad" },
   openGraph: {
-    title: "Outstation Car Rental from Ahmedabad | WheelOnHour",
+    title: "Outstation Car Rental from Ahmedabad | wheelsonhours",
     description: "Self-drive outstation trips from Ahmedabad. Baleno & Altroz from ₹2000/day.",
-    url: "https://wheelonhour.vercel.app/outstation-car-rental-ahmedabad",
+    url: "https://wheelsonhours.vercel.app/outstation-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },
@@ -25,12 +25,12 @@ export default function OutstationCarRental() {
       <div className="bg-orb bg-orb-1" />
       <div className="bg-orb bg-orb-2" />
       <div className="container">
-        <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+        <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
         <div className="seo-page-hero">
           <h1>Outstation Car Rental from Ahmedabad</h1>
           <p>
-            Plan your road trip from Ahmedabad with WheelOnHour. Self-drive Baleno &amp; Altroz for outstation
+            Plan your road trip from Ahmedabad with wheelsonhours. Self-drive Baleno &amp; Altroz for outstation
             trips to Udaipur, Mount Abu, Goa, Kutch, Dwarka, and more — starting at ₹2,000/day.
           </p>
           <a

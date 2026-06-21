@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Car Rental Ahmedabad Price List 2025 — ₹2000/day | WheelOnHour",
+  title: "Car Rental Ahmedabad Price List 2025 — ₹2000/day | wheelsonhours",
   description:
-    "Car rental prices in Ahmedabad 2025. Tata Altroz ₹2000/day, Maruti Baleno ₹2400/day. Compare WheelOnHour prices vs Zoomcar, Revv. Cheapest rates guaranteed. Book on WhatsApp.",
+    "Car rental prices in Ahmedabad 2025. Tata Altroz ₹2000/day, Maruti Baleno ₹2400/day. Compare wheelsonhours prices vs Zoomcar, Revv. Cheapest rates guaranteed. Book on WhatsApp.",
   alternates: { canonical: "/car-rental-ahmedabad-price" },
   openGraph: {
-    title: "Car Rental Ahmedabad Price List 2025 | WheelOnHour",
+    title: "Car Rental Ahmedabad Price List 2025 | wheelsonhours",
     description: "Compare car rental prices in Ahmedabad. Cheapest rates from ₹2000/day.",
-    url: "https://wheelonhour.vercel.app/car-rental-ahmedabad-price",
+    url: "https://wheelsonhours.vercel.app/car-rental-ahmedabad-price",
     type: "website",
     locale: "en_IN",
   },
@@ -25,18 +25,18 @@ export default function CarRentalPrice() {
         <div className="bg-orb bg-orb-1" />
         <div className="bg-orb bg-orb-2" />
         <div className="container">
-          <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+          <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
           <div className="seo-page-hero">
             <h1>Car Rental Ahmedabad — Price List 2025</h1>
             <p>
-              Transparent pricing with no hidden charges. Compare WheelOnHour&apos;s car rental rates
+              Transparent pricing with no hidden charges. Compare wheelsonhours&apos;s car rental rates
               with Zoomcar, Revv, and local dealers in Ahmedabad.
             </p>
           </div>
 
           <div className="seo-page-content">
-            <h2>WheelOnHour Car Rental Price List</h2>
+            <h2>wheelsonhours Car Rental Price List</h2>
             <div className="price-table-wrap">
               <table className="price-table">
                 <thead>
@@ -79,7 +79,7 @@ export default function CarRentalPrice() {
               <li><strong>No platform fees</strong> — Unlike Zoomcar/Revv, no app charges</li>
             </ul>
 
-            <h2>WheelOnHour vs Other Car Rental Prices in Ahmedabad</h2>
+            <h2>wheelsonhours vs Other Car Rental Prices in Ahmedabad</h2>
             <div className="price-table-wrap">
               <table className="price-table">
                 <thead>
@@ -92,7 +92,7 @@ export default function CarRentalPrice() {
                 </thead>
                 <tbody>
                   <tr className="highlight-row">
-                    <td><strong>WheelOnHour</strong></td>
+                    <td><strong>wheelsonhours</strong></td>
                     <td><strong>₹2,000 - ₹2,400</strong></td>
                     <td>None</td>
                     <td>Ahmedabad Office</td>

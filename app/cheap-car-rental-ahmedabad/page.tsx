@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Cheap Car Rental in Ahmedabad — From ₹2000/day | WheelOnHour",
+  title: "Cheap Car Rental in Ahmedabad — From ₹2000/day | wheelsonhours",
   description:
-    "Cheapest car rental in Ahmedabad starting ₹2000/day. Fully insured Tata Altroz & Maruti Baleno with easy pickup. No hidden charges. Book on WhatsApp — WheelOnHour.",
+    "Cheapest car rental in Ahmedabad starting ₹2000/day. Fully insured Tata Altroz & Maruti Baleno with easy pickup. No hidden charges. Book on WhatsApp — wheelsonhours.",
   alternates: { canonical: "/cheap-car-rental-ahmedabad" },
   openGraph: {
     title: "Cheap Car Rental Ahmedabad — From ₹2000/day",
     description: "Most affordable car rental in Ahmedabad. Premium cars from ₹2000/day.",
-    url: "https://wheelonhour.vercel.app/cheap-car-rental-ahmedabad",
+    url: "https://wheelsonhours.vercel.app/cheap-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },
@@ -25,12 +25,12 @@ export default function CheapCarRental() {
       <div className="bg-orb bg-orb-1" />
       <div className="bg-orb bg-orb-2" />
       <div className="container">
-        <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+        <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
         <div className="seo-page-hero">
           <h1>Cheap Car Rental in Ahmedabad</h1>
           <p>
-            Get the most affordable car rental in Ahmedabad with WheelOnHour. Premium cars starting at
+            Get the most affordable car rental in Ahmedabad with wheelsonhours. Premium cars starting at
             just ₹2,000/day — no hidden charges, no surge pricing, fully insured.
           </p>
           <a
@@ -44,7 +44,7 @@ export default function CheapCarRental() {
         <div className="seo-page-content">
           <h2>Lowest Car Rental Prices in Ahmedabad</h2>
           <p>
-            WheelOnHour offers the <strong>cheapest car rental rates in Ahmedabad</strong> without compromising on
+            wheelsonhours offers the <strong>cheapest car rental rates in Ahmedabad</strong> without compromising on
             quality. Compare our prices:
           </p>
           <ul>
@@ -52,9 +52,9 @@ export default function CheapCarRental() {
             <li><strong>Maruti Baleno:</strong> ₹2,400/day (₹100/hour) — Premium automatic</li>
           </ul>
 
-          <h2>Price Comparison: WheelOnHour vs Other Car Rentals in Ahmedabad</h2>
+          <h2>Price Comparison: wheelsonhours vs Other Car Rentals in Ahmedabad</h2>
           <ul>
-            <li><strong>WheelOnHour:</strong> ₹2,000 - ₹2,400/day (no hidden charges)</li>
+            <li><strong>wheelsonhours:</strong> ₹2,000 - ₹2,400/day (no hidden charges)</li>
             <li><strong>Zoomcar:</strong> ₹2,800 - ₹4,500/day + platform fees</li>
             <li><strong>Revv:</strong> ₹3,000 - ₹5,000/day + service charges</li>
             <li><strong>Local dealers:</strong> ₹2,500 - ₹3,500/day + driver charges</li>

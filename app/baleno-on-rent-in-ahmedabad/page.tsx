@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Baleno on Rent in Ahmedabad — ₹2400/day | Self Drive | WheelOnHour",
+  title: "Baleno on Rent in Ahmedabad — ₹2400/day | Self Drive | wheelsonhours",
   description:
-    "Rent Maruti Suzuki Baleno in Ahmedabad at ₹2400/day. Automatic & Manual available. Self-drive, fully insured, easy pickup. Book on WhatsApp — WheelOnHour.",
+    "Rent Maruti Suzuki Baleno in Ahmedabad at ₹2400/day. Automatic & Manual available. Self-drive, fully insured, easy pickup. Book on WhatsApp — wheelsonhours.",
   alternates: { canonical: "/baleno-on-rent-in-ahmedabad" },
   openGraph: {
-    title: "Baleno on Rent in Ahmedabad — ₹2400/day | WheelOnHour",
+    title: "Baleno on Rent in Ahmedabad — ₹2400/day | wheelsonhours",
     description: "Rent Maruti Baleno in Ahmedabad. Automatic & Manual. ₹2400/day with easy pickup.",
-    url: "https://wheelonhour.vercel.app/baleno-on-rent-in-ahmedabad",
+    url: "https://wheelsonhours.vercel.app/baleno-on-rent-in-ahmedabad",
     type: "website",
     locale: "en_IN",
   },
@@ -25,7 +25,7 @@ export default function BalenoOnRent() {
       <div className="bg-orb bg-orb-1" />
       <div className="bg-orb bg-orb-2" />
       <div className="container">
-        <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+        <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
         <div className="seo-page-hero">
           <h1>Maruti Suzuki Baleno on Rent in Ahmedabad</h1>
@@ -64,7 +64,7 @@ export default function BalenoOnRent() {
 
           <h2>Baleno Rental Price Comparison in Ahmedabad</h2>
           <p>
-            WheelOnHour offers the <strong>Baleno on rent in Ahmedabad at ₹2,400/day</strong> — significantly cheaper
+            wheelsonhours offers the <strong>Baleno on rent in Ahmedabad at ₹2,400/day</strong> — significantly cheaper
             than Zoomcar (₹3,000+), Revv (₹3,500+), and local car rental agencies (₹2,800+). No surge pricing,
             no hidden charges, no app fees.
           </p>

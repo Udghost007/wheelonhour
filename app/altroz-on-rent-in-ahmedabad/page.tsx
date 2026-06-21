@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Tata Altroz on Rent in Ahmedabad — ₹2000/day | Self Drive | WheelOnHour",
+  title: "Tata Altroz on Rent in Ahmedabad — ₹2000/day | Self Drive | wheelsonhours",
   description:
-    "Rent Tata Altroz in Ahmedabad at just ₹2000/day — cheapest car rental in Ahmedabad. Self-drive, fully insured, easy pickup. Book on WhatsApp — WheelOnHour.",
+    "Rent Tata Altroz in Ahmedabad at just ₹2000/day — cheapest car rental in Ahmedabad. Self-drive, fully insured, easy pickup. Book on WhatsApp — wheelsonhours.",
   alternates: { canonical: "/altroz-on-rent-in-ahmedabad" },
   openGraph: {
     title: "Tata Altroz on Rent in Ahmedabad — ₹2000/day",
     description: "Cheapest car rental in Ahmedabad. Tata Altroz at ₹2000/day with easy pickup.",
-    url: "https://wheelonhour.vercel.app/altroz-on-rent-in-ahmedabad",
+    url: "https://wheelsonhours.vercel.app/altroz-on-rent-in-ahmedabad",
     type: "website",
     locale: "en_IN",
   },
@@ -25,7 +25,7 @@ export default function AltrozOnRent() {
       <div className="bg-orb bg-orb-1" />
       <div className="bg-orb bg-orb-2" />
       <div className="container">
-        <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+        <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
         <div className="seo-page-hero">
           <h1>Tata Altroz on Rent in Ahmedabad</h1>
@@ -60,12 +60,12 @@ export default function AltrozOnRent() {
           <p>
             The Tata Altroz is India&apos;s only 5-star safety rated hatchback. At just ₹2,000/day, it&apos;s the
             <strong> cheapest car rental option in Ahmedabad</strong>. With 23 km/l mileage, you save on fuel costs
-            too. It&apos;s the owner&apos;s pick at WheelOnHour — the most popular rental car in our fleet.
+            too. It&apos;s the owner&apos;s pick at wheelsonhours — the most popular rental car in our fleet.
           </p>
 
           <h2>Altroz vs Other Rentals — Price Comparison</h2>
           <p>
-            At ₹2,000/day, the Tata Altroz from WheelOnHour is up to 40% cheaper than similar cars on Zoomcar,
+            At ₹2,000/day, the Tata Altroz from wheelsonhours is up to 40% cheaper than similar cars on Zoomcar,
             Revv, or MyChoize. We offer the <strong>lowest car rental price in Ahmedabad</strong> without compromising
             on quality, insurance, or maintenance.
           </p>

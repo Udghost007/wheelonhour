@@ -90,20 +90,20 @@ function saveContact() {
   const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Kidiya;Nilesh;;;
-FN:Nilesh Kidiya - WheelOnHour
-ORG:WheelOnHour - Car Rental Ahmedabad
+FN:Nilesh Kidiya - wheelsonhours
+ORG:wheelsonhours - Car Rental Ahmedabad
 TITLE:Owner & Founder
 TEL;TYPE=CELL:+918849849888
-URL:https://wheelonhour.vercel.app
+URL:https://wheelsonhours.vercel.app
 ADR;TYPE=WORK:;;Stavan Ample, Devnagar Gam Road;Ahmedabad;Gujarat;382481;India
-NOTE:WheelOnHour - Ahmedabad's #1 Self-Drive Car Rental. Baleno, Altroz, i20, Dzire, Nexon & Brezza from ₹2,000/day. Book on WhatsApp!
+NOTE:wheelsonhours - Ahmedabad's #1 Self-Drive Car Rental. Baleno, Altroz, i20, Dzire, Nexon & Brezza from ₹2,000/day. Book on WhatsApp!
 END:VCARD`;
 
   const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "WheelOnHour_Nilesh_Kidiya.vcf";
+  link.download = "wheelsonhours_Nilesh_Kidiya.vcf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -113,9 +113,9 @@ END:VCARD`;
 /* ===== SHARE FUNCTION ===== */
 async function shareCard() {
   const shareData = {
-    title: "WheelOnHour — Car Rental Ahmedabad",
-    text: "🚗 Nilesh Kidiya | WheelOnHour\n#1 Self-Drive Car Rental in Ahmedabad\nFrom ₹2,000/day | 8+ Premium Cars\n📞 +91 884 984 9888",
-    url: "https://wheelonhour.vercel.app/card",
+    title: "wheelsonhours — Car Rental Ahmedabad",
+    text: "🚗 Nilesh Kidiya | wheelsonhours\n#1 Self-Drive Car Rental in Ahmedabad\nFrom ₹2,000/day | 8+ Premium Cars\n📞 +91 884 984 9888",
+    url: "https://wheelsonhours.vercel.app/card",
   };
 
   if (navigator.share) {
@@ -254,7 +254,7 @@ export default function BusinessCard() {
               <div className="vcard-logo-section">
                 <div className="vcard-logo-ring">
                   <div className="vcard-logo-inner">
-                    <img src="/logo.png" alt="WheelOnHour Logo" />
+                    <img src="/logo.png" alt="wheelsonhours Logo" />
                   </div>
                   <div className="vcard-logo-glow" />
                 </div>
@@ -266,7 +266,7 @@ export default function BusinessCard() {
                 <p className="vcard-role">Owner & Founder</p>
                 <div className="vcard-company-badge">
                   <span className="vcard-company-dot" />
-                  WheelOnHour
+                  wheelsonhours
                 </div>
               </div>
 
@@ -287,7 +287,7 @@ export default function BusinessCard() {
                   <span>+91 884 984 9888</span>
                 </a>
                 <a
-                  href="https://wa.me/918849849888?text=Hi!%20I%20saw%20your%20business%20card.%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+                  href="https://wa.me/918849849888?text=Hi!%20I%20saw%20your%20business%20card.%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="vcard-chip vcard-chip-whatsapp"
@@ -327,8 +327,8 @@ export default function BusinessCard() {
               {/* Back header */}
               <div className="vcard-back-header">
                 <div className="vcard-back-logo">
-                  <img src="/logo.png" alt="WheelOnHour" />
-                  <span>WheelOnHour</span>
+                  <img src="/logo.png" alt="wheelsonhours" />
+                  <span>wheelsonhours</span>
                 </div>
                 <div className="vcard-back-subtitle">Premium Fleet</div>
               </div>
@@ -395,7 +395,7 @@ export default function BusinessCard() {
             <span>Share Card</span>
           </button>
           <a
-            href="https://wa.me/918849849888?text=Hi!%20I%20saw%20your%20business%20card.%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+            href="https://wa.me/918849849888?text=Hi!%20I%20saw%20your%20business%20card.%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
             target="_blank"
             rel="noopener noreferrer"
             className="vcard-action-btn vcard-action-whatsapp"
@@ -465,7 +465,7 @@ export default function BusinessCard() {
 
         {/* Big CTA */}
         <a
-          href="https://wa.me/918849849888?text=Hi!%20I%20saw%20your%20digital%20business%20card.%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+          href="https://wa.me/918849849888?text=Hi!%20I%20saw%20your%20digital%20business%20card.%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
           target="_blank"
           rel="noopener noreferrer"
           className="vcard-big-cta"
@@ -482,7 +482,7 @@ export default function BusinessCard() {
 
         {/* Footer */}
         <div className="vcard-footer">
-          <p>© {new Date().getFullYear()} WheelOnHour. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} wheelsonhours. All rights reserved.</p>
           <p>
             Designed by{" "}
             <a href="https://udaykjasani.vercel.app/" target="_blank" rel="noopener noreferrer">

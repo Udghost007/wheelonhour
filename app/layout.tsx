@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 
-const BASE_URL = "https://wheelonhour.vercel.app";
+const BASE_URL = "https://wheelsonhours.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default:
-      "WheelOnHour — #1 Car Rental in Ahmedabad | Self Drive Cars from ₹2,000/day",
-    template: "%s | WheelOnHour — Car Rental Ahmedabad",
+      "wheelsonhours — #1 Car Rental in Ahmedabad | Self Drive Cars from ₹2,000/day",
+    template: "%s | wheelsonhours — Car Rental Ahmedabad",
   },
   description:
-    "Rent a car in Ahmedabad starting ₹2,000/day. Self-drive Baleno, Altroz, i20, Dzire, Nexon & Brezza on rent. 8+ cars available, fully insured, no hidden charges. Book on WhatsApp — 24/7 support. WheelOnHour is Ahmedabad's most trusted car rental service.",
+    "Rent a car in Ahmedabad starting ₹2,000/day. Self-drive Baleno, Altroz, i20, Dzire, Nexon & Brezza on rent. 8+ cars available, fully insured, no hidden charges. Book on WhatsApp — 24/7 support. wheelsonhours is Ahmedabad's most trusted car rental service.",
   keywords: [
     "rent a car in ahmedabad",
     "car rental ahmedabad",
@@ -38,27 +38,27 @@ export const metadata: Metadata = {
     "car rental ahmedabad airport",
     "car rental gujarat",
     "rent a car gujarat",
-    "wheelonhour",
-    "wheel on hour",
+    "wheelsonhours",
+    "wheels on hours",
     "car rental ahmedabad price",
     "wedding car rental ahmedabad",
     "outstation car rental ahmedabad",
     "car rental ahmedabad with driver",
     "car rental ahmedabad for trip",
   ],
-  authors: [{ name: "WheelOnHour", url: BASE_URL }],
-  creator: "WheelOnHour",
-  publisher: "WheelOnHour",
+  authors: [{ name: "wheelsonhours", url: BASE_URL }],
+  creator: "wheelsonhours",
+  publisher: "wheelsonhours",
   formatDetection: { telephone: true, email: false },
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "WheelOnHour — #1 Car Rental in Ahmedabad | From ₹2,000/day",
+    title: "wheelsonhours — #1 Car Rental in Ahmedabad | From ₹2,000/day",
     description:
       "Rent self-drive cars in Ahmedabad — Baleno, Altroz, i20, Dzire, Nexon & Brezza. 8+ cars, easy pickup, fully insured, no hidden charges. Book now on WhatsApp!",
     url: BASE_URL,
-    siteName: "WheelOnHour",
+    siteName: "wheelsonhours",
     type: "website",
     locale: "en_IN",
     images: [
@@ -66,13 +66,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "WheelOnHour — Premium Car Rental in Ahmedabad",
+        alt: "wheelsonhours — Premium Car Rental in Ahmedabad",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "WheelOnHour — #1 Car Rental in Ahmedabad",
+    title: "wheelsonhours — #1 Car Rental in Ahmedabad",
     description:
       "Self-drive cars on rent from ₹2,000/day. Baleno, Altroz, i20, Dzire, Nexon & Brezza — 8+ cars with easy pickup in Ahmedabad.",
     images: ["/og-image.png"],
@@ -99,13 +99,13 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "AutoRental",
-  name: "WheelOnHour",
+  name: "wheelsonhours",
   image: `${BASE_URL}/logo.png`,
   logo: `${BASE_URL}/logo.png`,
   url: BASE_URL,
   telephone: "+918849849888",
   description:
-    "WheelOnHour is Ahmedabad's most trusted self-drive car rental service. Rent Baleno, Altroz, i20, Dzire, Nexon & Brezza starting at just ₹2,000 per day with easy pickup, full insurance, and 24/7 support. 8+ cars available.",
+    "wheelsonhours is Ahmedabad's most trusted self-drive car rental service. Rent Baleno, Altroz, i20, Dzire, Nexon & Brezza starting at just ₹2,000 per day with easy pickup, full insurance, and 24/7 support. 8+ cars available.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Stavan Ample, Devnagar Gam Road",
@@ -175,7 +175,7 @@ const localBusinessSchema = {
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
-        seller: { "@type": "Organization", name: "WheelOnHour" },
+        seller: { "@type": "Organization", name: "wheelsonhours" },
       },
       {
         "@type": "Offer",
@@ -194,7 +194,7 @@ const localBusinessSchema = {
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
-        seller: { "@type": "Organization", name: "WheelOnHour" },
+        seller: { "@type": "Organization", name: "wheelsonhours" },
       },
       {
         "@type": "Offer",
@@ -213,7 +213,7 @@ const localBusinessSchema = {
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
-        seller: { "@type": "Organization", name: "WheelOnHour" },
+        seller: { "@type": "Organization", name: "wheelsonhours" },
       },
       {
         "@type": "Offer",
@@ -232,7 +232,7 @@ const localBusinessSchema = {
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
-        seller: { "@type": "Organization", name: "WheelOnHour" },
+        seller: { "@type": "Organization", name: "wheelsonhours" },
       },
       {
         "@type": "Offer",
@@ -251,7 +251,7 @@ const localBusinessSchema = {
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
-        seller: { "@type": "Organization", name: "WheelOnHour" },
+        seller: { "@type": "Organization", name: "wheelsonhours" },
       },
       {
         "@type": "Offer",
@@ -270,7 +270,7 @@ const localBusinessSchema = {
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
-        seller: { "@type": "Organization", name: "WheelOnHour" },
+        seller: { "@type": "Organization", name: "wheelsonhours" },
       },
     ],
   },
@@ -288,15 +288,15 @@ const faqSchema = {
       name: "What is the cheapest car on rent in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "WheelOnHour offers the Tata Altroz on rent in Ahmedabad starting at just ₹2,000 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
+        text: "wheelsonhours offers the Tata Altroz on rent in Ahmedabad starting at just ₹2,000 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
       },
     },
     {
       "@type": "Question",
-      name: "How do I rent a car in Ahmedabad from WheelOnHour?",
+      name: "How do I rent a car in Ahmedabad from wheelsonhours?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Booking a car with WheelOnHour is simple: 1) Choose your car from our fleet of 8+ cars (Baleno, Altroz, i20, Dzire, Nexon, Brezza), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
+        text: "Booking a car with wheelsonhours is simple: 1) Choose your car from our fleet of 8+ cars (Baleno, Altroz, i20, Dzire, Nexon, Brezza), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
       },
     },
     {
@@ -304,7 +304,7 @@ const faqSchema = {
       name: "Do you offer self-drive car rental in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. We offer 8+ cars including Baleno, Altroz, i20, Dzire, Nexon, and Brezza for self-drive rentals.",
+        text: "Yes! wheelsonhours specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. We offer 8+ cars including Baleno, Altroz, i20, Dzire, Nexon, and Brezza for self-drive rentals.",
       },
     },
     {
@@ -320,7 +320,7 @@ const faqSchema = {
       name: "What documents are needed to rent a car in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "To rent a car from WheelOnHour, you need a valid Indian driving license, an Aadhaar card (or any government ID), and a refundable security deposit. The process is quick and hassle-free.",
+        text: "To rent a car from wheelsonhours, you need a valid Indian driving license, an Aadhaar card (or any government ID), and a refundable security deposit. The process is quick and hassle-free.",
       },
     },
     {
@@ -328,7 +328,7 @@ const faqSchema = {
       name: "Can I rent a Baleno in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours in manual transmission. We also have i20 (₹2,800), Dzire (₹2,600), Nexon (₹3,000), and Brezza (₹3,000). Book via WhatsApp at +91 884 984 9888.",
+        text: "Absolutely! wheelsonhours offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours in manual transmission. We also have i20 (₹2,800), Dzire (₹2,600), Nexon (₹3,000), and Brezza (₹3,000). Book via WhatsApp at +91 884 984 9888.",
       },
     },
     {
@@ -336,7 +336,7 @@ const faqSchema = {
       name: "Are the rental cars insured?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, all cars at WheelOnHour are comprehensively insured. You can drive with complete peace of mind knowing you're fully covered during your rental period.",
+        text: "Yes, all cars at wheelsonhours are comprehensively insured. You can drive with complete peace of mind knowing you're fully covered during your rental period.",
       },
     },
     {
@@ -344,7 +344,7 @@ const faqSchema = {
       name: "What is the price of car rental in Ahmedabad per day?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "WheelOnHour offers car rental in Ahmedabad starting at ₹2,000/day (Altroz), ₹2,400/day (Baleno), ₹2,600/day (Dzire), ₹2,800/day (i20), and ₹3,000/day (Nexon & Brezza). All-inclusive prices with no hidden charges.",
+        text: "wheelsonhours offers car rental in Ahmedabad starting at ₹2,000/day (Altroz), ₹2,400/day (Baleno), ₹2,600/day (Dzire), ₹2,800/day (i20), and ₹3,000/day (Nexon & Brezza). All-inclusive prices with no hidden charges.",
       },
     },
     {
@@ -352,15 +352,15 @@ const faqSchema = {
       name: "Do you provide car rental for outstation trips from Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, WheelOnHour provides car rental for outstation trips from Ahmedabad. Whether you're heading to Udaipur, Mount Abu, Goa, Kutch, or anywhere else — you can rent our cars for long-distance travel. Contact us on WhatsApp for outstation rates.",
+        text: "Yes, wheelsonhours provides car rental for outstation trips from Ahmedabad. Whether you're heading to Udaipur, Mount Abu, Goa, Kutch, or anywhere else — you can rent our cars for long-distance travel. Contact us on WhatsApp for outstation rates.",
       },
     },
     {
       "@type": "Question",
-      name: "Is WheelOnHour available 24/7?",
+      name: "Is wheelsonhours available 24/7?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! WheelOnHour operates 24/7 in Ahmedabad. You can book a car, pick it up, or return it at any time of day or night. Reach us anytime on WhatsApp at +91 884 984 9888.",
+        text: "Yes! wheelsonhours operates 24/7 in Ahmedabad. You can book a car, pick it up, or return it at any time of day or night. Reach us anytime on WhatsApp at +91 884 984 9888.",
       },
     },
   ],
@@ -369,13 +369,13 @@ const faqSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "WheelOnHour",
+  name: "wheelsonhours",
   url: BASE_URL,
   description:
     "Ahmedabad's most trusted self-drive car rental service. 8+ cars — Baleno, Altroz, i20, Dzire, Nexon & Brezza from ₹2,000/day.",
   publisher: {
     "@type": "Organization",
-    name: "WheelOnHour",
+    name: "wheelsonhours",
     logo: {
       "@type": "ImageObject",
       url: `${BASE_URL}/logo.png`,

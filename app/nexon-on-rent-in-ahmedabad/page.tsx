@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
-const BASE_URL = "https://wheelonhour.vercel.app";
+const BASE_URL = "https://wheelsonhours.vercel.app";
 
 export const metadata: Metadata = {
-  title: "Tata Nexon on Rent in Ahmedabad | ₹3,000/Day — WheelOnHour",
+  title: "Tata Nexon on Rent in Ahmedabad | ₹3,000/Day — wheelsonhours",
   description:
-    "Rent Tata Nexon in Ahmedabad at ₹3,000/day. Compact SUV, self-drive, fully insured, easy pickup from Devnagar Gam Road. Book on WhatsApp — WheelOnHour.",
+    "Rent Tata Nexon in Ahmedabad at ₹3,000/day. Compact SUV, self-drive, fully insured, easy pickup from Devnagar Gam Road. Book on WhatsApp — wheelsonhours.",
   keywords: [
     "nexon on rent in ahmedabad",
     "tata nexon rental ahmedabad",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/nexon-on-rent-in-ahmedabad" },
   openGraph: {
-    title: "Tata Nexon on Rent in Ahmedabad | ₹3,000/Day — WheelOnHour",
+    title: "Tata Nexon on Rent in Ahmedabad | ₹3,000/Day — wheelsonhours",
     description:
       "Rent Tata Nexon in Ahmedabad. Compact SUV at ₹3,000/day with easy pickup.",
     url: `${BASE_URL}/nexon-on-rent-in-ahmedabad`,
@@ -38,7 +38,7 @@ const jsonLd = {
     price: "3000",
     priceCurrency: "INR",
     availability: "https://schema.org/InStock",
-    seller: { "@type": "Organization", name: "WheelOnHour" },
+    seller: { "@type": "Organization", name: "wheelsonhours" },
   },
 };
 
@@ -56,7 +56,7 @@ export default function NexonOnRent() {
         <div className="bg-orb bg-orb-2" />
         <div className="container">
           <Link href="/" className="seo-back-link">
-            ← Back to WheelOnHour
+            ← Back to wheelsonhours
           </Link>
 
           <div className="seo-page-hero">
@@ -125,14 +125,14 @@ export default function NexonOnRent() {
 
             <h2>Nexon Rental Price Comparison in Ahmedabad</h2>
             <p>
-              WheelOnHour offers the{" "}
+              wheelsonhours offers the{" "}
               <strong>Tata Nexon on rent in Ahmedabad at ₹3,000/day</strong> —
               significantly cheaper than Zoomcar (₹4,000+), Revv (₹4,500+), and
               local car rental agencies (₹3,500+). No surge pricing, no hidden
               charges, no app fees.
             </p>
 
-            <h2>WheelOnHour&apos;s Complete Fleet in Ahmedabad</h2>
+            <h2>wheelsonhours&apos;s Complete Fleet in Ahmedabad</h2>
             <p>
               Choose from our full range of self-drive cars in Ahmedabad:
             </p>

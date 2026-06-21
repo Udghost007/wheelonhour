@@ -219,7 +219,7 @@ function CarCard({ car }: { car: CarData }) {
   }, [nextImage]);
 
   const whatsappMsg = encodeURIComponent(
-    `Hi! I'm interested in renting the ${car.name} from WheelOnHour. Please share availability and details.`
+    `Hi! I'm interested in renting the ${car.name} from wheelsonhours. Please share availability and details.`
   );
 
   return (
@@ -492,8 +492,8 @@ export default function Home() {
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
         <div className="container navbar-inner">
           <a href="#" className="navbar-logo">
-            <img src="/logo.png" alt="WheelOnHour Logo" />
-            <span className="navbar-logo-text">WheelOnHour</span>
+            <img src="/logo.png" alt="wheelsonhours Logo" />
+            <span className="navbar-logo-text">wheelsonhours</span>
           </a>
 
           <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
@@ -505,7 +505,7 @@ export default function Home() {
             <li><a href="#contact" onClick={handleNavClick}>Contact</a></li>
             <li>
               <a
-                href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+                href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="navbar-cta"
@@ -554,7 +554,7 @@ export default function Home() {
               </p>
               <div className="hero-actions">
                 <a
-                  href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+                  href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp"
@@ -889,7 +889,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header animate-on-scroll">
             <div className="section-badge">Why Choose Us</div>
-            <h2 className="section-title">The WheelOnHour Advantage</h2>
+            <h2 className="section-title">The wheelsonhours Advantage</h2>
             <p className="section-subtitle">
               Experience car rental like never before. We prioritize your comfort, safety, and convenience.
             </p>
@@ -1065,7 +1065,7 @@ export default function Home() {
             <div className="section-badge">FAQs</div>
             <h2 className="section-title">Frequently Asked Questions</h2>
             <p className="section-subtitle">
-              Everything you need to know about renting a car in Ahmedabad with WheelOnHour.
+              Everything you need to know about renting a car in Ahmedabad with wheelsonhours.
             </p>
           </div>
 
@@ -1073,15 +1073,15 @@ export default function Home() {
             {[
               {
                 q: "What is the cheapest car on rent in Ahmedabad?",
-                a: "WheelOnHour offers the Tata Altroz on rent in Ahmedabad starting at just ₹2,000 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
+                a: "wheelsonhours offers the Tata Altroz on rent in Ahmedabad starting at just ₹2,000 per 24 hours — one of the most affordable self-drive car rental options in the city. No hidden charges, fully insured.",
               },
               {
-                q: "How do I rent a car in Ahmedabad from WheelOnHour?",
+                q: "How do I rent a car in Ahmedabad from wheelsonhours?",
                 a: "Booking a car is simple: 1) Choose from our fleet of 8+ cars (Baleno, Altroz, i20, Dzire, Nexon, Brezza), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
               },
               {
                 q: "Do you offer self-drive car rental in Ahmedabad?",
-                a: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. Choose from 8+ cars — Baleno, Altroz, i20, Dzire, Nexon, and Brezza.",
+                a: "Yes! wheelsonhours specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. Choose from 8+ cars — Baleno, Altroz, i20, Dzire, Nexon, and Brezza.",
               },
               {
                 q: "Where do I pick up the rental car in Ahmedabad?",
@@ -1093,11 +1093,11 @@ export default function Home() {
               },
               {
                 q: "Can I rent a Baleno in Ahmedabad?",
-                a: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent at ₹2,400/day. We also have Hyundai i20 (₹2,800), Dzire (₹2,600), Tata Nexon (₹3,000), and Brezza (₹3,000). All manual transmission. Book via WhatsApp at +91 884 984 9888.",
+                a: "Absolutely! wheelsonhours offers the Maruti Suzuki Baleno on rent at ₹2,400/day. We also have Hyundai i20 (₹2,800), Dzire (₹2,600), Tata Nexon (₹3,000), and Brezza (₹3,000). All manual transmission. Book via WhatsApp at +91 884 984 9888.",
               },
               {
                 q: "Are the rental cars insured?",
-                a: "Yes, all cars at WheelOnHour are comprehensively insured. Drive with complete peace of mind knowing you're fully covered.",
+                a: "Yes, all cars at wheelsonhours are comprehensively insured. Drive with complete peace of mind knowing you're fully covered.",
               },
               {
                 q: "What is the price of car rental in Ahmedabad per day?",
@@ -1108,7 +1108,7 @@ export default function Home() {
                 a: "Yes! Rent our cars for outstation trips — Udaipur, Mount Abu, Goa, Kutch, and more. Contact us on WhatsApp for outstation rates.",
               },
               {
-                q: "Is WheelOnHour available 24/7?",
+                q: "Is wheelsonhours available 24/7?",
                 a: "Yes! We operate 24/7 in Ahmedabad. Book, pick up, or return at any time. Reach us anytime on WhatsApp at +91 884 984 9888.",
               },
             ].map((faq, idx) => (
@@ -1141,7 +1141,7 @@ export default function Home() {
                 <div className="contact-owner-avatar">NK</div>
                 <div>
                   <div className="contact-owner-name">Nilesh Kidiya</div>
-                  <div className="contact-owner-role">Owner & Founder, WheelOnHour</div>
+                  <div className="contact-owner-role">Owner & Founder, wheelsonhours</div>
                 </div>
               </div>
 
@@ -1192,7 +1192,7 @@ export default function Home() {
 
               <div className="contact-cta-group">
                 <a
-                  href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+                  href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp"
@@ -1214,7 +1214,7 @@ export default function Home() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="WheelOnHour Location - Stavan Ample, Ahmedabad, Gujarat"
+                title="wheelsonhours Location - Stavan Ample, Ahmedabad, Gujarat"
               />
             </div>
           </div>
@@ -1228,8 +1228,8 @@ export default function Home() {
         <div className="container">
           <div className="footer-top">
             <div className="footer-logo">
-              <img src="/logo.png" alt="WheelOnHour" />
-              <span>WheelOnHour</span>
+              <img src="/logo.png" alt="wheelsonhours" />
+              <span>wheelsonhours</span>
             </div>
             <div className="footer-social">
               <a
@@ -1270,7 +1270,7 @@ export default function Home() {
 
           <div className="footer-bottom">
             <div className="footer-copy">
-              © {new Date().getFullYear()} WheelOnHour. All rights reserved. |
+              © {new Date().getFullYear()} wheelsonhours. All rights reserved. |
               Owned by <strong>Nilesh Kidiya</strong> | Ahmedabad, Gujarat
             </div>
             <div className="footer-designer">
@@ -1286,18 +1286,18 @@ export default function Home() {
       {/* ===== SEO CONTENT SECTION ===== */}
       <section className="seo-content">
         <div className="container">
-          <h2>Car Rental in Ahmedabad — WheelOnHour</h2>
+          <h2>Car Rental in Ahmedabad — wheelsonhours</h2>
           <p>
-            Looking to <strong>rent a car in Ahmedabad</strong>? WheelOnHour is Ahmedabad&apos;s most trusted {" "}
+            Looking to <strong>rent a car in Ahmedabad</strong>? wheelsonhours is Ahmedabad&apos;s most trusted {" "}
             <strong>self-drive car rental</strong> service with a fleet of 8+ premium cars. Choose from {" "}
             <strong>Maruti Suzuki Baleno</strong>, <strong>Tata Altroz</strong>, <strong>Hyundai i20</strong>, {" "}
             <strong>Maruti Suzuki Dzire</strong>, <strong>Tata Nexon</strong>, and <strong>Maruti Suzuki Brezza</strong> at
             unbeatable prices. Whether you need a <strong>car on rent in Ahmedabad</strong> for
             a day trip, outstation journey, wedding, or airport transfer — we&apos;ve got you covered.
           </p>
-          <h3>Why Choose WheelOnHour for Car Rental in Ahmedabad?</h3>
+          <h3>Why Choose wheelsonhours for Car Rental in Ahmedabad?</h3>
           <p>
-            WheelOnHour stands out as the <strong>best car rental in Ahmedabad</strong> with transparent pricing starting
+            wheelsonhours stands out as the <strong>best car rental in Ahmedabad</strong> with transparent pricing starting
             at just ₹2,000 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer easy pickup from our Ahmedabad
             location, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes {" "}
             <strong>Baleno on rent in Ahmedabad</strong> (₹2,400/day), <strong>Altroz on rent in Ahmedabad</strong> (₹2,000/day), {" "}
@@ -1310,7 +1310,7 @@ export default function Home() {
             pick up the keys and explore Gujarat at your own pace. Choose from hatchbacks, sedans, and SUVs — all manual
             transmission, well-maintained, and fully insured. Perfect for <strong>outstation car rental from Ahmedabad</strong> to
             popular destinations like Udaipur, Mount Abu, Goa, Kutch, Somnath, and Dwarka.
-            WheelOnHour also provides <strong>cheap car rental in Ahmedabad</strong> for budget-conscious travelers and {" "}
+            wheelsonhours also provides <strong>cheap car rental in Ahmedabad</strong> for budget-conscious travelers and {" "}
             <strong>car rental near Ahmedabad airport</strong> with pickup and drop-off.
           </p>
           <h3>Affordable Car Rental Prices in Ahmedabad</h3>
@@ -1319,14 +1319,14 @@ export default function Home() {
             Dzire ₹2,600/day, Hyundai i20 ₹2,800/day, Tata Nexon ₹3,000/day, and Brezza ₹3,000/day. These are among the most {" "}
             <strong>affordable car rental rates in Ahmedabad, Gujarat</strong>.
             Whether you search for &quot;rent a car in Ahmedabad&quot;, &quot;car rental near me&quot;, &quot;SUV on rent in Ahmedabad&quot;, or
-            &quot;cheap car on rent Ahmedabad&quot; — WheelOnHour is the answer. Contact owner Nilesh Kidiya at +91 884 984 9888 on WhatsApp to book now.
+            &quot;cheap car on rent Ahmedabad&quot; — wheelsonhours is the answer. Contact owner Nilesh Kidiya at +91 884 984 9888 on WhatsApp to book now.
           </p>
         </div>
       </section>
 
       {/* ===== FLOATING WHATSAPP ===== */}
       <a
-        href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+        href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"

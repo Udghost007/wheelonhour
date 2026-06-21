@@ -22,11 +22,11 @@ export function SeoNav() {
     <nav className="seo-nav" aria-label="Main navigation">
       <div className="container seo-nav-inner">
         <Link href="/" className="navbar-logo">
-          <img src="/logo.png" alt="WheelOnHour Logo" />
-          <span className="navbar-logo-text">WheelOnHour</span>
+          <img src="/logo.png" alt="wheelsonhours Logo" />
+          <span className="navbar-logo-text">wheelsonhours</span>
         </Link>
         <a
-          href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20WheelOnHour."
+          href="https://wa.me/918849849888?text=Hi!%20I%20want%20to%20rent%20a%20car%20from%20wheelsonhours."
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-whatsapp"
@@ -45,8 +45,8 @@ export function SeoFooter({ currentPath }: { currentPath: string }) {
       <div className="container">
         <div className="footer-top">
           <div className="footer-logo">
-            <img src="/logo.png" alt="WheelOnHour" />
-            <span>WheelOnHour</span>
+            <img src="/logo.png" alt="wheelsonhours" />
+            <span>wheelsonhours</span>
           </div>
           <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
             <a href="tel:+918849849888" className="btn btn-outline" style={{ padding: "8px 16px", fontSize: "0.85rem" }}>
@@ -81,7 +81,7 @@ export function SeoFooter({ currentPath }: { currentPath: string }) {
 
         <div className="footer-bottom">
           <div className="footer-copy">
-            © {new Date().getFullYear()} WheelOnHour. All rights reserved. |
+            © {new Date().getFullYear()} wheelsonhours. All rights reserved. |
             Owned by <strong>Nilesh Kidiya</strong> | Ahmedabad, Gujarat
           </div>
           <div className="footer-designer">

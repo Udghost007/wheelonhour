@@ -25,14 +25,14 @@ export async function POST(req: NextRequest) {
 
     // Email content
     const mailOptions = {
-      from: `"WheelOnHour Partner Inquiry" <${process.env.SMTP_EMAIL}>`,
+      from: `"wheelsonhours Partner Inquiry" <${process.env.SMTP_EMAIL}>`,
       to: "bhurokathiyavadi292@gmail.com",
       subject: `New Partnership Inquiry — ${name} (${carName})`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f8fafc; border-radius: 12px;">
           <div style="background: linear-gradient(135deg, #0891b2, #0e7490); padding: 24px; border-radius: 12px 12px 0 0; text-align: center;">
             <h1 style="color: white; margin: 0; font-size: 22px;">New Partner Inquiry</h1>
-            <p style="color: rgba(255,255,255,0.8); margin: 8px 0 0;">WheelOnHour Fleet Program</p>
+            <p style="color: rgba(255,255,255,0.8); margin: 8px 0 0;">wheelsonhours Fleet Program</p>
           </div>
 
           <div style="background: white; padding: 28px; border-radius: 0 0 12px 12px; border: 1px solid #e2e8f0;">
@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
           </div>
 
           <p style="text-align: center; color: #94a3b8; font-size: 12px; margin-top: 16px;">
-            This email was sent from the WheelOnHour website partner form.
+            This email was sent from the wheelsonhours website partner form.
           </p>
         </div>
       `,

@@ -3,14 +3,14 @@ import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
 export const metadata: Metadata = {
-  title: "Monthly Car Rental in Ahmedabad — Long Term from ₹2000/day | WheelOnHour",
+  title: "Monthly Car Rental in Ahmedabad — Long Term from ₹2000/day | wheelsonhours",
   description:
-    "Monthly car rental in Ahmedabad at discounted rates. Long-term Baleno & Altroz rental with special packages. Self-drive, fully insured. Book on WhatsApp — WheelOnHour.",
+    "Monthly car rental in Ahmedabad at discounted rates. Long-term Baleno & Altroz rental with special packages. Self-drive, fully insured. Book on WhatsApp — wheelsonhours.",
   alternates: { canonical: "/monthly-car-rental-ahmedabad" },
   openGraph: {
-    title: "Monthly Car Rental Ahmedabad | WheelOnHour",
+    title: "Monthly Car Rental Ahmedabad | wheelsonhours",
     description: "Long-term car rental in Ahmedabad. Special monthly packages available.",
-    url: "https://wheelonhour.vercel.app/monthly-car-rental-ahmedabad",
+    url: "https://wheelsonhours.vercel.app/monthly-car-rental-ahmedabad",
     type: "website",
     locale: "en_IN",
   },
@@ -25,12 +25,12 @@ export default function MonthlyCarRental() {
         <div className="bg-orb bg-orb-1" />
         <div className="bg-orb bg-orb-2" />
         <div className="container">
-          <Link href="/" className="seo-back-link">← Back to WheelOnHour</Link>
+          <Link href="/" className="seo-back-link">← Back to wheelsonhours</Link>
 
           <div className="seo-page-hero">
             <h1>Monthly Car Rental in Ahmedabad</h1>
             <p>
-              Need a car for a month or longer? WheelOnHour offers special long-term rental packages
+              Need a car for a month or longer? wheelsonhours offers special long-term rental packages
               in Ahmedabad with discounted rates. Self-drive Baleno &amp; Altroz at the best monthly prices.
             </p>
             <a
@@ -83,7 +83,7 @@ export default function MonthlyCarRental() {
             <ul>
               <li><strong>Buying:</strong> ₹7-10 lakh + EMI + insurance + maintenance — long-term commitment</li>
               <li><strong>Leasing:</strong> ₹15,000-25,000/month with 1-3 year lock-in</li>
-              <li><strong>WheelOnHour Monthly Rental:</strong> Flexible, no lock-in, cancel anytime, fully insured</li>
+              <li><strong>wheelsonhours Monthly Rental:</strong> Flexible, no lock-in, cancel anytime, fully insured</li>
             </ul>
 
             <div className="seo-page-cta">

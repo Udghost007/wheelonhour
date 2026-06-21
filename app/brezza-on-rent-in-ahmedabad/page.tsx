@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SeoNav, SeoFooter } from "../components/SeoPageLayout";
 
-const BASE_URL = "https://wheelonhour.vercel.app";
+const BASE_URL = "https://wheelsonhours.vercel.app";
 
 export const metadata: Metadata = {
   title:
-    "Maruti Suzuki Brezza on Rent in Ahmedabad | ₹3,000/Day — WheelOnHour",
+    "Maruti Suzuki Brezza on Rent in Ahmedabad | ₹3,000/Day — wheelsonhours",
   description:
-    "Rent Maruti Suzuki Brezza in Ahmedabad at ₹3,000/day. Compact SUV, self-drive, fully insured, easy pickup from Devnagar Gam Road. Book on WhatsApp — WheelOnHour.",
+    "Rent Maruti Suzuki Brezza in Ahmedabad at ₹3,000/day. Compact SUV, self-drive, fully insured, easy pickup from Devnagar Gam Road. Book on WhatsApp — wheelsonhours.",
   keywords: [
     "brezza on rent in ahmedabad",
     "maruti brezza rental ahmedabad",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/brezza-on-rent-in-ahmedabad" },
   openGraph: {
     title:
-      "Maruti Suzuki Brezza on Rent in Ahmedabad | ₹3,000/Day — WheelOnHour",
+      "Maruti Suzuki Brezza on Rent in Ahmedabad | ₹3,000/Day — wheelsonhours",
     description:
       "Rent Maruti Suzuki Brezza in Ahmedabad. Compact SUV at ₹3,000/day with easy pickup.",
     url: `${BASE_URL}/brezza-on-rent-in-ahmedabad`,
@@ -40,7 +40,7 @@ const jsonLd = {
     price: "3000",
     priceCurrency: "INR",
     availability: "https://schema.org/InStock",
-    seller: { "@type": "Organization", name: "WheelOnHour" },
+    seller: { "@type": "Organization", name: "wheelsonhours" },
   },
 };
 
@@ -58,7 +58,7 @@ export default function BrezzaOnRent() {
         <div className="bg-orb bg-orb-2" />
         <div className="container">
           <Link href="/" className="seo-back-link">
-            ← Back to WheelOnHour
+            ← Back to wheelsonhours
           </Link>
 
           <div className="seo-page-hero">
@@ -126,7 +126,7 @@ export default function BrezzaOnRent() {
 
             <h2>Brezza Rental Price Comparison in Ahmedabad</h2>
             <p>
-              WheelOnHour offers the{" "}
+              wheelsonhours offers the{" "}
               <strong>
                 Maruti Suzuki Brezza on rent in Ahmedabad at ₹3,000/day
               </strong>{" "}
@@ -135,7 +135,7 @@ export default function BrezzaOnRent() {
               hidden charges, no app fees.
             </p>
 
-            <h2>WheelOnHour&apos;s Complete Fleet in Ahmedabad</h2>
+            <h2>wheelsonhours&apos;s Complete Fleet in Ahmedabad</h2>
             <p>
               Choose from our full range of self-drive cars in Ahmedabad:
             </p>
