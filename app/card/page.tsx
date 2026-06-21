@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 /* ===== METADATA handled via generateMetadata in layout or head ===== */
 
@@ -143,6 +143,23 @@ export default function BusinessCard() {
   const [flipped, setFlipped] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [savedToast, setSavedToast] = useState(false);
+  const [flipperHeight, setFlipperHeight] = useState<number | undefined>(undefined);
+  const frontRef = useRef<HTMLDivElement>(null);
+  const backRef = useRef<HTMLDivElement>(null);
+
+  const updateHeight = useCallback(() => {
+    if (flipped && backRef.current) {
+      setFlipperHeight(backRef.current.offsetHeight);
+    } else if (!flipped && frontRef.current) {
+      setFlipperHeight(frontRef.current.offsetHeight);
+    }
+  }, [flipped]);
+
+  useEffect(() => {
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, [updateHeight]);
 
   useEffect(() => {
     const saved = localStorage.getItem("woh-theme") as "dark" | "light" | null;
@@ -202,9 +219,10 @@ export default function BusinessCard() {
           <div
             className={`vcard-flipper ${flipped ? "vcard-flipped" : ""}`}
             onClick={() => setFlipped(!flipped)}
+            style={flipperHeight ? { height: flipperHeight } : undefined}
           >
             {/* ===== FRONT SIDE ===== */}
-            <div className="vcard-face vcard-front">
+            <div className="vcard-face vcard-front" ref={frontRef}>
               {/* Premium border glow */}
               <div className="vcard-border-glow" />
 
@@ -303,7 +321,7 @@ export default function BusinessCard() {
             </div>
 
             {/* ===== BACK SIDE ===== */}
-            <div className="vcard-face vcard-back">
+            <div className="vcard-face vcard-back" ref={backRef}>
               <div className="vcard-border-glow" />
 
               {/* Back header */}

@@ -3139,7 +3139,7 @@ button {
 .vcard-flipper {
   position: relative;
   width: 100%;
-  transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1), height 0.6s ease;
   transform-style: preserve-3d;
   cursor: pointer;
 }
@@ -3169,6 +3169,7 @@ button {
   top: 0;
   left: 0;
   transform: rotateY(180deg);
+  padding-bottom: 8px;
 }
 
 /* Border glow animation */
@@ -3611,7 +3612,7 @@ button {
 .vcard-actions {
   display: flex;
   gap: 10px;
-  margin-top: 24px;
+  margin-top: 40px;
   width: 100%;
   max-width: 420px;
   z-index: 2;
