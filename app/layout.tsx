@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default:
-      "WheelOnHour — #1 Car Rental in Ahmedabad | Self Drive Cars from ₹1800/day",
+      "WheelOnHour — #1 Car Rental in Ahmedabad | Self Drive Cars from ₹1,800/day",
     template: "%s | WheelOnHour — Car Rental Ahmedabad",
   },
   description:
-    "Rent a car in Ahmedabad starting ₹1800/day. Self-drive Maruti Baleno & Tata Altroz on rent with easy pickup. Fully insured, no hidden charges. Book on WhatsApp — 24/7 support. WheelOnHour is Ahmedabad's most trusted car rental service.",
+    "Rent a car in Ahmedabad starting ₹1,800/day. Self-drive Baleno, Altroz, i20, Dzire, Nexon & Brezza on rent. 8+ cars available, fully insured, no hidden charges. Book on WhatsApp — 24/7 support. WheelOnHour is Ahmedabad's most trusted car rental service.",
   keywords: [
     "rent a car in ahmedabad",
     "car rental ahmedabad",
@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "self drive cars ahmedabad",
     "baleno on rent in ahmedabad",
     "altroz on rent in ahmedabad",
+    "i20 on rent in ahmedabad",
+    "dzire on rent in ahmedabad",
+    "nexon on rent in ahmedabad",
+    "brezza on rent in ahmedabad",
+    "suv on rent in ahmedabad",
     "car rental near me ahmedabad",
     "affordable car rental ahmedabad",
     "best car rental ahmedabad",
@@ -49,9 +54,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "WheelOnHour — #1 Car Rental in Ahmedabad | From ₹1800/day",
+    title: "WheelOnHour — #1 Car Rental in Ahmedabad | From ₹1,800/day",
     description:
-      "Rent self-drive cars in Ahmedabad — Baleno & Altroz at the best prices. Easy pickup, fully insured, no hidden charges. Book now on WhatsApp!",
+      "Rent self-drive cars in Ahmedabad — Baleno, Altroz, i20, Dzire, Nexon & Brezza. 8+ cars, easy pickup, fully insured, no hidden charges. Book now on WhatsApp!",
     url: BASE_URL,
     siteName: "WheelOnHour",
     type: "website",
@@ -69,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WheelOnHour — #1 Car Rental in Ahmedabad",
     description:
-      "Self-drive cars on rent from ₹1800/day. Baleno & Altroz with easy pickup in Ahmedabad.",
+      "Self-drive cars on rent from ₹1,800/day. Baleno, Altroz, i20, Dzire, Nexon & Brezza — 8+ cars with easy pickup in Ahmedabad.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -100,7 +105,7 @@ const localBusinessSchema = {
   url: BASE_URL,
   telephone: "+918849849888",
   description:
-    "WheelOnHour is Ahmedabad's most trusted self-drive car rental service. Rent Maruti Suzuki Baleno and Tata Altroz starting at just ₹1800 per day with easy pickup, full insurance, and 24/7 support.",
+    "WheelOnHour is Ahmedabad's most trusted self-drive car rental service. Rent Baleno, Altroz, i20, Dzire, Nexon & Brezza starting at just ₹1,800 per day with easy pickup, full insurance, and 24/7 support. 8+ cars available.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Stavan Ample, Devnagar Gam Road",
@@ -128,7 +133,7 @@ const localBusinessSchema = {
     opens: "00:00",
     closes: "23:59",
   },
-  priceRange: "₹1800 - ₹2400 per day",
+  priceRange: "₹1,800 - ₹3,000 per day",
   currenciesAccepted: "INR",
   paymentAccepted: "Cash, UPI, Bank Transfer",
   areaServed: {
@@ -181,11 +186,87 @@ const localBusinessSchema = {
           model: "Baleno",
           vehicleConfiguration: "Premium Hatchback",
           fuelType: "Petrol",
-          vehicleTransmission: "Automatic / Manual",
+          vehicleTransmission: "Manual",
           seatingCapacity: 5,
           image: `${BASE_URL}/cars/baleno/1.jpg`,
         },
         price: "2400",
+        priceCurrency: "INR",
+        unitCode: "DAY",
+        availability: "https://schema.org/InStock",
+        seller: { "@type": "Organization", name: "WheelOnHour" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Car",
+          name: "Hyundai i20",
+          brand: { "@type": "Brand", name: "Hyundai" },
+          model: "i20",
+          vehicleConfiguration: "Premium Hatchback",
+          fuelType: "Petrol",
+          vehicleTransmission: "Manual",
+          seatingCapacity: 5,
+          image: `${BASE_URL}/cars/i20/1.webp`,
+        },
+        price: "2800",
+        priceCurrency: "INR",
+        unitCode: "DAY",
+        availability: "https://schema.org/InStock",
+        seller: { "@type": "Organization", name: "WheelOnHour" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Car",
+          name: "Maruti Suzuki Dzire",
+          brand: { "@type": "Brand", name: "Maruti Suzuki" },
+          model: "Dzire",
+          vehicleConfiguration: "Compact Sedan",
+          fuelType: "Petrol",
+          vehicleTransmission: "Manual",
+          seatingCapacity: 5,
+          image: `${BASE_URL}/cars/dezire/1.webp`,
+        },
+        price: "2600",
+        priceCurrency: "INR",
+        unitCode: "DAY",
+        availability: "https://schema.org/InStock",
+        seller: { "@type": "Organization", name: "WheelOnHour" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Car",
+          name: "Tata Nexon",
+          brand: { "@type": "Brand", name: "Tata" },
+          model: "Nexon",
+          vehicleConfiguration: "Compact SUV",
+          fuelType: "Petrol",
+          vehicleTransmission: "Manual",
+          seatingCapacity: 5,
+          image: `${BASE_URL}/cars/nexon/1.webp`,
+        },
+        price: "3000",
+        priceCurrency: "INR",
+        unitCode: "DAY",
+        availability: "https://schema.org/InStock",
+        seller: { "@type": "Organization", name: "WheelOnHour" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Car",
+          name: "Maruti Suzuki Brezza",
+          brand: { "@type": "Brand", name: "Maruti Suzuki" },
+          model: "Brezza",
+          vehicleConfiguration: "Compact SUV",
+          fuelType: "Petrol",
+          vehicleTransmission: "Manual",
+          seatingCapacity: 5,
+          image: `${BASE_URL}/cars/breeza/1.webp`,
+        },
+        price: "3000",
         priceCurrency: "INR",
         unitCode: "DAY",
         availability: "https://schema.org/InStock",
@@ -215,7 +296,7 @@ const faqSchema = {
       name: "How do I rent a car in Ahmedabad from WheelOnHour?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Booking a car with WheelOnHour is simple: 1) Choose your car (Baleno or Altroz), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
+        text: "Booking a car with WheelOnHour is simple: 1) Choose your car from our fleet of 8+ cars (Baleno, Altroz, i20, Dzire, Nexon, Brezza), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
       },
     },
     {
@@ -223,7 +304,7 @@ const faqSchema = {
       name: "Do you offer self-drive car rental in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. We offer Maruti Suzuki Baleno and Tata Altroz for self-drive rentals.",
+        text: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. We offer 8+ cars including Baleno, Altroz, i20, Dzire, Nexon, and Brezza for self-drive rentals.",
       },
     },
     {
@@ -247,7 +328,7 @@ const faqSchema = {
       name: "Can I rent a Baleno in Ahmedabad?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours. It's available in both automatic and manual transmission. Book via WhatsApp at +91 884 984 9888.",
+        text: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours in manual transmission. We also have i20 (₹2,800), Dzire (₹2,600), Nexon (₹3,000), and Brezza (₹3,000). Book via WhatsApp at +91 884 984 9888.",
       },
     },
     {
@@ -263,7 +344,7 @@ const faqSchema = {
       name: "What is the price of car rental in Ahmedabad per day?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "WheelOnHour offers car rental in Ahmedabad starting at ₹1,800 per day for the Tata Altroz and ₹2,400 per day for the Maruti Suzuki Baleno. These are all-inclusive prices with no hidden charges.",
+        text: "WheelOnHour offers car rental in Ahmedabad starting at ₹1,800/day (Altroz), ₹2,400/day (Baleno), ₹2,600/day (Dzire), ₹2,800/day (i20), and ₹3,000/day (Nexon & Brezza). All-inclusive prices with no hidden charges.",
       },
     },
     {
@@ -291,7 +372,7 @@ const websiteSchema = {
   name: "WheelOnHour",
   url: BASE_URL,
   description:
-    "Ahmedabad's most trusted self-drive car rental service. Rent Baleno & Altroz from ₹1800/day.",
+    "Ahmedabad's most trusted self-drive car rental service. 8+ cars — Baleno, Altroz, i20, Dzire, Nexon & Brezza from ₹1,800/day.",
   publisher: {
     "@type": "Organization",
     name: "WheelOnHour",

@@ -11,6 +11,10 @@ const seoPages = [
   { href: "/wedding-car-rental-ahmedabad", label: "Wedding Car Rental" },
   { href: "/car-rental-ahmedabad-price", label: "Car Rental Prices" },
   { href: "/monthly-car-rental-ahmedabad", label: "Monthly Car Rental" },
+  { href: "/i20-on-rent-in-ahmedabad", label: "i20 on Rent" },
+  { href: "/dzire-on-rent-in-ahmedabad", label: "Dzire on Rent" },
+  { href: "/nexon-on-rent-in-ahmedabad", label: "Nexon on Rent" },
+  { href: "/brezza-on-rent-in-ahmedabad", label: "Brezza on Rent" },
 ];
 
 export function SeoNav() {

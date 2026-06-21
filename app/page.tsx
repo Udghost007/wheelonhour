@@ -118,6 +118,84 @@ const carsData: CarData[] = [
       { icon: "💨", value: "30 km/l", label: "Mileage" },
     ],
   },
+  {
+    id: "i20",
+    name: "Hyundai i20",
+    type: "Premium Hatchback • Petrol • Manual",
+    badge: "Sporty",
+    price: 2800,
+    images: Array.from({ length: 4 }, (_, i) => `/cars/i20/${i + 1}.webp`),
+    specs: [
+      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "👤", value: "5", label: "Seats" },
+      { icon: "💨", value: "20 km/l", label: "Mileage" },
+    ],
+  },
+  {
+    id: "dezire",
+    name: "Maruti Suzuki Dzire",
+    type: "Compact Sedan • Petrol • Manual",
+    badge: "Sedan",
+    price: 2600,
+    images: Array.from({ length: 3 }, (_, i) => `/cars/dezire/${i + 1}.webp`),
+    specs: [
+      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "👤", value: "5", label: "Seats" },
+      { icon: "💨", value: "23 km/l", label: "Mileage" },
+    ],
+  },
+  {
+    id: "nexon",
+    name: "Tata Nexon",
+    type: "Compact SUV • Petrol • Manual",
+    badge: "SUV",
+    price: 3000,
+    images: Array.from({ length: 4 }, (_, i) => `/cars/nexon/${i + 1}.webp`),
+    specs: [
+      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "👤", value: "5", label: "Seats" },
+      { icon: "💨", value: "17 km/l", label: "Mileage" },
+    ],
+  },
+  {
+    id: "breeza",
+    name: "Maruti Suzuki Brezza",
+    type: "Compact SUV • Petrol • Manual",
+    badge: "SUV",
+    price: 3000,
+    images: Array.from({ length: 4 }, (_, i) => `/cars/breeza/${i + 1}.webp`),
+    specs: [
+      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "👤", value: "5", label: "Seats" },
+      { icon: "💨", value: "20 km/l", label: "Mileage" },
+    ],
+  },
+  {
+    id: "baleno2",
+    name: "Maruti Suzuki Baleno",
+    type: "Premium Hatchback • Petrol • Manual",
+    badge: "Popular",
+    price: 2400,
+    images: Array.from({ length: 2 }, (_, i) => `/cars/baleno2/${i + 1}.webp`),
+    specs: [
+      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "👤", value: "5", label: "Seats" },
+      { icon: "💨", value: "22 km/l", label: "Mileage" },
+    ],
+  },
+  {
+    id: "baleno3",
+    name: "Maruti Suzuki Baleno",
+    type: "Premium Hatchback • Petrol • Manual",
+    badge: "Popular",
+    price: 2400,
+    images: Array.from({ length: 4 }, (_, i) => `/cars/baleno3/${i + 1}.webp`),
+    specs: [
+      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "👤", value: "5", label: "Seats" },
+      { icon: "💨", value: "22 km/l", label: "Mileage" },
+    ],
+  },
 ];
 
 /* ===== CAR CARD COMPONENT ===== */
@@ -490,7 +568,7 @@ export default function Home() {
 
               <div className="hero-stats">
                 <div>
-                  <div className="hero-stat-value">2+</div>
+                  <div className="hero-stat-value">8+</div>
                   <div className="hero-stat-label">Premium Cars</div>
                 </div>
                 <div>
@@ -794,7 +872,7 @@ export default function Home() {
             <div className="section-badge">Our Fleet</div>
             <h2 className="section-title">Choose Your Perfect Ride</h2>
             <p className="section-subtitle">
-              Handpicked premium cars maintained to the highest standards. Altroz at ₹1,800/24hrs and Baleno at ₹2,400/24hrs.
+              Handpicked premium cars maintained to the highest standards. 8+ cars including Baleno, Altroz, i20, Dzire, Nexon &amp; Brezza — starting at ₹1,800/24hrs.
             </p>
           </div>
 
@@ -827,7 +905,7 @@ export default function Home() {
               {
                 icon: "🏷️",
                 title: "Transparent Pricing",
-                desc: "Clear 24-hour rates: Altroz at ₹1,800 and Baleno at ₹2,400. No hidden charges, no surge pricing.",
+                desc: "Clear 24-hour rates starting from ₹1,800. Altroz, Baleno, i20, Dzire, Nexon & Brezza — all transparently priced. No hidden charges.",
               },
               {
                 icon: "🛡️",
@@ -999,11 +1077,11 @@ export default function Home() {
               },
               {
                 q: "How do I rent a car in Ahmedabad from WheelOnHour?",
-                a: "Booking a car is simple: 1) Choose your car (Baleno or Altroz), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
+                a: "Booking a car is simple: 1) Choose from our fleet of 8+ cars (Baleno, Altroz, i20, Dzire, Nexon, Brezza), 2) Send a WhatsApp message to +91 884 984 9888 with your dates, 3) Pick up the car from our location at Stavan Ample, Devnagar Gam Road, Ahmedabad. No app download needed!",
               },
               {
                 q: "Do you offer self-drive car rental in Ahmedabad?",
-                a: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. We offer Maruti Suzuki Baleno and Tata Altroz for self-drive rentals.",
+                a: "Yes! WheelOnHour specializes in self-drive car rentals in Ahmedabad. You get the car keys and drive wherever you want — no driver required. Choose from 8+ cars — Baleno, Altroz, i20, Dzire, Nexon, and Brezza.",
               },
               {
                 q: "Where do I pick up the rental car in Ahmedabad?",
@@ -1015,7 +1093,7 @@ export default function Home() {
               },
               {
                 q: "Can I rent a Baleno in Ahmedabad?",
-                a: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent in Ahmedabad at ₹2,400 per 24 hours. Available in manual transmission. Book via WhatsApp at +91 884 984 9888.",
+                a: "Absolutely! WheelOnHour offers the Maruti Suzuki Baleno on rent at ₹2,400/day. We also have Hyundai i20 (₹2,800), Dzire (₹2,600), Tata Nexon (₹3,000), and Brezza (₹3,000). All manual transmission. Book via WhatsApp at +91 884 984 9888.",
               },
               {
                 q: "Are the rental cars insured?",
@@ -1023,7 +1101,7 @@ export default function Home() {
               },
               {
                 q: "What is the price of car rental in Ahmedabad per day?",
-                a: "WheelOnHour offers car rental starting at ₹1,800/day for the Tata Altroz and ₹2,400/day for the Maruti Suzuki Baleno. All-inclusive — no hidden charges.",
+                a: "Car rental prices: Altroz ₹1,800/day, Baleno ₹2,400/day, Dzire ₹2,600/day, i20 ₹2,800/day, Nexon & Brezza ₹3,000/day. All-inclusive — no hidden charges.",
               },
               {
                 q: "Do you provide car rental for outstation trips from Ahmedabad?",
@@ -1183,6 +1261,10 @@ export default function Home() {
               <a href="/wedding-car-rental-ahmedabad">Wedding Car Rental Ahmedabad</a>
               <a href="/car-rental-ahmedabad-price">Car Rental Ahmedabad Price List</a>
               <a href="/monthly-car-rental-ahmedabad">Monthly Car Rental Ahmedabad</a>
+              <a href="/i20-on-rent-in-ahmedabad">i20 on Rent in Ahmedabad</a>
+              <a href="/dzire-on-rent-in-ahmedabad">Dzire on Rent in Ahmedabad</a>
+              <a href="/nexon-on-rent-in-ahmedabad">Nexon on Rent in Ahmedabad</a>
+              <a href="/brezza-on-rent-in-ahmedabad">Brezza on Rent in Ahmedabad</a>
             </div>
           </div>
 
@@ -1207,31 +1289,37 @@ export default function Home() {
           <h2>Car Rental in Ahmedabad — WheelOnHour</h2>
           <p>
             Looking to <strong>rent a car in Ahmedabad</strong>? WheelOnHour is Ahmedabad&apos;s most trusted {" "}
-            <strong>self-drive car rental</strong> service offering premium cars like the <strong>Maruti Suzuki Baleno</strong> and {" "}
-            <strong>Tata Altroz</strong> at unbeatable prices. Whether you need a <strong>car on rent in Ahmedabad</strong> for
+            <strong>self-drive car rental</strong> service with a fleet of 8+ premium cars. Choose from {" "}
+            <strong>Maruti Suzuki Baleno</strong>, <strong>Tata Altroz</strong>, <strong>Hyundai i20</strong>, {" "}
+            <strong>Maruti Suzuki Dzire</strong>, <strong>Tata Nexon</strong>, and <strong>Maruti Suzuki Brezza</strong> at
+            unbeatable prices. Whether you need a <strong>car on rent in Ahmedabad</strong> for
             a day trip, outstation journey, wedding, or airport transfer — we&apos;ve got you covered.
           </p>
           <h3>Why Choose WheelOnHour for Car Rental in Ahmedabad?</h3>
           <p>
             WheelOnHour stands out as the <strong>best car rental in Ahmedabad</strong> with transparent pricing starting
             at just ₹1,800 per day. Unlike other <strong>car hire services in Ahmedabad</strong>, we offer easy pickup from our Ahmedabad
-            location, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes the {" "}
-            <strong>Baleno on rent in Ahmedabad</strong> (₹2,400/day) and <strong>Altroz on rent in Ahmedabad</strong> (₹1,800/day).
+            location, fully insured vehicles, no hidden charges, and instant WhatsApp booking. Our fleet includes {" "}
+            <strong>Baleno on rent in Ahmedabad</strong> (₹2,400/day), <strong>Altroz on rent in Ahmedabad</strong> (₹1,800/day), {" "}
+            <strong>i20 on rent in Ahmedabad</strong> (₹2,800/day), <strong>Dzire on rent</strong> (₹2,600/day), and SUVs like {" "}
+            <strong>Nexon</strong> and <strong>Brezza</strong> at ₹3,000/day.
           </p>
           <h3>Self-Drive Car Rental in Ahmedabad</h3>
           <p>
             Enjoy the freedom of driving with our <strong>self-drive car rental in Ahmedabad</strong>. No driver needed —
-            pick up the keys and explore Gujarat at your own pace. Perfect for <strong>outstation car rental from Ahmedabad</strong> to
+            pick up the keys and explore Gujarat at your own pace. Choose from hatchbacks, sedans, and SUVs — all manual
+            transmission, well-maintained, and fully insured. Perfect for <strong>outstation car rental from Ahmedabad</strong> to
             popular destinations like Udaipur, Mount Abu, Goa, Kutch, Somnath, and Dwarka.
             WheelOnHour also provides <strong>cheap car rental in Ahmedabad</strong> for budget-conscious travelers and {" "}
             <strong>car rental near Ahmedabad airport</strong> with pickup and drop-off.
           </p>
           <h3>Affordable Car Rental Prices in Ahmedabad</h3>
           <p>
-            Compare our <strong>car rental Ahmedabad prices</strong>: Tata Altroz at ₹1,800/24hrs and Maruti Suzuki Baleno
-            at ₹2,400/24hrs. These are among the most <strong>affordable car rental rates in Ahmedabad, Gujarat</strong>.
-            Whether you search for &quot;rent a car in Ahmedabad&quot;, &quot;car rental near me&quot;, or &quot;cheap car on rent Ahmedabad&quot; —
-            WheelOnHour is the answer. Contact owner Nilesh Kidiya at +91 884 984 9888 on WhatsApp to book now.
+            Compare our <strong>car rental Ahmedabad prices</strong>: Tata Altroz ₹1,800/day, Baleno ₹2,400/day,
+            Dzire ₹2,600/day, Hyundai i20 ₹2,800/day, Tata Nexon ₹3,000/day, and Brezza ₹3,000/day. These are among the most {" "}
+            <strong>affordable car rental rates in Ahmedabad, Gujarat</strong>.
+            Whether you search for &quot;rent a car in Ahmedabad&quot;, &quot;car rental near me&quot;, &quot;SUV on rent in Ahmedabad&quot;, or
+            &quot;cheap car on rent Ahmedabad&quot; — WheelOnHour is the answer. Contact owner Nilesh Kidiya at +91 884 984 9888 on WhatsApp to book now.
           </p>
         </div>
       </section>
