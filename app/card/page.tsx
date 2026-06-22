@@ -141,7 +141,7 @@ async function shareCard() {
 export default function BusinessCard() {
   const [theme, setTheme] = useState<"dark" | "light">("light");
   const [flipped, setFlipped] = useState(false);
-  const [mounted, setMounted] = useState(false);
+
   const [savedToast, setSavedToast] = useState(false);
   const [flipperHeight, setFlipperHeight] = useState<number | undefined>(undefined);
   const frontRef = useRef<HTMLDivElement>(null);
@@ -163,19 +163,17 @@ export default function BusinessCard() {
 
   useEffect(() => {
     const saved = localStorage.getItem("woh-theme") as "dark" | "light" | null;
-    const t = saved || "light";
-    setTheme(t);
-    document.documentElement.setAttribute("data-theme", t);
-    setMounted(true);
-  }, []);
+    if (saved && saved !== theme) {
+      setTheme(saved);
+      document.documentElement.setAttribute("data-theme", saved);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSaveContact = () => {
     saveContact();
     setSavedToast(true);
     setTimeout(() => setSavedToast(false), 3000);
   };
-
-  if (!mounted) return null;
 
   return (
     <>
@@ -186,19 +184,40 @@ export default function BusinessCard() {
       <div className="bg-orb bg-orb-3" />
 
       <div className="vcard-page">
-        {/* Floating Particles */}
+        {/* Floating Particles — deterministic positions to avoid hydration mismatch */}
         <div className="vcard-particles">
-          {Array.from({ length: 20 }).map((_, i) => (
+          {[
+            { l: 12, t: 8, d: 0.2, dur: 4.1, s: 4 },
+            { l: 45, t: 22, d: 1.3, dur: 5.8, s: 6 },
+            { l: 78, t: 5, d: 2.7, dur: 3.5, s: 3 },
+            { l: 33, t: 65, d: 0.8, dur: 6.2, s: 5 },
+            { l: 90, t: 40, d: 3.1, dur: 4.7, s: 7 },
+            { l: 5, t: 88, d: 1.9, dur: 5.3, s: 4 },
+            { l: 60, t: 15, d: 4.2, dur: 3.9, s: 6 },
+            { l: 25, t: 50, d: 0.5, dur: 6.5, s: 3 },
+            { l: 72, t: 72, d: 2.1, dur: 4.4, s: 5 },
+            { l: 50, t: 92, d: 3.8, dur: 5.1, s: 7 },
+            { l: 15, t: 35, d: 1.1, dur: 3.7, s: 4 },
+            { l: 85, t: 60, d: 4.5, dur: 6.0, s: 6 },
+            { l: 40, t: 78, d: 0.3, dur: 4.9, s: 3 },
+            { l: 68, t: 28, d: 2.5, dur: 5.5, s: 5 },
+            { l: 8, t: 55, d: 3.4, dur: 3.3, s: 7 },
+            { l: 55, t: 45, d: 1.7, dur: 6.8, s: 4 },
+            { l: 95, t: 18, d: 4.0, dur: 4.2, s: 6 },
+            { l: 20, t: 95, d: 0.9, dur: 5.7, s: 3 },
+            { l: 75, t: 82, d: 2.9, dur: 3.6, s: 5 },
+            { l: 38, t: 10, d: 3.6, dur: 6.4, s: 7 },
+          ].map((p, i) => (
             <span
               key={i}
               className="vcard-particle"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
-                width: `${3 + Math.random() * 5}px`,
-                height: `${3 + Math.random() * 5}px`,
+                left: `${p.l}%`,
+                top: `${p.t}%`,
+                animationDelay: `${p.d}s`,
+                animationDuration: `${p.dur}s`,
+                width: `${p.s}px`,
+                height: `${p.s}px`,
               }}
             />
           ))}
