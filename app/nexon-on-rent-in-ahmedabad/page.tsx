@@ -63,7 +63,8 @@ export default function NexonOnRent() {
             <h1>Tata Nexon on Rent in Ahmedabad</h1>
             <p>
               Rent the rugged Tata Nexon in Ahmedabad at just ₹3,000 per day.
-              This compact SUV comes with Manual transmission, petrol engine, 5
+              This compact SUV comes with Manual transmission, petrol/CNG
+              engine, 5
               seats, and a high ground clearance perfect for all road conditions.
               Self-drive, fully insured, easy pickup from our Ahmedabad
               location.
@@ -88,7 +89,7 @@ export default function NexonOnRent() {
                 <strong>Type:</strong> Compact SUV
               </li>
               <li>
-                <strong>Fuel:</strong> Petrol
+                <strong>Fuel:</strong> Petrol/CNG
               </li>
               <li>
                 <strong>Transmission:</strong> Manual

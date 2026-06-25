@@ -108,12 +108,12 @@ const carsData: CarData[] = [
   {
     id: "baleno",
     name: "Maruti Suzuki Baleno",
-    type: "Premium Hatchback • Petrol • Manual",
+    type: "Premium Hatchback • Petrol/CNG • Manual",
     badge: "Popular",
     price: 2400,
     images: Array.from({ length: 14 }, (_, i) => `/cars/baleno/${i + 1}.jpg`),
     specs: [
-      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "⛽", value: "Petrol/CNG", label: "Fuel" },
       { icon: "👤", value: "5", label: "Seats" },
       { icon: "💨", value: "30 km/l", label: "Mileage" },
     ],
@@ -121,12 +121,12 @@ const carsData: CarData[] = [
   {
     id: "i20",
     name: "Hyundai i20",
-    type: "Premium Hatchback • Petrol • Manual",
+    type: "Premium Hatchback • Petrol/CNG • Manual",
     badge: "Sporty",
     price: 2800,
     images: Array.from({ length: 4 }, (_, i) => `/cars/i20/${i + 1}.webp`),
     specs: [
-      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "⛽", value: "Petrol/CNG", label: "Fuel" },
       { icon: "👤", value: "5", label: "Seats" },
       { icon: "💨", value: "20 km/l", label: "Mileage" },
     ],
@@ -134,12 +134,12 @@ const carsData: CarData[] = [
   {
     id: "dezire",
     name: "Maruti Suzuki Dzire",
-    type: "Compact Sedan • Petrol • Manual",
+    type: "Compact Sedan • Petrol/CNG • Manual",
     badge: "Sedan",
     price: 2600,
     images: Array.from({ length: 3 }, (_, i) => `/cars/dezire/${i + 1}.webp`),
     specs: [
-      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "⛽", value: "Petrol/CNG", label: "Fuel" },
       { icon: "👤", value: "5", label: "Seats" },
       { icon: "💨", value: "23 km/l", label: "Mileage" },
     ],
@@ -147,12 +147,12 @@ const carsData: CarData[] = [
   {
     id: "nexon",
     name: "Tata Nexon",
-    type: "Compact SUV • Petrol • Manual",
+    type: "Compact SUV • Petrol/CNG • Manual",
     badge: "SUV",
     price: 3000,
     images: Array.from({ length: 4 }, (_, i) => `/cars/nexon/${i + 1}.webp`),
     specs: [
-      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "⛽", value: "Petrol/CNG", label: "Fuel" },
       { icon: "👤", value: "5", label: "Seats" },
       { icon: "💨", value: "17 km/l", label: "Mileage" },
     ],
@@ -173,12 +173,12 @@ const carsData: CarData[] = [
   {
     id: "baleno2",
     name: "Maruti Suzuki Baleno",
-    type: "Premium Hatchback • Petrol • Manual",
+    type: "Premium Hatchback • Petrol/CNG • Manual",
     badge: "Popular",
     price: 2400,
     images: Array.from({ length: 2 }, (_, i) => `/cars/baleno2/${i + 1}.webp`),
     specs: [
-      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "⛽", value: "Petrol/CNG", label: "Fuel" },
       { icon: "👤", value: "5", label: "Seats" },
       { icon: "💨", value: "22 km/l", label: "Mileage" },
     ],
@@ -186,12 +186,12 @@ const carsData: CarData[] = [
   {
     id: "baleno3",
     name: "Maruti Suzuki Baleno",
-    type: "Premium Hatchback • Petrol • Manual",
+    type: "Premium Hatchback • Petrol/CNG • Manual",
     badge: "Popular",
     price: 2400,
     images: Array.from({ length: 4 }, (_, i) => `/cars/baleno3/${i + 1}.webp`),
     specs: [
-      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "⛽", value: "Petrol/CNG", label: "Fuel" },
       { icon: "👤", value: "5", label: "Seats" },
       { icon: "💨", value: "22 km/l", label: "Mileage" },
     ],

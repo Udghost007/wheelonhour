@@ -87,7 +87,7 @@ export default function DzireOnRent() {
                 <strong>Type:</strong> Compact Sedan
               </li>
               <li>
-                <strong>Fuel:</strong> Petrol
+                <strong>Fuel:</strong> Petrol/CNG
               </li>
               <li>
                 <strong>Transmission:</strong> Manual

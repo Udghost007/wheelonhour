@@ -46,7 +46,7 @@ export default function BalenoOnRent() {
           <ul>
             <li><strong>Car:</strong> Maruti Suzuki Baleno (Latest Model)</li>
             <li><strong>Type:</strong> Premium Hatchback</li>
-            <li><strong>Fuel:</strong> Petrol</li>
+            <li><strong>Fuel:</strong> Petrol/CNG</li>
             <li><strong>Transmission:</strong> Automatic / Manual (both available)</li>
             <li><strong>Seats:</strong> 5</li>
             <li><strong>Mileage:</strong> 30 km/l</li>

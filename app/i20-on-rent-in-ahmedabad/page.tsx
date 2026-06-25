@@ -63,7 +63,7 @@ export default function I20OnRent() {
             <h1>Hyundai i20 on Rent in Ahmedabad</h1>
             <p>
               Rent the stylish Hyundai i20 in Ahmedabad at just ₹2,800 per day.
-              This premium hatchback comes with Manual transmission, petrol
+              This premium hatchback comes with Manual transmission, petrol/CNG
               engine, and seats 5 comfortably. Self-drive, fully insured, easy
               pickup from our Ahmedabad location.
             </p>
@@ -87,7 +87,7 @@ export default function I20OnRent() {
                 <strong>Type:</strong> Premium Hatchback
               </li>
               <li>
-                <strong>Fuel:</strong> Petrol
+                <strong>Fuel:</strong> Petrol/CNG
               </li>
               <li>
                 <strong>Transmission:</strong> Manual
