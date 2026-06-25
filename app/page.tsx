@@ -493,7 +493,7 @@ export default function Home() {
         <div className="container navbar-inner">
           <a href="#" className="navbar-logo">
             <img src="/logo.png" alt="wheelsonhours Logo" />
-            <span className="navbar-logo-text">wheelsonhours</span>
+            <span className="navbar-logo-text">WheelsonHours</span>
           </a>
 
           <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
@@ -1023,36 +1023,195 @@ export default function Home() {
         </div>
       </section>
 
-          {/* ===== PARTNER WITH US ===== */}
-      <section className="section partner-section" id="partner">
+      {/* ===== PARTNER WITH US — REDESIGNED ===== */}
+      <section className="section pw-section" id="partner">
         <div className="container">
-          <div className="partner-card animate-on-scroll">
-            <div className="partner-layout">
-              <div className="partner-content">
-                <div className="section-badge">Partner With Us</div>
-                <h2 className="partner-title">Own a Car? Earn With Us!</h2>
-                <p className="partner-desc">
-                  If you own a vehicle and would like to rent it out, we are open to discussing a
-                  partnership opportunity with you. We can make you a <strong>partner in our fleet program</strong>,
-                  where your vehicle can be listed and managed through our platform. You earn — we handle everything.
-                </p>
-                <div className="partner-perks">
-                  <div className="partner-perk">
-                    <span>💰</span><span>Earn passive income from your car</span>
+
+          {/* ROW 1: Hero + Commission Visual */}
+          <div className="pw-hero animate-on-scroll">
+            <div className="pw-hero-left">
+              <div className="section-badge">👤 Partner With Us</div>
+              <h2 className="pw-title">
+                We Grow Together,<br />
+                <span className="pw-title-highlight">You Earn More.</span>
+              </h2>
+              <p className="pw-desc">
+                We believe in fair partnerships. That&apos;s why we take only{" "}
+                <span className="pw-accent">20% commission</span> and give you <strong>80%</strong> of every booking.
+              </p>
+              <div className="pw-features">
+                {[
+                  { icon: "🛡️", title: "Fair & Transparent", desc: "No hidden charges. Just a clear 20% commission." },
+                  { icon: "💰", title: "More You Earn", desc: "You keep 80% of every successful booking." },
+                  { icon: "🎧", title: "We Support You", desc: "From onboarding to growth, we're with you always." },
+                ].map((f, i) => (
+                  <div className="pw-feature" key={i}>
+                    <div className="pw-feature-icon">{f.icon}</div>
+                    <div>
+                      <strong>{f.title}</strong>
+                      <p>{f.desc}</p>
+                    </div>
                   </div>
-                  <div className="partner-perk">
-                    <span>🛡️</span><span>Full insurance and maintenance covered</span>
+                ))}
+              </div>
+            </div>
+
+            <div className="pw-hero-right">
+              <div className="pw-commission-visual">
+                {/* Left: 20% */}
+                <div className="pw-cv-left">
+                  <div className="pw-cv-label">WE TAKE ONLY</div>
+                  <div className="pw-cv-big">20<span>%</span></div>
+                  <div className="pw-cv-sublabel">COMMISSION</div>
+                  <ul className="pw-cv-list">
+                    <li><span className="pw-check">✓</span> Platform &amp; Technology</li>
+                    <li><span className="pw-check">✓</span> Marketing &amp; Brand</li>
+                    <li><span className="pw-check">✓</span> Operations &amp; Support</li>
+                    <li><span className="pw-check">✓</span> Secure &amp; Reliable Service</li>
+                  </ul>
+                </div>
+
+                {/* Center: Circle */}
+                <div className="pw-cv-center">
+                  <div className="pw-cv-circle">
+                    <div className="pw-cv-circle-inner">
+                      <span className="pw-cv-handshake">🤝</span>
+                      <span className="pw-cv-circle-text">Our Success is<br />Your Success</span>
+                    </div>
                   </div>
-                  <div className="partner-perk">
-                    <span>📊</span><span>Transparent earnings and reports</span>
-                  </div>
-                  <div className="partner-perk">
-                    <span>🤝</span><span>Hassle-free partnership</span>
+                </div>
+
+                {/* Right: 80% */}
+                <div className="pw-cv-right">
+                  <div className="pw-cv-badge">YOU KEEP</div>
+                  <div className="pw-cv-big pw-cv-big-dark">80<span>%</span></div>
+                  <div className="pw-cv-sublabel">OF EVERY BOOKING</div>
+                  <div className="pw-cv-right-features">
+                    {[
+                      { icon: "📈", title: "Higher Profits", desc: "Keep the majority of every booking." },
+                      { icon: "🚀", title: "Business Growth", desc: "More income, more cars, more success." },
+                      { icon: "🎯", title: "You're in Control", desc: "You run your business, your way." },
+                    ].map((f, i) => (
+                      <div className="pw-cv-rf" key={i}>
+                        <span className="pw-cv-rf-icon">{f.icon}</span>
+                        <div>
+                          <strong>{f.title}</strong>
+                          <p>{f.desc}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
+          {/* ROW 2: Early Bird Banner */}
+          <div className="pw-earlybird animate-on-scroll">
+            <div className="pw-eb-left">
+              <div className="pw-eb-trophy">
+                <span className="pw-eb-trophy-icon">🏆</span>
+                <div className="pw-eb-top5">
+                  <span className="pw-eb-top-label">TOP</span>
+                  <span className="pw-eb-top-num">5</span>
+                </div>
+              </div>
+              <div className="pw-eb-text">
+                <h3>First 5 Partners</h3>
+                <h4>Get Extra Rewards!</h4>
+                <p>The first 5 partners to join our program will receive exclusive extra rewards decided by our company.</p>
+              </div>
+            </div>
+            <div className="pw-eb-right">
+              {[
+                { icon: "🎁", title: "Higher Commission", desc: "Enjoy extra % on every booking" },
+                { icon: "👑", title: "Priority Support", desc: "Get fast-track assistance" },
+                { icon: "⭐", title: "Featured Partner", desc: "Showcased on our platform" },
+                { icon: "📢", title: "Marketing Boost", desc: "Special promotion & visibility" },
+                { icon: "🏅", title: "Exclusive Benefits", desc: "More perks as we grow together" },
+              ].map((r, i) => (
+                <div className="pw-eb-reward" key={i}>
+                  <div className="pw-eb-reward-icon">{r.icon}</div>
+                  <strong>{r.title}</strong>
+                  <p>{r.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ROW 3: VS Comparison */}
+          <div className="pw-advantage animate-on-scroll">
+            <h3 className="pw-adv-title">
+              <span className="pw-adv-line" />
+              The wheelsonhours Advantage
+              <span className="pw-adv-line" />
+            </h3>
+            <div className="pw-vs-card">
+              <div className="pw-vs-side pw-vs-us">
+                <div className="pw-vs-logo-wrap">
+                  <img src="/logo.png" alt="wheelsonhours" className="pw-vs-logo" />
+                </div>
+                <div>
+                  <div className="pw-vs-brand pw-accent">wheelsonhours</div>
+                  <div className="pw-vs-line">We take only <strong className="pw-accent">20%</strong></div>
+                  <div className="pw-vs-line">You keep <strong className="pw-accent">80%</strong></div>
+                </div>
+              </div>
+              <div className="pw-vs-badge">VS</div>
+              <div className="pw-vs-side pw-vs-them">
+                <div className="pw-vs-icon-wrap">🏢</div>
+                <div>
+                  <div className="pw-vs-brand">Other Car Rental Companies</div>
+                  <div className="pw-vs-line">They take <strong className="pw-vs-red">30% – 40%</strong></div>
+                  <div className="pw-vs-line">You keep only <strong className="pw-vs-red">60% – 70%</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Partner Form */}
+          <div className="pw-form-section animate-on-scroll">
+            <div className="section-header">
+              <h2 className="section-title">Submit Your Details</h2>
+              <p className="section-subtitle">Interested? Fill in the form and we&apos;ll get in touch.</p>
+            </div>
+            <div className="pw-form-wrap">
               <PartnerForm />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ===== BOOKING POLICY ===== */}
+      <section className="section" id="booking-policy">
+        <div className="container">
+          <div className="section-header animate-on-scroll">
+            <div className="section-badge">Booking Policy</div>
+            <h2 className="section-title">Payment &amp; Cancellation Policy</h2>
+            <p className="section-subtitle">
+              Clear and transparent policies — know exactly what to expect before you book.
+            </p>
+          </div>
+
+          <div className="policy-cards animate-on-scroll">
+            <div className="booking-policy-card">
+              <div className="booking-policy-icon">💳</div>
+              <h3>50% Advance Payment</h3>
+              <p>Pay 50% of the total rental amount at the time of booking to confirm your reservation.</p>
+              <div className="booking-policy-tag">At Booking</div>
+            </div>
+            <div className="booking-policy-card">
+              <div className="booking-policy-icon">🚗</div>
+              <h3>50% After the Trip</h3>
+              <p>Pay the remaining 50% when you return the car after your trip is completed.</p>
+              <div className="booking-policy-tag">At Return</div>
+            </div>
+            <div className="booking-policy-card booking-policy-card--alert">
+              <div className="booking-policy-icon">⚠️</div>
+              <h3>No Refund Policy</h3>
+              <p>The advance payment is <strong>non-refundable</strong> in case of plan changes, trip cancellation, or no-show. Please book only when you are sure.</p>
+              <div className="booking-policy-tag booking-policy-tag--alert">Non-Refundable</div>
             </div>
           </div>
         </div>
