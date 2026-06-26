@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-
-/* ========== CSS CUSTOM PROPERTIES ========== */
+﻿/* ========== CSS CUSTOM PROPERTIES ========== */
 :root {
   /* Primary Palette */
   --primary: #00d4ff;
@@ -3448,7 +3446,7 @@ button {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(5, 10, 21, 0.95);
+  /* background: rgba(5, 10, 21, 0.95); */
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   padding: 12px 0;
