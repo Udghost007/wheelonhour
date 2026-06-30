@@ -196,6 +196,19 @@ const carsData: CarData[] = [
       { icon: "💨", value: "22 km/l", label: "Mileage" },
     ],
   },
+  {
+    id: "bullet",
+    name: "Royal Enfield Bullet",
+    type: "Cruiser Bike • Petrol • Manual",
+    badge: "🏍️ Bike",
+    price: 1800,
+    images: Array.from({ length: 5 }, (_, i) => `/bikes/bullet/${i + 1}.webp`),
+    specs: [
+      { icon: "⛽", value: "Petrol", label: "Fuel" },
+      { icon: "👤", value: "2", label: "Seats" },
+      { icon: "💨", value: "35 km/l", label: "Mileage" },
+    ],
+  },
 ];
 
 /* ===== CAR CARD COMPONENT ===== */
